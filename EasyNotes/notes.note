@@ -1,0 +1,2831 @@
+<<<
+Attribute enabled software development: illustrated with mobile software applications
+>>>
+<<<
+D:/attr/cepaAESD
+>>>
+<<<
+kniha
+>>>
+<<<
+\cite{CepaAESD}
+
+\bibitem{CepaAESD} Cepa, V. (2007), 'Attribute enabled software development: illustrated with mobile software applications', VDM Verlag, Saarbr\"{u}cken, Germany, (2007)
+>>>
+<<<
+MDD;domain specific abstractions;DSL;@OP;UML;attribute-oriented programming;annotations application;generative programming;MobCon;
+>>>
+
+<<<
+Language Support for Model-Driven Software Development
+>>>
+<<<
+D:/attr/lang
+>>>
+<<<
+anotacie + gaast + reflexia (codedom)
+>>>
+<<<
+\cite{langSupport}
+
+\bibitem{langSupport} Cepa, V. \& Mezini, M. (2004), 'Language Support for Model-Driven Software Development', in Special Issue Science of Computer Programming (Elsevier) on MDA: Foundations and Applications Model Driven Architecture, 2004
+>>>
+<<<
+new;domain abstractions;language extension;DSL;
+>>>
+
+<<<
+Adding Genericity to a Plug-in Framework
+>>>
+<<<
+D:/attr/markus
+>>>
+<<<
+markus
+>>>
+<<<
+\cite{genericityPlugin}
+
+\bibitem{genericityPlugin} Wolfinger, R.; Löberbauer, M.; Jahn, M. \& Mössenböck, H. (2010), 'Adding Genericity to a Plug-in Framework' in 9th Intl. Conference on Generative Programming and Component Engineering, 2010
+>>>
+<<<
+new;plugin;annotations;.net attributes;interface definition;annotations application;
+>>>
+
+<<<
+other citations
+>>>
+<<<
+D:/attr/other citations
+>>>
+<<<
+\cite{audioVisualMeta}
+
+\bibitem{audioVisualMeta} Federal Agencies Audio-Visual Working Group (2009), 'Embedding Metadata in Digital Audio Files', available on \url{http://www.digitizationguidelines.gov/audio-visual/documents/Embed_Intro_090915.pdf} (07/11/2012)
+
+\cite{jpegMeta}
+
+\bibitem{jpegMeta} Gecko\&Fly (2012), 'Remove and Insert Metadata Keywords into Jpeg Images for Search Engine', available on \url{http://www.geckoandfly.com/3172/remove-and-insert-metadata-keywords-into-jpeg-images-for-search-engine/} (07/11/2012)
+
+\cite{pdfMeta}
+
+\bibitem{pdfMeta} Weisinger, D. (2006), 'Embedded Document MetaData', in Formtek Blog, available on \url{http://www.formtek.com/blog/?p=46} (07/11/2012)
+>>>
+<<<
+
+>>>
+<<<
+new;citations;
+>>>
+
+<<<
+.NET Framework - A solution for the next generation tools for system-level modeling and simulation
+>>>
+<<<
+D:/attr/application/.NET Framework - A solution for the next generation tools for system-level modeling and simulation
+>>>
+<<<
+Framework pre simulaciu obvodov ak som spravne pochopil, ktory na modelovanie pouziva jazyk C# s jeho atributmi.
+>>>
+<<<
+\cite{esys.net}
+
+\bibitem{esys.net} Lapalme, J.; Aboulhamid, E. M.; Nicolescu, G.; Charest, L.; Boyer, F. R.; David, J. P. \& Bois, G. (2004), '.NET Framework -- A Solution for the Next Generation Tools for System-Level Modeling and Simulation', in DATE, IEEE Computer Society, pp. 732--733
+>>>
+<<<
+ESys.NET;.NET attributes;annotations application;
+>>>
+
+<<<
+Alias Annotations for Program Understanding
+>>>
+<<<
+D:/attr/application/Alias Annotations for Program Understanding
+>>>
+<<<
+POuzivaju special anotacie (skor by som povedal ze vkladaju nove keywords) na definovanie pristupu k alias objektom.
+Kvoli zjednoduseniu prace navrhuju aj jednoduche algoritmy na automaticke anotovanie programu.
+
+This paper described AliasJava, an annotation system for Java that places structural and temporal  bounds on aliases, enabling developers to reason more directly about aliasing in object-oriented systems.
+>>>
+<<<
+\cite{aliasAnnotations}
+
+\bibitem{aliasAnnotations} Aldrich, J.; Kostadinov, V. \& Chambers, C. (2002), 'Alias annotations for program understanding', in Proceedings of the 17th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, OOPSLA '02, ACM, pp. 311--330
+>>>
+<<<
+@OP;special annotations;annotations application;superimposition of annotations;annotations vs keywords;locality;dumb;
+>>>
+
+<<<
+An extensible framework for middleware design based on concurrent event-based AOP
+>>>
+<<<
+D:/attr/application/An extensible framework for middleware design based on concurrent event-based AOP
+>>>
+<<<
+Navrhuju nejaky AOP framework pre middleware, ktory pouziva anotacie na POJO na definiciu aspektov. Rozdeluju programatorov na dve roly - aspektovy programator, ktory tvori aspekty, a clientsky (aplikacny) programator, ktory vytvara pointcuts a teda tvori aplikaciu. chcu totiz aplikovat skompilovane aspekty na kod (kniznice aspektove). Ich aspekty maju byt loosely-coupled.
+
+Mozno by stalo za to spravit taky vseobecny framework.
+>>>
+<<<
+\cite{aopFramework}
+
+\bibitem{aopFramework} Marques, E.; Veiga, L. \& Ferreira, P. (2010), 'An extensible framework for middleware design based on concurrent event-based AOP', in Proceedings of the 9th International Workshop on Adaptive and Reflective Middleware, ARM '10, ACM, pp. 26--31
+>>>
+<<<
+@OP;dynamic AOP;Java annotations;annotations application;navigation;separated aspects;
+>>>
+
+<<<
+Applying Code Generation Techniques to the J2EE Development
+>>>
+<<<
+D:/attr/application/Applying Code Generation Techniques to the J2EE Development
+>>>
+<<<
+Definuje anotacie na strane 7 ako @OP languages enable special declarative tags, or attributes, to be embedded within the body of the code.
+Porovnava s C++ makrami.
+naznacuje ze oproti makram sa z anotacii generuje kod do druhych suborov a nie priamo do tela co povazuje za vyhodu, lebo sa tym neznecistuje kod (oproti makru pre reverse engineering).
+Priklad pouzitia a vyhod pouzitia XDocletu pre ejb.
+Active a passive code generators.
+>>>
+<<<
+\cite{applyingCodeGeneration}
+
+\bibitem{applyingCodeGeneration} Monnox, A. (2005), 'Applying Code Generation Techniques to the J2EE Development', in Pearson informIT, June 10, 2005, available on \url{http://www.informit.com/articles/article.aspx?p=389718} (31/10/2012)
+>>>
+<<<
+@OP;generative programming;templates;Velocity;alternatives;competition;XDoclet;EJB;annotations definition;
+>>>
+
+<<<
+Aspect-Oriented Programming with C# and .NET
+>>>
+<<<
+D:/attr/application/Aspect-Oriented Programming with C# and .NET
+>>>
+<<<
+Pekne rozobratie reflexie v .NET. O metadatach tu hovori nie len ako o @OP ale vlastne o lubobolnych datach o strukturach - teda celkovo o reflexii.
+Preskumat implementaciu .NET atributov (najm? moznosti pridavania funkcionality do atributu).
+>>>
+<<<
+\cite{aopdotnet}
+
+\bibitem{aopdotnet} Schult, W. \& Polze, A. (2002), 'Aspect-Oriented Programming with C\# and .NET', in Symposium on Object-Oriented Real-Time Distributed Computing, pp. 241--248
+>>>
+<<<
+AOP;@OP;.NET attributes;attribute-oriented programming;metadata theory;annotations application;
+>>>
+
+<<<
+Attribute-Oriented Programming with Java 1.5
+>>>
+<<<
+D:/attr/application/Attribute-Oriented Programming with Java 1.5, Part 1
+>>>
+<<<
+Implementacia v podstate AOP pomocou anotacii. Ukazka pouzitia anotacii v JAve.
+
+However, with the inclusion of JSR-175, Java 1.5 has provided a more structured format for including these attributes inside of real code. The attributes are called "annotations" and they can be used to provide metadata for class, method, field, or variable definitions. They must be declared explicitly, and provide a sequence of name-value pairs that can contain any constant value (including primitives, strings, enumerations, and classes).
+>>>
+<<<
+\cite{aopJava15}
+
+\bibitem{aopJava15} Schwarz, D. (2004), 'Attribute-Oriented Programming with Java 1.5', available on \url{http://onjava.com/pub/a/onjava/2004/06/30/insidebox1.html}, (22/10/2012)
+>>>
+<<<
+annotations application;AOP;annotations definition;structured annotations;
+>>>
+
+<<<
+Design by Contract with JML
+>>>
+<<<
+D:/attr/application/Design by Contract with JML
+>>>
+<<<
+Pouzivaju specialne anotacne komentare na definovanie kontraktu. Kontrkakt ako pre a post podmienka. A vela o tom.
+>>>
+<<<
+\cite{designContractJML}
+
+\bibitem{designContractJML} Leavens, G. \& Cheon, Y. (2006), 'Design by Contract with JML', draft paper, available on \url{http://www.eecs.ucf.edu/~leavens/JML//jmldbc.pdf}, (20/12/2012)
+>>>
+<<<
+special annotations;annotations application;@OP;documenting annotations;JML;code checking;
+>>>
+
+<<<
+Generative design patterns
+>>>
+<<<
+D:/attr/application/Generative Design Patterns
+>>>
+<<<
+.. due to the fact that design patterns are written documents that are subject to human interpretation. This makes them vulnerable to the ambiguities in natural language. An incorrect interpretation of a pattern can lead to an incorrect implementation. It would be beneficial to use generative design patterns that generate code. They reduce implementation time, are less prone to programmer error, promote rapid prototyping and code reuse, support performance tuning, and provide better overall software engineering benefits.
+pokus o generovanie struktur pre aplikaciu navrhovych vzorov
+vseobecny NV je cez variabilne parametre adaptovany na konkretnu situaciu a z toho je vygenerovany kod
+generovanie je pomocou javadoc-u - doclet a anotacie
+NV su definovane pomocou tychto var parametrov, ich navrh pomocou ich toolu COPS a MetaCOPS
+>>>
+<<<
+\cite{generativeDesignPatterns}
+
+\bibitem{generativeDesignPatterns} MacDonald, S.; Szafron, D.; Schaeffer, J.; Anvik, J.; Bromling, S. \& Tan, K. (2002), 'Generative design patterns', in Proceedings of the 17th IEEE international conference on Automated software engineering, ASE '02, IEEE Computer Society, Washington, DC, USA
+>>>
+<<<
+design pattern;generative programming;annotations application;XDoclet;special annotations;
+>>>
+
+<<<
+Implementing Automatic Error Recovery Support for Rich Web Clients
+>>>
+<<<
+D:/attr/application/Implementing Automatic Error Recovery Support for Rich Web Clients
+>>>
+<<<
+In [9] a new semantic construction called  Reconstructor  is proposed and integrated with OO languages using attribute oriented programming in Java.
+Reconstructor ako objekt ktory vracia objekt do konzistentneho stavu, pre kazdu metodu, ktoru je mozno zakazat sa pri jej volani vytvori reconstructor ktory sa dava do stacku. Takto tvoria kontext, s kazdou rekonstruovatelnou operaciu sa vytvara novy kontext.
+Programator moze oznacit rekonstruovatelne atributy, metody, a kontexty prave pomocou anotacii (ale to v Jave, a toto je pre RIA a JavaScript, takze predpokladam ze [9]). Vyuzivaju AOP ako take.
+>>>
+<<<
+\cite{automaticErrorRecovery}
+
+\bibitem{automaticErrorRecovery} Quintela-Pumares, M.; Fernández-Lanvin, D.; Izquierdo, R. \& Fernández-Álvarez, A. M. (2010), 'Implementing Automatic Error Recovery Support for Rich Web Clients', in Proceedings of the 11th international conference on Web information systems engineering, WISE'10, Springer, pp. 630--638
+>>>
+<<<
+Java annotations;annotations application;AOP;@OP;
+>>>
+
+<<<
+Attribute-oriented Programming in Task-driven Case Study Design and Evolution
+>>>
+<<<
+D:/attr/application/poster2012
+>>>
+<<<
+
+>>>
+<<<
+\cite{attTDCSposter}
+
+\bibitem{attTDCSposter} Nosá¾, M. (2012), 'Attribute-oriented Programming in Task-driven Case Study Design and Evolution', in POSTER 2012: 16th International Student Conferenece on Electrical Engineering: May 17, 2012, Prague, Czech Technical University in Prague, pp. 1--5.
+>>>
+<<<
+new;annotations application;
+>>>
+
+<<<
+Preserving the Separation of Concerns While Composing Aspects on Shared Joinpoints
+>>>
+<<<
+D:/attr/application/Preserving the Separation of Concerns While Composing Aspects on Shared Joinpoints
+>>>
+<<<
+V skratke chce pouzivat semanticke anotacie na to aby dokazal riesit interferenciu viacerych aspektov.
+>>>
+<<<
+\cite{preservingSoCsharedJP}
+
+\bibitem{preservingSoCsharedJP} Marot, A. (2009), 'Preserving the Separation of Concerns While Composing Aspects on Shared Joinpoints', in Proceedings of the 24th ACM SIGPLAN conference companion on Object oriented programming systems languages and applications, OOPSLA '09, ACM, pp. 837--838
+>>>
+<<<
+@OP;AOP;annotations application;semantic annotations;SoC;
+>>>
+
+<<<
+Role-Based Access Control (RBAC) in Java via Proxy Objects using Annotations
+>>>
+<<<
+D:/attr/application/Role-Based Access Control (RBAC) in Java via Proxy Objects using Annotations
+>>>
+<<<
+Annotations enable developers to associate arbitrary metadata- in our case, access control metadata - with code.
+
+Ak som to spravne pochopil, snazia sa robit RBAC pomocou anotacii, ale tak ze bojuju voci RMI - vytvoria proxy pre kazdu rolu, tzn. ze nejaka rola ani nebude vediet ze niektore metody resp. rozhrania existuju - nie len ze jej bude zakazany pristup!
+Pekny system anotacii, aby vyjadrili ze jedna rola je podrolou druhej tak metanatuju sa navzjaom..
+>>>
+<<<
+\cite{RBACJavaAnn}
+
+\bibitem{RBACJavaAnn} Zarnett, J.; Tripunitara, M. V. \& Lam, P. (2010), 'Role-based access control (RBAC) in Java via proxy objects using annotations', in Proceedings of the 15th ACM symposium on Access control models and technologies, SACMAT '10, ACM, pp. 79--88
+>>>
+<<<
+RBAC;@OP;annotations application;annotations definition;
+>>>
+
+<<<
+Smart Composition of Game Objects Using Dependency Injection
+>>>
+<<<
+D:/attr/application/Smart Composition of Game Objects Using Dependency Injection
+>>>
+<<<
+Principialne predstavuju nejaky framework na tvorbu hier, pricom na kompoziciu vyuzivaju dependency injection. Na DI pouzivaju XML aj anotacie. Anotacia Inject na injekciu, xml na tvorbu sveta.
+>>>
+<<<
+\cite{dependencyInjection}
+
+\bibitem{dependencyInjection} Passos, E. B.; Sousa, J. W. S.; Clua, E. W. G.; Montenegro, A. A. \& Murta, L. G. P. (2009), 'Smart composition of game objects using dependency injection', in Computers in Entertainment, vol. 7, no. 4, pp. 1--15
+>>>
+<<<
+Java annotations;XML;dependency injection;annotations application;DIP;IoC;
+>>>
+
+<<<
+Spoon Compile-time Annotation Processing for Middleware
+>>>
+<<<
+D:/attr/application/Spoon Compile-time Annotation Processing for Middleware
+>>>
+<<<
+Pouziva anotacie v nejakom template jazyku, argumentuje ze anotacie su lepsie nez XML a ze je nimi mozne zdvihnut level abstrakcie (tak ako aj XMLkom).  Argumentuje ze template based metaprogramming je lepsia alternativa nez AOP. Spoon je vlastne nastroj na implementaciu pozadia vykon?vania z anotacii. Fine-grained modification of programs. Vyzera to ako anotacny procesor, ale s v?csou invazivnou silou + pomaha si so sablonami v nativnej Java a s anotaciami.
+
+Annotations are an interesting alternative to deployment descriptors because they?re natively supported in a typed and integrated way, making configuration more straightforward by limiting structural information redundancy. Annotations and metadata in general have proven to be extremely useful for ensuring better separation of concerns and for optimization. By defining the right annotations, you can raise the program?s abstraction level and talk about intentions rather than having to use complex middleware-level APIs, making the program less coupled to a particular technology. However, you must process the annotations to modify the program?s semantics and tune them with regard to a given execution context.
+>>>
+<<<
+\cite{spoonPawlak}
+
+\bibitem{spoonPawlak} Pawlak, R. (2006), 'Spoon: Compile-time Annotation Processing for Middleware', in IEEE Distributed Systems Online, vol. 7, no. 11
+>>>
+<<<
+annotations vs XML;annotations theory;templates;MDD;service component architecture;@OP vs XML;Java annotations;structured annotations;SoC;domain abstraction;spoon;
+>>>
+
+<<<
+Tool Support for Continuous Maintenance of State Machine Models in Program Code
+>>>
+<<<
+D:/attr/application/Tool Support for Continuous Maintenance of State Machine Models in Program Code
+>>>
+<<<
+Zda sa ze pouzivaju anotacie pri modelovani state machines v kode, trieda je stav, metoda je transition a anotacie nad metodou definuju cielovy stav. Podstatou je asi to, ze model mapuju do kodu.
+>>>
+<<<
+\cite{stateMachine}
+
+\bibitem{stateMachine} Balz, M.; Striewe, M. \& Goedicke, M. (2010), 'Tool support for continuous maintenance of state machine models in program code', in Proceedings of the IEEE/ACM international conference on Automated software engineering, ASE '10, ACM, pp. 175--176
+>>>
+<<<
+annotations application;
+>>>
+
+<<<
+Addressing Ubiquitous Software Complexity with Mobile Containers
+>>>
+<<<
+D:/attr/application/configuration/Addressing Ubiquitous Software Complexity with Mobile Containers
+>>>
+<<<
+Predstavuje MobCon, ten svoj conatinerovy generovany framework ci ako to nazvat, ak som to spravne pochopil tak nevytvara staly framework, ale namiesto toho pouziva MDD (generativne programovanie) na generovanie sluzieb ktore by inak poskytoval container.
+>>>
+<<<
+\cite{mobconOverview}
+
+\bibitem{mobconOverview} Cepa, V. (2004), 'Addressing Ubiquitous Software Complexity with Mobile Containers', in Proceedings of the Third AOSD Workshop on Aspects, Components, and Patterns for Infrastructure Software, Lancaster, UK, 22. March 2004, pp. 72--74
+>>>
+<<<
+@OP;GAAST;semantic annotations;annotation application;MobCon;generative programming;special annotations;configuration;
+>>>
+
+<<<
+Supporting Multiple Configuration Sources Using Abstraction
+>>>
+<<<
+D:/attr/application/configuration/Supporting Multiple Configuration Sources Using Abstraction
+>>>
+<<<
+moj clanok o BTE
+>>>
+<<<
+\cite{bte}
+
+\bibitem{bte} Nosá¾, M. \& Porubän, J. (2012), 'Supporting multiple configuration sources using abstraction', in Central European Journal of Computer Science, vol. 2, no. 3, 2012, pp. 283--299, DOI: 10.2478/s13537-012-0015-7
+>>>
+<<<
+annotations application;@OP vs XML;Java annotations;annotations position;locality;internal vs external;configuration;BTE;
+>>>
+
+<<<
+Type Checking Annotation-Based Product Lines
+>>>
+<<<
+D:/attr/application/configuration/Type Checking Annotation-Based Product Lines
+>>>
+<<<
+Velmi pekny popis toho co je software product line, ako sa to implementuje pomocou "anotacii" (co su vlastne len direktivy preprocesora - je otazka ci su anotaciami leo ich mozes napisat kdekolvek, nie len nad jazykovy element (pomenovany)). Ake chyby mozu nastat, ake su alternativy k tomuto pristupu, co je to feature model, domain engineering.
+Riesia ako typovo chranit generovany kod pri tomto anotacnom pristupe - aby sa nestalo ze sa vyberie jedna feature (read only database - teda bez set na dbs) ale niekde sa vola set, ktory existovat nebude. Potom je tam mnoho mnoho matematiky..
+>>>
+<<<
+\cite{typeCheckingAnnBasPL}
+
+\bibitem{typeCheckingAnnBasPL} Kästner, C.; Apel, S.; Th\"{u}m, T. \& Saake, G. (2012), 'Type checking annotation-based product lines', in ACM Trans. Softw. Eng. Methodol., vol. 21, no. 3, art. 14, pp. 1--39
+>>>
+<<<
+DSL;MDD;software product line;special annotations;annotations application;dependency;configuration;
+>>>
+
+<<<
+Using Metadata in Aspect-Oriented Frameworks
+>>>
+<<<
+D:/attr/application/configuration/Using Metadata in Aspect-Oriented Frameworks
+>>>
+<<<
+The  framework  aspects  need  to  include  logging  refer-ences  inside  advice.  This  entails  a  high  syntactic  coupling relationship  [14]  among  advice  and  the  framework  classes that implement the logging. 
+Neto  et  al  [14] present a definition for  syntactic and se-mantic  coupling.  Moreover,  Yang  and  Tempero  [15]  have shown criteria for dealing with indirect coupling.
+Vyzera to tak ze pouzivaju metadata (XML/@OP) na to aby definovali nejake body variability pre advices v AOP. Teda nie je to o tom ako pouzit anotacie na to aby sme vedeli kam mapovat advices, ale aby sme vedeli nakonfigurovat advice pre nejaky konkretny joinpoit. Potencialne nejake dobre linky.
+
+Attribute-oriented  programming  is  a program-level  marking  technique  that  allows  the  program-mers  to  mark  program  elements  (e.g.  classes  and  methods) to  indicate  that  they  maintain  application-specific  or  do-main-specific semantics.
+>>>
+<<<
+\cite{metadataAOPGuerra}
+
+\bibitem{metadataAOPGuerra} Guerra, E. M.; Silva, J.; Silveira, F. \& Fernandes, C. T. (2008), 'Using Metadata in Aspect-Oriented Frameworks', in Proceedings of 2nd Workshop on Assessment of Contemporary Modularization Techniques (ACoM.08) at OOPSLA 2008 -- ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications (Nashville, EUA, October 19. -- 23., 2008)
+>>>
+<<<
+AOP;@OP;Java annotations;metadata;XML;annotations application;configuration;annotations definition;
+>>>
+
+<<<
+A Prolog-oriented extension of Java programming based on generics and annotations
+>>>
+<<<
+D:/attr/application/definicia rozhrani/A Prolog-oriented extension of Java programming based on generics and annotations
+>>>
+<<<
+Pouziva anotacie na premostenie nejakeho enginu na prolog do javy, anotovanim sa vytvara stub (proxy) ktore bude pre pristup do enginu - jednoduchsie spustanie prologu.
+idea -- nie je to trosku prehnane pisanie?
+>>>
+<<<
+\cite{prologGenAnn}
+
+\bibitem{prologGenAnn} Cimadamore, M. \& Viroli, M. (2007), 'A Prolog-oriented extension of Java programming based on generics and annotations', in Proceedings of the 5th international symposium on Principles and practice of programming in Java, PPPJ '07, ACM, pp. 197--202
+>>>
+<<<
+prolog;annotations application;Java annotations;@OP;annotations usage;idea;
+>>>
+
+<<<
+GUI GENERATION BASED ON LANGUAGE EXTENSIONS
+>>>
+<<<
+D:/attr/application/definicia rozhrani/GUI GENERATION BASED ON LANGUAGE EXTENSIONS
+>>>
+<<<
+Attribute oriented programming is a program-level marking technique.
+
+Pouzivaju anotacie pre generovanie GUI. Pekny clanocek, plus dobre spravena analyza @OP.
+>>>
+<<<
+\cite{guiGenerationAnns}
+
+\bibitem{guiGenerationAnns} Monteiro, M.; Oliveira, P. \& Goncalves, R. (2008), 'GUI Generation Based on Language Extensions -- A Model to Generate GUI, based on Source Code with Custom Attributes', in ICEIS (1), pp. 449--452
+>>>
+<<<
+Attribute-Oriented Programming;Source Code Model;GUI Generation;Data-Driven Application;@OP;annotations definition;annotations application;
+>>>
+
+<<<
+GUI Generation from Annotated Source Code
+>>>
+<<<
+D:/attr/application/definicia rozhrani/GUI Generation from Annotated Source Code
+>>>
+<<<
+Nazov je dost vystizny, pouzivaju tree rewriting. GUI je generovane task-driven metodou. Ak som to spravne pochopil je tam prechod medzi abstraktnym GUI a potoms a da aplikovat nejaky konkretny
+>>>
+<<<
+\cite{guiGenerationJelinek}
+
+\bibitem{guiGenerationJelinek} Jelinek, J. \& Slavik, P. (2004), 'GUI generation from annotated source code', in Proceedings of the 3rd annual conference on Task models and diagrams, TAMODIA '04, ACM, pp. 129--136
+>>>
+<<<
+@OP;annotations application;generative programming;
+>>>
+
+<<<
+Runtime Concepts of Hierarchical Software Components
+>>>
+<<<
+D:/attr/application/definicia rozhrani/Runtime Concepts of Hierarchical Software Components
+>>>
+<<<
+Autori popisuju svoj komponentovy model - SOFA 2.0, ktory sa snazi poskytovat high-level sluzby ako je kompozicia komponentov (hierarchia), rozne styly komunikacie, softverove konektory, dynamicke architektury atd. komunikacia resp definicia komponentov si nevyzaduje implementaciu nejakych SOFA rozhranie alebo tried, ale pouzitim anotacii - tie su nasledne introspektivou skumane a podla toho sa sprava SOFA prostredie (na Jave je to teraz).  Ak to nedovoluje prostredie (J2ME), chystaju generovat SOFA specific code.
+>>>
+<<<
+\cite{sofaAnnotations}
+
+\bibitem{sofaAnnotations} Bures, T.; Hnetynka, P. \& Plasil, F. (2007), 'Runtime Concepts of Hierarchical Software Components', in International Journal of Computer \& Information Science 8, pp. 454--463
+>>>
+<<<
+annotations application;interface definition;java annotations;@OP;
+>>>
+
+<<<
+Type Safe Composition in .NET
+>>>
+<<<
+D:/attr/application/definicia rozhrani/Type Safe Composition in.NET
+>>>
+<<<
+Pouziva attributy v C# na definovanie zavislosti, resp. rozhrani - TYPOV pre potreby dynamickej load-time type controly.
+>>>
+<<<
+\cite{compositiondotNET}
+
+\bibitem{compositiondotNET} Seco, J. C. (2002), 'Type Safe Composition in .NET', in First Microsoft Research Summer Workshop, Cambridge, UK, 2002
+>>>
+<<<
+annotations application;interface definition;C# attributes;
+>>>
+
+<<<
+A Model Transformation Framework for Domain Specific Languages
+>>>
+<<<
+D:/attr/application/mapovanie na model/A Model Transformation Framework for Domain Specific Languages
+>>>
+<<<
+Okrem toho co je uz v praci Leveraging Metamodeling and A...
+
+je asi podstatne rozdelenie anotacii na marker annotations a member annotations.
+
+
+Stereotypes are specified as meta-classes extending UML?s standard metaclasses, and tagged-values are specified as attributes of the extended metaclasses (i.e. stereotypes). -- v spojeni s Leveraging moze byt uzitocne
+A stereotype that does not have tagged-values in DSM is mapped to a marker annotation.
+A stereotype that has tagged-values in DSM is mapped to a member annotation.
+A tagged-value in DSM is mapped to a member variable of a member annotation in DSC.
+pouzivaju na spracovanie UML nejaky EMF, Eclipse-UML2, JDT (Eclipse Java Development Tool), MTF
+
+Attribute oriented programming is a program-level
+marking technique,
+
+Attributes sepa-rate application?s core logic from application-specific or do-main-specific semantics (e.g. logging and web service func-tions). By hiding the implementation details of those semantics from program code, attributes increase the level of program-ming abstraction and reduce programming complexity, resulting in simpler and more readable programs. The program elements associated with attributes are transformed to more detailed pro-grams by a supporting tool (e.g. pre-processor).
+>>>
+<<<
+\cite{modelTransformationDSL}
+
+\bibitem{modelTransformationDSL} Wada, H.; Suzuki, J.; Takada, S. \& Doi, N. (2005), 'A Model Transformation Framework for Domain Specific Languages: An Approach Using UML and Attribute-Oriented Programming', in Proc. of the 9th World Multi-Conference on Systemics, Cybernetics and Informatics, pp. 1--6
+>>>
+<<<
+MDD;annotations;DSL;UML;annotations theory;annotations classification;annotations in UML;declarative transformation;annotations definition;mTurnpike;domain specific abstractions;abstraction;annotations application;
+>>>
+
+<<<
+Leveraging Component-Based Software Engineering with Fraclet
+>>>
+<<<
+D:/attr/application/mapovanie na model/Leveraging Component-Based Software Engineering with Fraclet
+>>>
+<<<
+Attribute-Oriented Programming (@op) is a program-level marking technique.
+
+Annotations separate application?s business logic from middleware-specific or domain-specificconcerns.
+By hiding the implementation details of those semantics from program code, annotations increase the level of programming abstraction and reduce programming complexity, resulting in simpler and more readable programs
+
+Fractal component framework .. - najv?csi problem vraj je prelinanie sa technickeho s business codom.. - tight coupling
+redundancia v metadatach medzi kodom a ADL - linkovanie z ADL do kodu
+
+Pouzivaju anotacie na premostenie abstraktneho modelu komponentov do programovacieho modelu. - pouzivaju spoon na generovanie
+
+anotacie mozu generovat aj nove artefakty nie len injektovat ako AOP
+>>>
+<<<
+\cite{leveragingFraclet}
+
+\bibitem{leveragingFraclet} Rouvoy, R. \& Merle, P. (2009), 'Leveraging Component-Based Software Engineering with Fraclet', Annales des Telecommunications 64, 1--2, pp. 65--79
+>>>
+<<<
+@OP;annotations definition;annotations application;theory;domain specific abstraction;Fractal;Fraclet;Spoon;competition;@OP vs AOP;domain specific abstractions;
+>>>
+
+<<<
+Leveraging Component-Oriented Programming with Attribute-Oriented Programming
+>>>
+<<<
+D:/attr/application/mapovanie na model/Leveraging Component-Oriented Programming with Attribute-Oriented Programming
+>>>
+<<<
+Attribute-Oriented Programming (@OP) is a program-level marking technique. Basically, this approach allows developers
+to mark program elements (e.g., classes, methods, and fields) with annotationsto indicate that they maintain application-specific or domain-specific concerns.
+
+Besides, working with only one file per component gives a better overview of the program code to the developer.
+
+Ako v podstate pouzivaju anotacie na premostenie abstraktneho modelu komponentu do kodu, namiesto toho aby sa do neho vpletal technical code. Generativnym programovanim sa o to staraju oni.
+>>>
+<<<
+\cite{rouvoyLeveragingCOP@OP}
+
+\bibitem{rouvoyLeveragingCOP@OP} Rouvoy, R. \& Merle, P. (2006), 'Leveraging Component-Oriented Programming with Attribute-Oriented Programming', in Proceedings of the 11th International ECOOP Workshop on Component-Oriented Programming, WCOP'06, Technical Report, volume 2006'11. Karlsruhe University, Nantes, France, July 2006
+>>>
+<<<
+@OP;attribute-oriented programming;annotations application;history?;component-oriented programming;annotations definition;internal vs external;generative programming;Spoon;AOP;competition;Fractal;
+>>>
+
+<<<
+Leveraging Metamodeling and Attribute-Oriented Programmingto Build a Model-driven Framework for Domain Specific Languages
+>>>
+<<<
+D:/attr/application/mapovanie na model/Leveraging Metamodeling and Attribute-Oriented Programmingto Build a Model-driven Framework for Domain Specific Languages
+>>>
+<<<
+DSC transformer premostuje UML a DSC (domain specific code) s anotaciami. Dynamicky kod je dodavany manualne. A stereotype in DSM is mapped to a marker annotation in DSC. A tagged-value in DSM is mapped to a member annota-tion in DSC. 
+
+marker anno-tations  and member annotations
+
+V skratke, pouzivaju @OP na to, aby spravili prechod v MDD od Abstract Code ku konkretnemu plynulejsie. Reprezentuju domenove abstrakcie v kode pomocou anotacii. Medzi abstrkatnym modelom a abstrkatnym kodom je teda priame mapovanie, priamy kod a priamy model sa generuju z tychto.
+
+Attribute oriented programming is a program-level
+marking technique,
+>>>
+<<<
+\cite{leveragingMetamodelingTurnPike}
+
+\bibitem{leveragingMetamodelingTurnPike} Wada, H. \& Takada, S. (2005), 'Leveraging Metamodeling and Attribute-Oriented Programming to Build a Model-driven Framework for Domain Specific Languages', in Proc. of the 8th JSSST Conference on Systems Programming and its Applications
+>>>
+<<<
+annotations application;Java annotations;domain-specific abstractions;model mapping;annotations theory;annotations classification;annotations and UML;annotations definition;mTurnpike;
+>>>
+
+<<<
+Modeling Turnpike: a Model-Driven Framework for  Domain-Specific Software Development
+>>>
+<<<
+D:/attr/application/mapovanie na model/Modeling Turnpike a Model-Driven Framework for  Domain-Specific Software Development
+>>>
+<<<
+Attribute-oriented programming is a program marking technique [6]. Programmers can mark program elements (e.g. classes and methods) to indicate that they maintain domain-specific semantics.
+V podstate je to na udrziavanie konzistencie medzi modelom a kodom, inak to co v ostatnych mTurnpike clankoch ale len so sustredenim na mTurnpike.
+Chcu podporovat lubovolny DSL - ale musi byt postaveny ako UML profil.
+Namiesto toho aby musel programator pracovat na nizsej forme abtraklcie v generovanom kode, pracuje s tzv. domenovo specifickym kodom (DSC, vs DSM - mdoel), ktory je anotovany a generovanie deploymentu a detailov je odlozene na neskor z anotacii (resp. anotacie sluzia na mapovanie kodu spat na model?).
+Pre transformaciu pouziva deklarativne transformacne pravidla pre transformaciu DSM na DSC a holy UML model a tie nasledne spaja do kompilovatelneho kodu.
+Oddelenie ale zaroven automaticke prepojenie modelu s kodom.
+Rozsirenia: podpora transformacii pre viacero DSL sucasne, odosobnenie sa od UML, podporu transformacie aj tiel metod z DSC
+>>>
+<<<
+\cite{mTurnpikeOverview}
+
+\bibitem{mTurnpikeOverview} Wada, H. \& Suzuki, J. (2005), 'Modeling Turnpike: A Model-Driven Framework for Domain-Specific Software Development', in MoDELS Satellite Events, Springer, pp. 357--358
+>>>
+<<<
+DSL;UML;@OP;mTurnpike;Java annotations;annotations application;annotations definition;model mapping;
+>>>
+
+<<<
+Supporting Design Patterns with Annotations
+>>>
+<<<
+D:/attr/application/semanticke obohatenie/Supporting Design Patterns with Annotations
+>>>
+<<<
+In the latest Java version, Java 5, annotations are, in contrary to this paper, introduced by JSR 175 as valid language constructs living outside comments as first-class statements. Deciding to express annotations as well-defined comments is more than syntactic sugar. Because with comments it is no matter preserving the behaviour of the annotated code, thus keeping it possible using current tools, compilers and interpreters. Besides, JSR 175 annotations don?t work at statement level but only for declarations. It would be a showstopper not allowing to annotate at statement level for the presented approach, because a single statement could potentially carry significant semantics. Moreover, not more than one (atomic) Java 5 annotation can be applied to one declaration.
+
+Vkladame anotacie nesuce intentions do kodu a tool nam pomaha rozoznat ci nejde o nejaky pattern a nasledne ho aplikovat. Podobne je mozne aplikovat automaticky anotacie na nejake existujuce DP.
+>>>
+<<<
+\cite{designPatternsMeffert}
+
+\bibitem{designPatternsMeffert} Meffert, K. (2006), 'Supporting Design Patterns with Annotations', in Proceedings of the 13th Annual IEEE International Symposium and Workshop on Engineering of Computer Based Systems, ECBS '06, IEEE Computer Society, pp. 437--445
+>>>
+<<<
+annotating unnamed constructs;documenting annotations;annotations application;design patterns;finding patterns;Java annotations;special annotations;structured annotations;
+>>>
+
+<<<
+Unit Test Support for Java via Reflection and Annotations
+>>>
+<<<
+D:/attr/application/testing/Unit Test Support for Java via Reflection and Annotations
+>>>
+<<<
+POuzivaju anotacie na oznacenie testovacich tried a metod.
+>>>
+<<<
+\cite{unitTestSupprotRefAnn}
+
+\bibitem{unitTestSupprotRefAnn} Proulx, V. K. \& Jossey, W. (2009), 'Unit test support for Java via reflection and annotations', in Proceedings of the 7th International Conference on Principles and Practice of Programming in Java, PPPJ '09, ACM, pp. 49--56
+>>>
+<<<
+annotations application;testing;
+>>>
+
+<<<
+A Java Code Annotation Approach for Model Checking Software Systems
+>>>
+<<<
+D:/attr/application/type checking/A Java Code Annotation Approach for Model Checking Software Systems
+>>>
+<<<
+Anotacie pouzivaju na definovanie modelu a aj na definovanie specifikacie a neskor to kontroluju.. aky to ma vyznam ked oboje zapisuju do programu celkom nechapem.
+>>>
+<<<
+\cite{javaCodeModelCheck}
+
+\bibitem{javaCodeModelCheck} Ferreira, G.; Loureiro, E. \& Oliveira, E. A. S. (2007), 'A Java code annotation approach for model checking software systems', in Proceedings of the 2007 ACM symposium on Applied computing, SAC '07, ACM, pp. 1536--1537
+>>>
+<<<
+@OP;special annotations;java doc;annotations application;model checking;
+>>>
+
+<<<
+Adapting the Java Modeling Language for Java 5 Annotations
+>>>
+<<<
+D:/attr/application/type checking/Adapting the Java Modeling Language for Java 5 Annotations
+>>>
+<<<
+JML
+>>>
+<<<
+\cite{JMLJ5Ann}
+
+\bibitem{JMLJ5Ann} Taylor, K. B.; Rieken, J. \& Leavens, G. T. (2008), 'Adapting the Java Modeling Language for Java 5 Annotations', Department of Computer Science, Iowa State University, TR \#08-06, April 2008
+>>>
+<<<
+new;JML;annotations application;
+>>>
+
+<<<
+Compile-time Type-checking for Custom Type Qualifiers in Java
+>>>
+<<<
+D:/attr/application/type checking/Compile-time Type-checking for Custom Type Qualifiers in Java
+>>>
+<<<
+idea: netrewba varovat pouzivatela ak prerkyva premennu ale potom ju nepouziva? Stanov pripad..
+
+            int index = NOT_FOUND;
+            if (rank == 0) {
+                int index = hash(buffer[i]); // tu je chyba
+                printf("Zaciatocny index pre %s je %d. Rozposielam...\n", buffer[i], index);
+            }
+            MPI_Bcast(&index, 1, MPI_INT, 0, MPI_COMM_WORLD);
+            printf("Rank %d prijal zaciatocny index (%d) pre %s.\n", rank, index, buffer[i]);
+
+zaoberaju sa aj javou 7 a novou specifikaciou JSR 308. Type checking s podporou anotacii, anotaciou viem nico povedat..
+
+@NonNull a pod.
+
+precitat spec o jsr 308
+>>>
+<<<
+\cite{compileTimeCustumQJ}
+
+\bibitem{compileTimeCustumQJ} Papi, M. M. \& Ernst, M. D. (2008), 'Compile-time type-checking for custom type qualifiers in Java', in Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems and applications companion, OOPSLA '07, ACM, pp. 723--724
+>>>
+<<<
+idea;@OP;Java 7;annotations application;theory;annotations usage;program checking;type checking;unnamed constructs;
+>>>
+
+<<<
+Propagation of JML non-null annotations in Java programs
+>>>
+<<<
+D:/attr/application/type checking/Propagation of JML non-null annotations in Java programs
+>>>
+<<<
+Automacitky propaguju JML nonnull anotaciu, tam kde je to odvoditelne.
+>>>
+<<<
+\cite{propagationJMLNonNull}
+
+\bibitem{propagationJMLNonNull} Cielecki, M.; Fulara, J.; Jakubczyk, K. \& Jancewicz, L. (2006), 'Propagation of JML non-null annotations in Java programs', in Proceedings of the 4th international symposium on Principles and practice of programming in Java, PPPJ '06, ACM, pp. 135--140
+>>>
+<<<
+JML;@OP;annotations;semantic annotations;constraints;annotations application;type checking;program checking;documenting annotations;
+>>>
+
+<<<
+A Graph Transformation-Based Approach for applying MDA to SOA
+>>>
+<<<
+D:/attr/competition/A Graph Transformation-Based App roach for applying MDA to SOA
+>>>
+<<<
+Aplikuje nejaky story driven modeling ci co na MDA ktore chcu pouzit na generovanie SOA. Z UML standard profilu (PIM) je nejaky premostovac do SOA profilu (PSM) a pricom povauzju aspekty ako ?profily? v kode. Na naviazanie aspektu pouzivaju anotacie.
+
+Pre-process weaving is in fact a special kind of AOP, known as Attribute Oriented Programming. XDoclet [15] is a famous attribute oriented programming tool. With standardizing annotation in Java 5 most of the time attributes are defined using annotation and we have used the same approach.
+>>>
+<<<
+\cite{MDAtoSOA}
+
+\bibitem{MDAtoSOA} Taghizadeh, F. \& Taghizadeh, S. R. (2009), 'A Graph Transformation-Based Approach for Applying MDA to SOA', in Proceedings of the 2009 Fourth International Conference on Frontier of Computer Science and Technology (FCST '09). IEEE Computer Society, Washington, DC, USA, pp. 446--451
+>>>
+<<<
+AOP;AOSD;annotations application;MDA;SOA;Aspect;competition;
+>>>
+
+<<<
+Commercialization of AOSD The Road Ahead
+>>>
+<<<
+D:/attr/competition/Commercialization  of  AOSD  The  Road  Ahead
+>>>
+<<<
+V kratkosti uvadza @OP ako konkurenciu AOP, jemne rozobera.
+>>>
+<<<
+\cite{commofAOSD}
+
+\bibitem{commofAOSD} Bodkin, R. (2003), 'Commercialization of AOSD: The Road Ahead', in AOSD Workshop on Commercialization of AOSD Technology, pp. 1--5
+>>>
+<<<
+AOP;competition;annotations in AOP;
+>>>
+
+<<<
+AnnaBot: A Static Verifier for Java Annotation Usage
+>>>
+<<<
+D:/attr/dependency/AnnaBot A Static Verifier for Java Annotation Usage
+>>>
+<<<
+Stavia skor na praxi nez na nejakom research, v prvom rade nedefinuje @OP ale skor sa zaobera vyhradne anotaciami v Jave. Uvadza priklad pochybenia v tomto smere (JPA anotacie na fieldoch a getteroch sucasne).
+Constrainty sa zapisuju ako Claim-y, bud v Jave priamo alebo ako java-like dsl (declarative) - teda teoreticky by malo byt mozne zapisat lubovolny constraint - ale nemyslimze to je tento pripad. Podla future work mozem povedat ze je to dost slabe.
+Spomina Aval ale ako rozidel uvadza ze oni chcu ist cez metaanotacie, cim si vyzaduju aby sa o definiciu podmienok staral poskytovatel API, jemu o to nejde.
+>>>
+<<<
+\cite{annaBot}
+
+\bibitem{annaBot} Darwin, I. F. (2010), 'AnnaBot: A Static Verifier for Java Annotation Usage', in Proceedings of the 2nd International Workshop on Defects in Large Software Systems, DEFECTS '09, ACM, New York, USA, pp. 1--7
+>>>
+<<<
+@OP;attribute-oriented programming;annotations constraints;annotations dependency;Java annotations;zavislost;
+>>>
+
+<<<
+Annotation Framework Validation using Domain Models
+>>>
+<<<
+D:/attr/dependency/Annotation Framework Validation using Domain Models
+>>>
+<<<
+The Java type system for annotations is not expressive enough to assure that the use of annotations is correct.
+
+rozdelenie na code-wise validations; structural validations
+
+AVal robi dve veci: explicitne urcuje zavislosti, a ich definiciu robi lokalnou voci anotaciam na ktore sa vztahuje.
+Annotation model ako UML model anotacii a ich vztahov medzi nimi.
+Ak to spravne chapem, tak namiesto toho aby tam davali len metaanotacie sa snazia vytvarat akysi metamodel - model anotacii a kodu a ten ma viest validaciu.
+Ako dopyty pre kontrolu pouzivaju OCL queries na EMF model, zda sa ze tym chcu dosiahnut univerzalnost, namiesto programovanie len napisem v OCL co chcem zabezpecit a idem.
+Velmi dobry related works.
+>>>
+<<<
+\cite{avalFramework}
+
+\bibitem{avalFramework} Noguera, C. \& Duchien, L. (2008), 'Annotation Framework Validation Using Domain Models', in Proceedings of the 4th European conference on Model Driven Architecture: Foundations and Applications, ECMDA-FA '08, Springer, pp. 48--62
+>>>
+<<<
+Java annotations;AVal;annotations constraints;annotations dependency;annotation model;annotations classification;zavislost;
+>>>
+
+<<<
+AVal: an Extensible Attribute-Oriented Programming Validator for Java
+>>>
+<<<
+D:/attr/dependency/AVal
+>>>
+<<<
+Attribute-oriented programming (@OP) is a program-level marking technique that al-lows developers to declaratively enhance the programs through the use of metadata. More precisely, developers can mark program elements (e.g., classes, methods, fields) with attributes (annotations) to indicate that they maintain application-specific or domain-specific semantics [23]. In contrast to prevous uses of attributes for program genera-tion or transformation [13, 18], annotations are placed in the program by the program developers, as opposed to specialized tools, which use annotations to pass information from one processing phase to the next.
+
+Annotations are usually represented as types that can contain a number of parameters, or elements, that serve as containers of the enclosed metadata.
+
+Definuju pojem AttDSL ako atributovy DSL.
+In JUnit, if the programmer misspells the Test annotation, the Java compiler will flag the error, whereas this is not true for naming conventions.
+Dve druhy validacii: code-wise validations - voci kodu; structural validations - navzajom
+Inside usage pattern. Requires, prohibits, RefersTo, matches (vyzera ze ide o matchovanie regexpov), Avaltarget (ako target), Type.
+Rozsirenie si ziada metaanotaciu a jej implementaciu (validator implementujuci checkovanie danej podmienky).
+Umoznuje docasne nahradit implementaciu anotacii ku ktorych zdrojom nemame pristup.
+Testuju to na 3 frameworkoch. Vyzera to lahko, mohli by sme len rozisirit AVal o podporu toho co chceme my.
+
+idea: vyuzivat constrainty na derivovanie anotacii -> pomoc pri oprave chyb
+>>>
+<<<
+\cite{avalValidator}
+
+\bibitem{avalValidator} Noguera, C. \& Pawlak, R. (2007), 'AVal: an Extensible Attribute-Oriented Programming Validator for Java: Research Articles', in J. Softw. Maint. Evol., vol. 19, no. 4, July 2007, pp. 253--275
+>>>
+<<<
+annotations definition;Java annotations;annotations dependency;annotations constraints;AttDSL;naming conventions;annotation usage pattern;AVal;annotations theory;history;structured annotations;zavislost;annotations alternatives;theory;optimization;idea;dumb;
+>>>
+
+<<<
+Co-evolving Annotations and Source Code through Smart Annotations
+>>>
+<<<
+D:/attr/dependency/Co-evolving Annotations and Source Code through Smart Annotations
+>>>
+<<<
+Annotations are a means to attach additional metadata to the source code of a system. Nowadays, more and more technologies rely on the presence of such annotations in the source code: beyond their use for documentation purposes, annotations impact the behaviour of the system.
+
+Problem evolucie kodu, ktora moze narusit plantost anotacii, oni navrhuju system v ktorom si definujem podmienky ake platia pre anotacie, na tie podmienky vyuzivaju metaanotacie a staticke finalne cleny anotacneho typu.
+Pouzivaju SOUL, nejaky prolog-like logicky jazyk na definovanie podmienok.
+
+Sufficient queries allow identifying source code entities that are missing an applicable annotation. - to nase s anotovanym objektom
+
+niekedy je podmienka prilis genericka, vtedy sa daju pozuit anotacie DoesApply (ak sa ma podmienka vztahovat aj na tento element kodu) alebo doesnotapply (ak sa na toto vztahovat nema).
+
+Pouzivaju eclipse plugin.
+
+priklad na riesenie fragile pointcut problemu - napriek tomu ze anotaciami sa zbavime zavislosti na strukture programu (kodu), stale sa moze stat ze zabudneme oanotovat to co ma byt anotovane (co nejako moze zavisiet na kode) - preto dat kontrolu pouzitia anotacii - moja otazka teraz znie: neda sa to spravit priamo napisanim vhodneho pointcutu? mozno bude velmi zlozity, ale aj tak.. teraz hovorim konkretne o ich priklade. lebo tu zavislost pisem aj tak ku kodu a teda tie anotacie su zavilse na strutkture kodu
+
+potom priklad s EJB a jej tromi anotaciami..
+>>>
+<<<
+\cite{coevolvingAnn}
+
+\bibitem{coevolvingAnn} Kellens, A.; Noguera, C.; Schutter, K. D.; Roover, C. D. \& D'Hondt, T. (2010), 'Co-evolving Annotations and Source Code through Smart Annotations', in Proceedings of the 2010 14th European Conference on Software Maintenance and Reengineering, CSMR '10, IEEE, pp. 117--126
+>>>
+<<<
+@OP;attribute-oriented programming;annotation fragility;annotations constraints;annotations dependency;AOP;pointcut fragility;annotations definition;documenting annotations;zavislost;
+>>>
+
+<<<
+Declaring and Enforcing Dependencies Between .NET Custom Attributes
+>>>
+<<<
+D:/attr/dependency/Declaring and enforcing dependencies between .NET custom attributes
+>>>
+<<<
+Pekne spisane, ukazuje ako atributy mozu byt pouzite na tvorbu DSL. Ako motivaciu ku kontrole zavislosti uvadzaju to, ze si vsimli, ze je to cast kodu, ktora sa stale opakuje.
+Rozlisuje dva typy zavislosti - required a disallowed.
+Nedovoluje klast dependencies medzi susedne atributy, tj atribut na fielde nemoze klast zavislost na atribute na metode.
+Rozsiritelny ale zavisly na strukture ADC.
+>>>
+<<<
+\cite{declDependencies.net}
+
+\bibitem{declDependencies.net} Cepa, V. \& Mezini, M. (2004), 'Declaring and Enforcing Dependencies Between .NET Custom Attributes', in GPCE, Lecture Notes in Computer Science, Springer, pp. 283--297
+>>>
+<<<
+DSL;.NET attributes;annotations dependency;metaannotations;annotations constraints;zavislost;
+>>>
+
+<<<
+DEFINING ANNOTATION CONSTRAINTS IN ATTRIBUTE ORIENTED
+>>>
+<<<
+D:/attr/dependency/DEFINING ANNOTATION CONSTRAINTS IN ATTRIBUTE ORIENTED
+>>>
+<<<
+Porubanov clanok. Zaujimave su idei vzorov pouzitia anotacii. Trebalo by vyskusat, ci je mozne naozaj lubovolne obmedzenie pouzitia.
+
+Parent-child relation
+Mutual exclusivity
+Unique annotation occurrence (@Id)
+Occurrence of multiple annotations
+Annotation values referencing other elements
+
+idea -- vzory poriadne
+>>>
+<<<
+\cite{annotationsConstraints}
+
+\bibitem{annotationsConstraints} Ruska, Š. \& Porubän, J. (2010), 'Defining Annotation Constraints in Attribute Oriented Programming', in Acta Electrotechnica et Informatica, no.4, vol.10, pp. 89--93
+>>>
+<<<
+Java annotations;annotations constraints;annotations dependency;documenting annotations;annotation usage pattern;idea;zavislost;
+>>>
+
+<<<
+Design Pattern Support Based on the Source Code Annotations and Feature Models
+>>>
+<<<
+D:/attr/dependency/Design Pattern Support Based on the Source Code Annotations and Feature Models
+>>>
+<<<
+Oproti napr Sabovi sa snazia aj o autoamticku aplikaci vzorov + evoluciu, podla typu vzoru aj generuju povinne triedy a podobne. Problem vsak je ze je otazka rozsiritelnosti, ak by sme to spravili tak ako sa mi zda u saba, ze pridanie noveho patternu je len otazka definicie jeho vlastnosti nejakym "claimom", tak mi to pride skvele.
+Vyuzivaju Eclipse. A ak som to spravne pochopil, snaizia sa ist z UML do kodu, tj uz v uml developer nanacuje co by sa tam hodilo a oni to dogeneruvaju.
+>>>
+<<<
+\cite{designPatternsSupportNavrat}
+
+\bibitem{designPatternsSupportNavrat} Kajsa, P. \& Návrat, P. (2012), 'Design Pattern Support Based on the Source Code Annotations and Feature Models', in Proceedings of the 38th international conference on Current Trends in Theory and Practice of Computer Science, SOFSEM'12, Springer-Verlag, pp. 467--478
+>>>
+<<<
+annotations application;type checking;design patterns;program checking;model mapping;Java;design pattern structure;structural checking;dependency;semantic annotations;documenting annotations;
+>>>
+
+<<<
+Detecting Metadata Bugs on the Fly
+>>>
+<<<
+D:/attr/dependency/Detecting Metadata Bugs on the Fly
+>>>
+<<<
+to iste co v Metadata Invarinats: Checking .. ; ale tu predsatvuju tool, ktory to robi, cez nejaky eclipse plugin.
+>>>
+<<<
+\cite{detectingMetadataFly}
+
+\bibitem{detectingMetadataFly} Song, M. \& Tilevich, E. (2012), 'Detecting metadata bugs on the fly', in Proceedings of the 2012 International Conference on Software Engineering, ICSE 2012, IEEE, pp. 1455--1456
+>>>
+<<<
+@OP;metadata;annotations;attribute-oriented programming;program checking;annotations consistency;annotations dependency;annotations constraints;DSL;zavislost;
+>>>
+
+<<<
+Enforcing programming conventions by attribute extension in an open compiler
+>>>
+<<<
+D:/attr/dependency/Enforcing programming conventions by attribute extension in an open compiler
+>>>
+<<<
+Proposuju otvoreny compilator ktory umoznuje pridavat semanticku kontrolu (ale nie napr. rozsirovat gramatiku jazyka).
+Umoznuju to rozsirenim jazyka o atributy, aspon tak to znie. Chcu pridavat atributy do AST.
+DAG - umoznuju referencie medzi atributmi.
+Anotuju program aby vedeli odhlaovat semanticke chyby (tzn. ze zadaju nejaku poziadavku ako atribut - napr. ze metoda je entry - vstup do synchronizovanej sekcie; nasledne sa kontroluje ci sa tato metoda zacina volanim metody implementujucej vstup do chranenej sekcie) pre kniznice.
+>>>
+<<<
+\cite{attributeExtensionOpenComp}
+
+\bibitem{attributeExtensionOpenComp} Hedin, G. (1996), 'Enforcing programming conventions by attribute extension in an open compiler', Lund University, Department of Computer Science, 1996
+>>>
+<<<
+Door Attribute grammars;attributes;history;program checking;type checking;special annotations;
+>>>
+
+<<<
+Extended Static Checking for Java
+>>>
+<<<
+D:/attr/dependency/Extended Static Checking for Java
+>>>
+<<<
+Nepouzivaju ozajstne anotacie, ale simuluju komentarmi. Pokusaju sa o rozsirene staticku kontrolu na modularnej urovni (po metodach a pod.). Anotacie pouzivaju na definovanie constraintov ohladom kodu. Pouzivaju Theorem proving.
+Pri experience tu hovoria o annotation overhead, ked musia anotovat vela.
+Vyznam prilkadaju najma v maintenance.
+>>>
+<<<
+\cite{staticCheckingJava}
+
+\bibitem{staticCheckingJava} Flanagan, C.; Leino, K. R. M.; Lillibridge, M.; Nelson, G.; Saxe, J. B. \& Stata, R. (2002), 'Extended Static Checking for Java', in Proceedings of the ACM SIGPLAN 2002 Conference on Programming language design and implementation, PLDI '02, ACM, pp. 234--245
+>>>
+<<<
+Java annotations;documenting annotations;type checking;type constraints;dependency;program checking;special annotations;
+>>>
+
+<<<
+Language Support for Design Patterns using Attribute Extension
+>>>
+<<<
+D:/attr/dependency/Language Support for Design Patterns using Attribute Extension
+>>>
+<<<
+Podobne ako Sabov clanok o patternoch, povedal by som ze rovnake dokonca, akurat namiesto anotacii pouzivaju attribute extension. Pomocou anotacii v komentaroch vedia definovat roly v DP a kontrolovat ich pouzitie.
+>>>
+<<<
+\cite{attExtensionHedin}
+
+\bibitem{attExtensionHedin} Hedin, G. (1997), 'Language Support for Design Patterns Using Attribute Extension', in Proceedings of the Workshops on Object-Oriented Technology, ECOOP '97, Springer, pp. 137--140
+>>>
+<<<
+@OP;attributed grammar;design pattern;annotations constraints;type checking;program checking;
+>>>
+
+<<<
+Metadata Invariants: Checking and Inferring Metadata Coding Conventions
+>>>
+<<<
+D:/attr/dependency/Metadata Invariants Checking and Inferring Metadata Coding Conventions
+>>>
+<<<
+Navrhuju invarianty metadat ktore definuju spravne pouzitie metadat. Ukazuju priklady chyb ktore mozu nastat, a je to napr aj chyba pri refaktorizacii kodu na ktory sa odkazuju metadata z XML. Zapis je v ich DSL.
+navrhuju aj nejaky algoritmus na automaticke odvodenie invariantov z kodu.
+>>>
+<<<
+\cite{metadataInvariants}
+
+\bibitem{metadataInvariants} Song, M. \& Tilevich, E. (2012), 'Metadata invariants: Checking and inferring metadata coding conventions', in Proceedings of the 2012 International Conference on Software Engineering, ICSE 2012, IEEE, pp. 694--704
+>>>
+<<<
+@OP;metadata;annotations;attribute-oriented programming;program checking;annotations consistency;annotations dependency;annotations constraints;DSL;zavislost;internal vs external;
+>>>
+
+<<<
+Preserving Design Patterns using Source Code Annotations
+>>>
+<<<
+D:/attr/dependency/Preserving Design Patterns using Source Code Annotations
+>>>
+<<<
+Pouzivat custom anotacie na to aby sme zachytili a udrzali design pattern v kode.
+Definicia konkretnej anotacie pre nejaky DP je ale opat pomocou metaanotacii ktore urcuju podmienky za akych nie je design pattern broken. Nedalo by sa to spravit vylucne nejakym nastrojom ako je napr. Aval? !!!!!
+Hovoria aj o nejakej aplikacii rozdielov v implementacii DP co moze byt dosiahnute zmenou definicie anotacneho typu pre DP anotaciu - mozno by sa na to dal pouzit daleion.
+>>>
+<<<
+\cite{designPatternsSabo}
+
+\bibitem{designPatternsSabo} Sabo, M. \& Porubän, J. (2009), 'Preserving Design Patterns using Source Code Annotations', in Journal of Computer Science and Control Systems, vol. 2, no. 1, pp. 53--56
+>>>
+<<<
+design patterns;annotations;Java;design pattern structure;structural checking;program checking;annotations application;dependency;semantic annotations;documenting annotations;idea;
+>>>
+
+<<<
+Reachability Analysis for Annotated Code
+>>>
+<<<
+D:/attr/dependency/Reachability Analysis for Annotated Code
+>>>
+<<<
+V skratke co som pochopil, kontroluju dosiahnutelny kod v ESC/Java2 (nejaky checker kodu) s JML (anotacny jazyk). Unreacheable moze byt kvoli kode v Jave ale aj kvoli prepodmienkam v JML.
+>>>
+<<<
+\cite{reachabilityJanota}
+
+\bibitem{reachabilityJanota} Janota, M.; Grigore, R. \& Moskal, M. (2007), 'Reachability analysis for annotated code', in Proceedings of the 2007 conference on Specification and verification of component-based systems: 6th Joint Meeting of the European Conference on Software Engineering and the ACM SIGSOFT Symposium on the Foundations of Software Engineering, SAVCBS '07, ACM, pp. 23--30
+>>>
+<<<
+special annotations;@OP;type checking;program checking;JML;
+>>>
+
+<<<
+Static Checking of Safety Critical Java Annotations
+>>>
+<<<
+D:/attr/dependency/Static Checking of Safety Critical Java Annotations
+>>>
+<<<
+SCJ - Safety Critical Java - je nejaka specifikacia pre kriticke aplikacie, maju definovane anotacie, ktore oznacuju aku maju mat bezpecnost jednotlive elementy. Oni robia automaticky cehcker tychto pravidiel - ale zrejme je to adhoc kontroler, dalo by sa to zastresit tiez?
+
+idea - Nie len smer od kodu k anotaciam ale aj naopak - nie len ze napr rozhranie caka objekt anotovany niecim, ale ze anotacia caka nieco od tried - ale to tu uz asi bolo.
+>>>
+<<<
+\cite{staticCheckSCJAnn}
+
+\bibitem{staticCheckSCJAnn} Tang, D.; Plsek, A. \& Vitek, J. (2010), 'Static checking of safety critical Java annotations', in Proceedings of the 8th International Workshop on Java Technologies for Real-Time and Embedded Systems, JTRES '10, ACM, pp. 148--154
+>>>
+<<<
+@OP;Java annotations;annotations application;constraints;dependency;type checking;program checking;
+>>>
+
+<<<
+Using Annotations to Check Structural Properties of Classes
+>>>
+<<<
+D:/attr/dependency/Using annotations to check structural properties of classes
+>>>
+<<<
+Pouzivaju nejaky pristup, ktory mapuje artifacty softveru na XML, ktory je ulozeny do databazy, a nasledne podmienky vyjadruju ako XQuery dopyty na databazu.
+Argumentuju pre reprezentaciu bytecodu namiesto AST, pretoze nemusime mat pristup ku kodu, a zaroven reprezentacie v bytecode je menej variabilna.
+Ukazuju priklad mapovania - pomocou BAT2XML a aj priklad dopytov.
+restrictions sa vasltne zapisuju ako query dopyty - udavaju nejake priklady z praxe
+Najblizsie k nasemu, lebo nekontroluje len pouzitie anotacii, ale aj vlastnosti ktore vyplyvaju z ich pouzitia a da sa pristup pouzit aj na nas problem bez pritomnosit anotacii.
+Nesuvisi priamo s JavaML, ale nieco podobne a neviem teraz aky keyword tam dat.
+>>>
+<<<
+\cite{annotationsStrucClasses}
+
+\bibitem{annotationsStrucClasses} Eichberg, M.; Schäfer, T. \& Mezini, M. (2005), 'Using Annotations to Check Structural Properties of Classes', in Proceedings of the 8th international conference, held as part of the joint European Conference on Theory and Practice of Software conference on Fundamental Approaches to Software Engineering, FASE '05, Springer, pp. 237--252
+>>>
+<<<
+@OP;attribute-oriented programming;structural dependency;annotations dependency;annotations constraints;XML;JavaML;zavislost;
+>>>
+
+<<<
+The Literate-Programming Paradigm
+>>>
+<<<
+D:/attr/documentation/Cordes-Literate-Programming
+>>>
+<<<
+strucne a povedal by som aj jasne vysvetlenie paradigmy s jedn. prikladmi, LP ako programovanie s "vynucovanim" komentarov,
+
+LP jazyk definuje strukturu programu podla ktorej sa rozlisuju moduly atd.,
+nevyhody:
+	1. dok. prog. nezapada do klasickeho soft. vyvojoveho cyklu,
+	2. je len pre elitu - vedcov,
+	3.vynucovanie dok. nemusi dokumentaciu skvalitnit;
+
+navrhuju rozsirenia:
+	1. Viacurovnovy obsah pre lepsie strukturovanie dokumentacnych informacii (bol problem s identifikaciou section headerov, lebo vsetky boli na tej istej urovni),
+	2. Graficke rozhranie ako alternativa k dok. program. jazyku, namiesto pisania vo Web sa struktury a vlstnosti vyklikaju nativnejsim sposobom,
+	3. Debuggovacie nastroje pomahajuce sledovat strukturu lit. programu, priblizuju dok. programovanie na formu konvencneho a tym umoznuju udrzbu aj neautorovi, zaroven to posuva dok. programovanie aj do dalsej fazy vyvojoveho cyklu,
+	4. rozsireny index s cielom umoznit lepsi prehlad v indexoch, v povodnom sa mohlo stat ze bola jedna premenna nazvana rovnako ako ina v inom module a boli tie referencie dokopy, umoznenie manazovania rozdelenia indexov podla typu nazvov a podobne (premenne, autorom generovane polozky);
+
+a obmedzenia:
+	1. pretlacit striktne zapuzdrenie modulov, aby funckia, resp. blok nacaty v module sa v nom aj skoncil (lahsie sa orientuje v deklaraciach premennych a scope-och) a poziadavka aby sa vsetky funkcie a procedury dali do separovanych modulov,
+	2. redukciu dok. prog. prikazov, oproti viacerym prilazom ktore sa venovali aj stylom vypisu ponechat styl na jazyk pre typesetting
+>>>
+<<<
+\cite{litProgrammingParadigm}
+
+\bibitem{litProgrammingParadigm} Cordes, D. \& Brown, M. (1991), 'The Literate-Programming Paradigm', IEEE Computer, vol. 24, no. 6, pp. 52--61
+>>>
+<<<
+literate programming;documentation;@OP;
+>>>
+
+<<<
+Document-Oriented Source Code Transformation using XML
+>>>
+<<<
+D:/attr/documentation/Document-Oriented Source Code Transformation using XML
+>>>
+<<<
+popisany vyznam refaktorizacie a transformacie kodu v zovotnom cykle softveru - evolucia softveru, dolezitost ponechania vsetkych foriem dokumentacie - anotacie, indentation, comentare.
+
+Pustaju sa do toho cez XML - nejaky srcML.
+Tymto su schopni pridat nejake vysoko abstraktne syntatkicke informacie bez zasahu do textoveho/comentoveho kontextu suboru - ponechava programatorovi jeho pohlad + pridavanie casti AST.
+Cielom pouzitia srcML je neintruzivna transformacia kodu (src -> srcML -> srcML' -> src').
+Stazuju sa na nedostatok podporovanych refaktorizacii.
+Predstavene na priklade zameny podmieneneho vetvenia za "strazcu" (guarda).
+>>>
+<<<
+\cite{docOrientedsourcecode}
+
+\bibitem{docOrientedsourcecode} Collard, M. L. \& Maletic, J. I. (2004), 'Document-Oriented Source Code Transformation using XML', in Proceedings 1st International Workshop on Software Evolution Transformations, SET 2004, Delft, the Netherlands, pp. 11--14
+>>>
+<<<
+XML;transformation;refactoring;
+>>>
+
+<<<
+Experiments in the Use of XML to Enhance Traceability between Object-Oriented Design Specifications and Source Code
+>>>
+<<<
+D:/attr/documentation/Experiments in the Use of XML to Enhance Traceability between Object-Oriented Design Specifications and Source Code
+>>>
+<<<
+potreba podpory pohladu na cely system pri vyvoji, nielen orientovanie sa na programaticku uroven (top-down creation).
+
+Cstym problemom softver development procesu je ze generuje mnozstvo roznych dokumentov (requirements specs, design specs, ..), ktore vsak nie su prepojene (traceability) - oni sa snazia podporit proces vytvaranim liniek medzi poziadavkami, dizajnom a kodom (pomocou XML technologii - XLink).
+pouzivaju XMI pre reprezetaciu UML, JavaML pre sources.
+Ciele su tri:
+1. mat viac informacii o kode ako su nejake sof. metriky alebo miera kritickosti,
+2. umoznit pohlad z viacerych uhlov pomocou transofmracie formatov,
+3. vystopovatelnost medzi dizajnom a kodom;
+
+XLink na link base, ale potom nejako tvoria html zobrazujuce linky
+>>>
+<<<
+\cite{experimentsXMLTraceability}
+
+\bibitem{experimentsXMLTraceability} Alves-Foss, J.; de Leon, D. C. \& Oman, P. W. (2002), 'Experiments in the Use of XML to Enhance Traceability between Object-Oriented Design Specifications and Source Code', in Proceedings of the 35th Annual Hawaii International Conference on System Sciences, HICSS'02, Volume 9, pp. 276--284
+>>>
+<<<
+views;documentation;XML;traceability;program comprehension;
+>>>
+
+<<<
+Fluid Source Code Views
+>>>
+<<<
+D:/attr/documentation/Fluid Source Code Views
+>>>
+<<<
+The definition of a complex software system by means of text based source code documents manifests a highly fragmented, heavily linked, hyperlink-able information space. The application of software development paradigms and principles such as abstraction, object orientation, aspect orientation [2] and separation of concerns means that the definition of software may be highly fragmented. The code implementing a program operation of feature can, potentially, be fragmented over dozens of separate source code documents with often implicit and semi-implicit relationships. This phenomenon has also been described loosely as scatter [3] and delocalized plans [4].
+
+fajnyt clanok na pohlady. je to trosku iny pohlad ako sme chceli, ale princip a aj zmysel maju velmi podobny - ukazuje pohlady cez volania metod, pri volani si viem zobrazit aj telo volanej metody -> nie je obmedzenie na hlbku volania..
+>>>
+<<<
+\cite{fluidSourceCode}
+
+\bibitem{fluidSourceCode} Desmond, M.; Storey, M.--A. D. \& Exton, C. (2006), 'Fluid Source Code Views', in Proceedings of the 14th IEEE International Conference on Program Comprehension, ICPC '06, IEEE Computer Society, pp. 260--263
+>>>
+<<<
+documentation;code views;AOP;Eclipse plugin;code comprehension;
+>>>
+
+<<<
+Elucidative programming in Java
+>>>
+<<<
+D:/attr/documentation/Normark - Elucidative Programming in Java
+>>>
+<<<
+vyuzit vztah medzi programovymi fragmentami a programovou dokumentaciou (vysvetlivkami).
+LitP stavia ich vztah naopak, najprv komentare, vysvetlenia, "knowledge" (toto vlastne tvori program), a programove fragmenty su ich anotacie (v klas. je to naopak, program tvoria programove fragmenty a ich anotaciami su vysvetlivky).
+JavaDoc na komentare externych rozhrani, identifikuju dalsie druhy dokumentacie
+	- udrzbova (pre udrzbu, pise sa nakoniec ked je projekt vo finalnom stave),
+	autorska (proactive mental understanding, pise si ju autor pre lepsiu formulaciu a pre lepsie pochopenie koderov, pise sa pred alebo pocas implementacie),
+	procesna (logy a denniky ze co sa robi). Nevyhoda LitP je, ze si ziada, aby program bol pisany formou komentarov a programove fragmenty su iba ako anotacie.
+
+Studenti pri pokusoch sa snazili pisat formou klasickou, a LitP struktura sa dodavala az nakoniec. ElP pouziva dva zakladne entity, programove a dokumentacne, vyzvou je najm? ich prepojenie. dolezity je pojem navigacneho vztahu, spojenie medzi prvkami v dok a prog, pricom v prehliadaci su dva ramce, jeden pre dokumentaciu a druhy pre program, je potrebne zabezpecit ich navigacnu komunikaciu.
+Pritom tento navigacny vztah je slabsi nez fyzicky v LitP, ale zasa umoznuje popisat viacero prog. entit v jednej dok. entite(sekcii).
+Elucidator: Pozicie a regiony v kode (pre potreby navigacie) su oznacovane source markermi (dat anotaciami - asi nie). Stranka je generovana na dopyt, nie staticke html - vhodne pre kolaborativne programovanie.
+>>>
+<<<
+\cite{elucProgJava}
+
+\bibitem{elucProgJava} Normark, K.; Andersen, M. R.; Christensen, C. N.; Kumar, V.; Staun-Pedersen, S. \& Sorensen, K. L. (2000), 'Elucidative Programming in Java', in The Proceedings on the eighteenth annual international conference on Computer documentation, IPCC/SIGDOC '00, pp. 483--495
+>>>
+<<<
+elucidative programming;literate programming;documentation;code comprehension;
+>>>
+
+<<<
+Elucidative Programming
+>>>
+<<<
+D:/attr/documentation/normark-elucidative programming
+>>>
+<<<
+zhrnutie, poziadavky na dokumentacne IDE, nav. vs. fyz. vztahy, source markers - oznacenia v kode kde nie su pomenovane abstrakcie, podrobnejsi navrh toolu. elucidator - program abstractor - inkrementalna abstrakcia, ostatne - vid eluc prog in java
+>>>
+<<<
+\cite{elucProgrammingNor}
+
+\bibitem{elucProgrammingNor} Normark, K. (2000), 'Elucidative Programming', Nordic Journal of Computing, vol. 7, no. 2, pp. 87--105
+>>>
+<<<
+elucidative programming;literate programming;documentation;
+>>>
+
+<<<
+Towards Modern Literate Programming
+>>>
+<<<
+D:/attr/documentation/Towards Modern Literate Programming
+>>>
+<<<
+Maintenance programmers spend approximately half of their time simply trying to understand the function of program code [28]. This factor alone has been estimated as contributing any-where from 30?90% of the cost of software over its entire life cycle [41].
+lack of communication of problem understanding - motivacia preco
+
+Let us change our traditional attitude to the construction of programs: instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining tohuman beings what we want a computer to do.
+
+V podstate prehlad literate programmingu, prehlad jazykov a pod (web family).
+Obmedzenia.
+>>>
+<<<
+\cite{towardsModernLitP}
+
+\bibitem{towardsModernLitP} Smith, M. (2001), 'Towards Modern Literate Programming', Honours Project Report, 2001
+>>>
+<<<
+literate programming;software comprehension;structured documentation;
+>>>
+
+<<<
+Aspects of Internal Program Documentation - An Elucidative Perspective
+>>>
+<<<
+D:/attr/documentation/Vestdam - Aspects of internal program documentationan - an elucidative perspective
+>>>
+<<<
+tri druhy dokumentaciae
+	end-user, interface, internal;
+dok. analyzy - dok. popisujuca problem,
+dok architektury - popisuje navrh, dizajn, architekturu;
+
+evolucia doklumentacie zaostava za evol. softveru - degeneracia dokumentacie.
+Dalej vyznam EluP z praxe - skusali to na nejakych "vzorkach".
+Aspekty internej dokumentacie:
+1. programovae tutorialy, inline eluc kedy elucidator vklada fragmenty kodu priamo do dokumentacie (aby sa pri citani nenarusoval rytmus preklikavanim);
+2. frameworks a navrhove vzory,
+3. reviews, revies umoznuju nielen zlepsit kvalitu kodu, ale mohli by zlepsit aj kvalitu dokumentacie, elucidative pristup aj k reviews, kde je mozne sledovat hodnotenie a zaroven fragment kodu ktoreho sa to tyka,
+4. podpora od IDE pre pisanie internej dokumentacie
+>>>
+<<<
+\cite{aspectsOfInternalDoc}
+
+\bibitem{aspectsOfInternalDoc} Vestdam, T. \& Normark, K. (2002), 'Aspects of Internal Program Documentation -- An Elucidative Perspective', in Proceedings of the 10th International Workshop on Program Comprehension, IWPC '02, pp. 43--52
+>>>
+<<<
+elucidative programming;documentation;evolution;
+>>>
+
+<<<
+Toward Documentation of Program Evolution
+>>>
+<<<
+D:/attr/documentation/Vestdam - Toward documentation of program evolution
+>>>
+<<<
+dok : program, pri vyvoji jedna k jednej, ak mame initial doc only, tak dokumentacia ostava a evolvuje iba program.
+
+Navrhuju tool, ktory by umoznoval dokumentaciu evolucie namiesto evolucie dokumentacie. version-aware eluc tool, verziovane zdrojaky, ktore su rozne linkovatelne z dokumentacie.
+identifikuju evolucne prvky jemnozrnej evolucie ako napr. pridanie novej abstrakcie a, zmazanie abstrakcie, presunutie, update, a pod.. 
+
+pri "m?kkom" linkovani (link na abstrakciu, nie na konkretny subor a miesto) nam premiestnenie medzi subormi "nedoserie" dokumentaciu :).
+
+hrubozrna evolucia - agregacia mnozstva malych evolucii - tvrdia ze sa neda automatizovat. vyhody pouzitia tohto pristupu - zvyraznenie casti dokumentacie, ktora je out-of-date - najm? odstranenie abstrakcii, resp. pridanie novych, identifikacie nezmenenych a teda stabilnych casti programu a reorganizacie.
+
+male updatey vraj mozu byt ignorovane, pricom velke treba sledovat. spomenute theme-based litP - versioned themes?.
+>>>
+<<<
+\cite{towardDocEvol}
+
+\bibitem{towardDocEvol} Vestdam, T. \& Normark, K. (2005), 'Toward Documentation of Program Evolution', in Proceedings of the 21st IEEE International Conference on Software Maintenance, ICSM '05, IEEE Computer Society, pp. 505--514
+>>>
+<<<
+elucidative programming;documentation evolution;
+>>>
+
+<<<
+Concrete Syntax for Objects
+>>>
+<<<
+D:/attr/DSL/Concrete Syntax for Objects
+>>>
+<<<
+Tzv. embedded jazyky, umoznuju vytvarat DSL s lubovolnou syntaxou pre kniznice v GPL. Metaborg.
+Kombinuju vyhody "string literal" pisania + modelu v API (oboje v kontexte generovania kodu) -> inak povedane to co by mal robit externy DSL.
+Maju tu peknu kapitolku o teorii prekladacov.
+>>>
+<<<
+\cite{concreteSyntax}
+
+\bibitem{concreteSyntax} Bravenboer, M. \& Visser, E. (2004), 'Concrete syntax for objects: domain-specific language embedding and assimilation without restrictions', in Proceedings of the 19th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, OOPSLA '04, ACM, pp. 365--383
+>>>
+<<<
+embedded DSL;
+>>>
+
+<<<
+When and How to Develop Domain-Specific Languages
+>>>
+<<<
+D:/attr/DSL/DSL-mernik
+>>>
+<<<
+DSL
+>>>
+<<<
+\cite{mernikDSL}
+
+\bibitem{mernikDSL} Mernik, M.; Heering, J. \& Sloane, A. M. (2005), 'When and How to Develop Domain-Specific Languages', in ACM Comput. Surv., vol. 37, no. 4, December 2005, pp. 316--344
+>>>
+<<<
+new;DSL;embedded DSL;
+>>>
+
+<<<
+Implementing a Domain-Specific Modeling Environment For a Family of Thick-Client GUI Components
+>>>
+<<<
+D:/attr/DSL/Implementing a Domain-Specific Modeling Environment For a Family of Thick-Client GUI Components
+>>>
+<<<
+Pekne rozobera DSL.
+Ich cielom je reference driven Domain specific modeling. Tj referencna implementacia sluzi ako zdroj pre model aj pre generator, ale nie na manualne migrovanie, ale automaticke generovanie - referencna implementacia sa oanotuje a vytvori sa podla nej metamodel jazyka, a aj generator.
+
+Podobne, ale ako keby som takto vytvaral sablony namiesto generatora? nie je to v konecnom dosledku to iste?
+>>>
+<<<
+\cite{implementingDSMEnvGUI}
+
+\bibitem{implementingDSMEnvGUI} Muszynski, M. (2005), 'Implementing a Domain-Specific Modeling Environment For a Family of Thick-Client GUI Components', in The 5th OOPSLA Workshop on Domain-Specific Modeling, OOPSLA '05, Computer Science and Information System Reports, Finland 2005, pp. 1--10
+>>>
+<<<
+DSL;MDD;idea;@OP;annotations application;
+>>>
+
+<<<
+An experiment in generating Java bytecode using rewritable reference attributed grammars
+>>>
+<<<
+D:/attr/history/attrGrammars/application/An experiment in generating Java bytecode using rewritable reference attributed grammars
+>>>
+<<<
+clanok sa venuje ReRAG - rewritable referenced attributed grammar, pristup s prepisovanim atributovych gramatik.. zaujimava idea, implementuju prekladac pomocou prepisovania AST, pricom atributy im pri tom posluhuju..
+>>>
+<<<
+\cite{reragsExper}
+
+\bibitem{reragsExper} Ive, A.; Hedin, G. \& Ekman, T. (2004), 'An experiment in generating Java bytecode using rewritable reference attributed grammars', in 11th Nordic Workshop on Programming and Software Development Tools and Techniques NWPER'2004, pp. 65--78
+>>>
+<<<
+attributed grammars;history;Java annotations;
+>>>
+
+<<<
+W/AGE : The Windsor Attribute Grammar Programming Environment
+>>>
+<<<
+D:/attr/history/attrGrammars/application/WAGE  The Windsor Attribute Grammar Programming Environment
+>>>
+<<<
+Pouzivaju atributove gramatiky na deklarativne definovanie jazykoveho procesora pre prirodzeny jazyk.
+>>>
+<<<
+\cite{wageFrost}
+
+\bibitem{wageFrost} Frost, R. A. (2002), 'W/AGE: The Windsor Attribute Grammar Programming Environment', in Proceedings of the IEEE 2002 Symposia on Human Centric Computing Languages and Environments, HCC, IEEE Computer Society, pp. 96--98
+>>>
+<<<
+attributed grammar;application;speech recognition;
+>>>
+
+<<<
+Inversion of Control Containers and the Dependency Injection pattern
+>>>
+<<<
+D:/attr/IoC/Inversion of Control Containers and the Dependency Injection pattern
+>>>
+<<<
+
+>>>
+<<<
+\cite{fowlerIoCDIP}
+
+\bibitem{fowlerIoCDIP} Fowler, M. (2004), 'Inversion of Control Containers and the Dependency Injection pattern', available on \url{http://martinfowler.com/articles/injection.html} (16/11/2012)
+>>>
+<<<
+new;IoC;DIP;
+>>>
+
+<<<
+Attribute Grammar Paradigms - A High-Level Methodology in Language Implementation
+>>>
+<<<
+D:/attr/later/PaakkiAttributeGrammars
+>>>
+<<<
+Attribute Grammar Paradigms - A High-Level Methodology in Language Implementation
+precitat este
+>>>
+<<<
+\cite{attributeGrammars}
+
+\bibitem{attributeGrammars} Paakki, J. (1995), 'Attribute Grammar Paradigms -- A High-Level Methodology in Language Implementation', in ACM Comput. Surv., vol. 27, no. 2, ACM, pp. 196--255
+>>>
+<<<
+new;attribute grammars;
+>>>
+
+<<<
+A Gentle Introduction to Metadata
+>>>
+<<<
+D:/attr/metadata/A Gentle Introduction to Metadata
+>>>
+<<<
+Data o datach. Upozornuje aj na to ze mozu byt reprezentovane rozlicne. Metaudaje samotne neposkytuju pristup k samotnym udajom, a preto mozu byt zverejnene, neviem na co to je dobre v nasom kontexte ale ktovie.
+>>>
+<<<
+\cite{gentleMetadata}
+
+\bibitem{gentleMetadata} Good, Jeff (2002), 'A Gentle Introduction to Metadata', University of California, Berkeley, available on \url{http://www.language--archives.org/documents/gentle--intro.html} (22/10/2012)
+>>>
+<<<
+metadata;metadata format;
+>>>
+
+<<<
+A Survey of Techniques for Achieving Metadata Interoperability
+>>>
+<<<
+D:/attr/metadata/A Survey of Techniques for Achieving Metadata Interoperability
+>>>
+<<<
+Metadata are machine processable data that describe resources, digital or non-digital.
+Following Gilliand's definition [Gilliland 2005], we conceive metadata as the total sum of what one can say about any information object at any level of aggregation, in a machine understandable representation. An information object is anything that can be addressed and manipulated by a human or a system as a discrete entity.
+Based on this observation, we can identify three main metadata building blocks: we denote the set of content values in a metadata description as metadata instance, the element definitions as metadata schema (Konrektna xml schema, konrketny idsl v @OP), and the language for defining metadata schemes as schema definition language (XMLschema, UML, @OP).
+Rozdeluju to an 4 informacne vrstvy, fyzicka vrstva, logicka vrstva (logicke usporiadanie 0 a 1), programatorska (ako je naprogramovane spracovanie) a konceptualna - skutocny vyznam v podstate.
+Kazda z tychto vrstiev ma spolocne to, ze informacne elementy su implementovane v terminoch udajoveho modelu - data model for metadata - metadata model. Ten reprezentuje ich semantiku formalnym sposobom - ta je definovana ich mapovanim na korespondujuce entity v aplikacnej domene.
+The notion of interoperability can further be subdivided: for Baker et al. [2002], achieving interoperability is a problem to be resolved on three main levels: the transport and exchange level (e.g., protocols), the metadata representation level (e.g., syntactic binding, encoding language), and the level of metadata with their attribute space(e.g., schema elements) and value space(e.g., controlled vocabular-ies).
+Tolk [2006] proposes an-other view consisting of six levels: no interoperabilityon the lowest level,techni-cal interoperability (communication infrastructure established) on level one, syn-tactic interoperability (common structure to exchange information) on level two,
+semantic interoperability (common information model) on level three, pragmatic interoperability (context awareness) on level four, dynamic interoperability(ability to comprehend state changes) on level five, and conceptual interoperability (fully specified, but implementation independent model) on level six.
+
+Toto by sa breutalne hodilo k mojej diplomovke, maju tam rozoberane ako to zjednocovat a co stoji v ceste.
+>>>
+<<<
+\cite{surveyMetadata}
+
+\bibitem{surveyMetadata} Haslhofer, B. \& Klas, W. (2010), 'A survey of techniques for achieving metadata interoperability', ACM Comput. Surv. 42 (2), pp. 1--42
+>>>
+<<<
+metadata;metadata interoperability;mapping;metadata standards;metadata theory;
+>>>
+
+<<<
+BabuDB Fast and Efficient File System Metadata Storage
+>>>
+<<<
+D:/attr/metadata/BabuDB Fast and Efficient File System Metadata Storage
+>>>
+<<<
+Nejaky clanok o efektivnejsom ukladani metadat pre distrubuovane filesystemy, namiesto B stromov nejake LMS ci co.
+Z hladiska anotacii priamo asi zbytocne.
+>>>
+<<<
+\cite{BabuDB}
+
+\bibitem{BabuDB} Stender, J.; Kolbeck, B.; H\"{o}gqvist, M. \& Hupfeld, F. (2010), 'BabuDB: Fast and Efficient File System Metadata Storage', in Proceedings of the 2010 International Workshop on Storage Network Architecture and Parallel I/Os, SNAPI '10, IEEE Computer Society, Washington, DC, USA, pp. 51--58
+>>>
+<<<
+external metadata;storage;
+>>>
+
+<<<
+ClassMock: A Testing Tool for Reflective Classes Which Consume Code Annotations
+>>>
+<<<
+D:/attr/metadata/ClassMock A Testing Tool for Reflective Classes Which Consume Code Annotations
+>>>
+<<<
+Metadata   is   an   overloaded   term   in   computer   science   and   can   be   interpreted differently  according   to   the   context.   In  the   context   of   object-oriented   programming, metadata is information about the program structure itself such as classes, methods and attributes.
+
+The   use   of   code   annotations   is   also   called   attribute-oriented   programing (Schwarz 2004), which  can be defined as a program-level marking technique used to mark program elements, such as classes, methods  and attributes, with annotations to indicate that they maintain application-specific or domain-specific semantics. This technique introduces a declarative approach inside an imperative programming language.
+
+Predstavuju tool ClassMock, ktory generuje mock triedy - triedy ktore predstavuju fake triedy pre testy - mozu sa menit v detailoch ako je napr. pouzitie anotacie and metodou a pod. To robia pouzitim fluent interface. Fajn pri AOP - testy na pointcuty a pod.
+This work addressed the automated tests of classes which uses reflection or consume code annotations.
+>>>
+<<<
+\cite{classMock}
+
+\bibitem{classMock} Guerra, E.; Silveira, F. \& Fernandes, C. (2010), 'ClassMock: A Testing Tool for Reflective Classes Which Consume Code Annotations', in Workshop Brasileiro de Metodos Ageis, Conferencia Brasileira sobre Metodos Ageis de Desenvolvimento de Software Agile, Brazil 2010, pp. 1--14
+>>>
+<<<
+@OP;metadata;annotations definition;fluent interface;DSL;AOP;
+>>>
+
+<<<
+Metadata Principles and Practicalities
+>>>
+<<<
+D:/attr/metadata/Metadata Principles and Practicalities
+>>>
+<<<
+Poskytuje rozdelenie, ale hovori o metadatach vo velmi vseobecnej rovine.
+Embedded metadata - priamo
+Associated metadata - vo viazanych fileoch
+Third-Party metadata - v 3rd party repozitaroch
+
+mandatory vs optional - ma zmysel v niektorych kontextoch (ci uz ako v konfiguracii, ci ako pri denpendency) hovorit o povinnych a nepovinnych?
+>>>
+<<<
+\cite{metadataPrincPract}
+
+\bibitem{metadataPrincPract} Duval, E.; Hodgins, W.; Sutton, S. \& Weibel, S. L. (2002), 'Metadata Principles and Practicalities', in D-Lib Magazine, vol. 8, no. 4, April 2002
+>>>
+<<<
+metadata;internal vs external;idea;
+>>>
+
+<<<
+QoS-Aware Component Frameworks
+>>>
+<<<
+D:/attr/metadata/QoS-Aware Component Frameworks
+>>>
+<<<
+Vseobecne je to o vyuziti @OP v oblasti QoS, ale je tam naznacena moznost vyjadrenia atributov prostrednictvm a) XML; b) priamo metadatami (anotaciami); c) a bejakymi konceptualnymi modelmi. Cize je tu naznak toho, ze atributy sa daju povazovat za metadata a ze je azda mozne ich odosobnit od implementacie - ale my sa na to pozrieme prave naopak, pojem atributy budeme nahradzovat internymi metaudaj
+>>>
+<<<
+\cite{qosAware}
+
+\bibitem{qosAware} de Miguel, M.A.; Ruiz, J.F. \& Garcia, M. (2002), 'QoS--aware component frameworks', in Tenth IEEE International Workshop on Quality of Service 2002, pp. 161--169
+>>>
+<<<
+metadata;abstract layers;annotations position;locality;
+>>>
+
+<<<
+Reusable Enterprise Metadata with Pattern-Based Structural Expressions
+>>>
+<<<
+D:/attr/metadata/Reusable Enterprise Metadata with Pattern-Based Structural Expressions
+>>>
+<<<
+Novy format metadat, ktory by mal nahradit Anotacie a XML. Celkom fajn porovnanie tychto dvoch. Stavia najma na tom ze anotacie nie su op?tovne pouzitelne a nevyjadruju strukturalne informacie. Uzitocne aj pri Matovom, robia tam nejaku projekciu ich metadat Eclipse pluginom.
+>>>
+<<<
+\cite{reusableEnterprise}
+
+\bibitem{reusableEnterprise} Tilevich, E. \& Song, M. (2010), 'Reusable enterprise metadata with pattern-based structural expressions', in Proceedings of the 9th International Conference on Aspect-Oriented Software Development, AOSD '10, ACM, pp. 25--36
+>>>
+<<<
+Java annotations;@OP vs XML;metadata;annotations position;locality;internal vs external;
+>>>
+
+<<<
+The RAND Metadata  Management System  (RMMS)
+>>>
+<<<
+D:/attr/metadata/The RAND Metadata  Management System  (RMMS)
+>>>
+<<<
+Metadata denotes definitional and descriptional information about databases, simulation models, and procedures.
+Hovoria o vyzname metadat (z pohladu databaz samozrejme),
+>>>
+<<<
+\cite{randMetadata}
+
+\bibitem{randMetadata} National Defense Research Institute (U. S.); Cammarata, S.; United States Department of Defense Office of the Secretary of Defense; United States Army; United States Air Force \& Arroyo Center (1995), 'The Rand Metadata Management System (Rmms: A Metadata Storage Facility to Support Data Interoperability, Reuse, and Sharing)'
+>>>
+<<<
+metadata;database;
+>>>
+
+<<<
+AOM Metadata Extension Points
+>>>
+<<<
+D:/attr/metadata/AOM/AOM Metadata Extension Points
+>>>
+<<<
+Z toho co som pochopil tak hovoria o tom ze pomocou anotacii (metadat aby som bol presny) sa daju nastavit body rozsirenia pre nejake AOM frameworky (adaptive object model) - ale pride mi to take ako keby hovorilo ze pomocou toho sa to da nakonfiguraovat co mi pride prilis jednoduche.
+Na konci pri +  a - je nejaka veta ktora vysveltuje ze anotacie/xml je lepsia ako naming conventisons kvoli couplingu.
+Zda sa ze AOM vyuziva metadata vo velkom.
+>>>
+<<<
+\cite{aomExtensionPoints}
+
+\bibitem{aomExtensionPoints} Matsumoto, P. M.; Correia, F. F.; Yoder, J. W.; Guerra, E.; Ferreira, H. S. \& Aguiar, A. (2011), 'AOM Metadata Extension Points', in 18th Conference on Pattern Languages of Programs (PLoP), Portland, Oregon, USA, October 2011, pp. 1--16
+>>>
+<<<
+@OP;annotations application;IoC;inversion of control;naming conventions;XML;.NET attributes;Java annotations;navigation;metadata;
+>>>
+
+<<<
+Annotation Based Parser Generator
+>>>
+<<<
+D:/attr/not so interesting/Annotation Based Parser Generator
+>>>
+<<<
+yajco
+>>>
+<<<
+\cite{YAJCo}
+
+\bibitem{YAJCo} Porubän, J.; Forgáè, M.; Sabo, M. \& Bìhálek, M. (2010), 'Annotation Based Parser Generator', in Computer Science and Information Systems, vol. 7, no. 2, 2010, pp. 291--307
+>>>
+<<<
+new;YAJCo;
+>>>
+
+<<<
+Automatically Optimizing Context Management in Contextual Composition Frameworks
+>>>
+<<<
+D:/attr/not so interesting/Automatically Optimizing Context Management
+>>>
+<<<
+Clanok o nejakom frameworku, ktory ma automatizovat optimalizaciu systemu vyuzivajuceho kontextovy framework (framework, pri pouzivani ktoreho sluzieb su nejake prepodmienky a prip. aj postpodmienky). Anotacie su tam spomenute len ako moznost konfiguracie frameworku.
+>>>
+<<<
+\cite{optContextManagment}
+
+\bibitem{optContextManagment} Trofin, M. (2008), 'Automatically Optimizing Context Management in Contextual Composition Frameworks', in ECOOP 2005, Glasgow, UK, pp. 1--4
+>>>
+<<<
+annotations application;
+>>>
+
+<<<
+Concepts and Concept-Oriented Programming
+>>>
+<<<
+D:/attr/not so interesting/Concepts and Concept-Oriented Programming
+>>>
+<<<
+Takmer vobec tomu nerozumiem, ale spomina sa @OP v related works. Takze asi tolko k tomu.
+>>>
+<<<
+\cite{conceptsAndCOP}
+
+\bibitem{conceptsAndCOP} Savinov, A. A. (2008), 'Concepts and Concept-Oriented Programming', in Journal of Object Technology, vol. 7, no. 3, pp. 91--106
+>>>
+<<<
+@OP;annotations;competition;
+>>>
+
+<<<
+Creating software models with semantic annotation
+>>>
+<<<
+D:/attr/not so interesting/Creating software models with semantic annotation
+>>>
+<<<
+NLP (natural language processing) s pomocou anotovania textu za ucelom vytvaranie modelu - anotovanie textu.
+>>>
+<<<
+\cite{creatingSoftModSemAnn}
+
+\bibitem{creatingSoftModSemAnn} Tichy, W. F.; Körner, S. J. \& Landhäußer, M. (2010), 'Creating software models with semantic annotation', in Proceedings of the third workshop on Exploiting semantic annotations in information retrieval, ESAIR '10, ACM, pp. 17--18
+>>>
+<<<
+annotations application;annotations definition;theory;
+>>>
+
+<<<
+Using Framework Introspection for a Deep Integration of Domain-Specific Models in Java Applications
+>>>
+<<<
+D:/attr/not so interesting/D4F2009_Proceedings
+>>>
+<<<
+Takmer nic s anotaciami ak som to pochopil, snazia sa poskytnut lepsiu integraciu modelu s implementaciou, prepajat nekontrolovane casti customizacie s modelom.
+Model attributes are represented here using annotations [17]. Java annotations are syntactically elegant but only provide very limited automatic consistency checking capabilities. The scope of an annotation only can be restricted to very generic Java constructs as fields, types, methods, and constructors. TheColumnannotation used in the example could also be applied to thesetGroups method, which would be an inconsistent modeling. This inconsistency cannot be checked by the Java compiler. Post-IntelliJ-IDEs cannot provide help answering questions about which modeling attributes are available in a specific situation.
+>>>
+<<<
+\cite{deepIntegrationDSM}
+
+\bibitem{deepIntegrationDSM} B\"{u}chner, T. \& Matthes, F. (2009), 'Using Framework Introspection for a Deep Integration of Domain-Specific Models in Java Applications', in Design for Future -- Langlebige Softwaresysteme, 1. Workshop des GI-Arbeitskreises 'Langlebige Softwaresysteme (L2S2)', 15. -- 16. October 2009, FZI Forschungszentrum Informatik, Karlsruhe
+>>>
+<<<
+Java annotations;DSL;internal DSL;embedded DSL;MDD;annotations dependency;annotations constraints;annotations unnamed constructs;
+>>>
+
+<<<
+Data, information and knowledge: have we got it right?
+>>>
+<<<
+D:/attr/not so interesting/datavsinfo
+>>>
+<<<
+Data, information and knowledge: have we got it 
+right?
+>>>
+<<<
+\cite{datavsinfo}
+
+\bibitem{datavsinfo} Boisot, M. \& Canals, A. (2004), 'Data, information and knowledge: have we got it right?', in Journal of Evolutionary Economics, vol. 14, no. 1, pp. 43--67
+>>>
+<<<
+metadata;information;data;
+>>>
+
+<<<
+Design of a Simple and Effective Object-to-Relational Mapping Technique
+>>>
+<<<
+D:/attr/not so interesting/Design of a Simple and Effective Object-to-Relational Mapping Technique
+>>>
+<<<
+Nejaky novy pristup na definovanie O/RM, z znejakeho dovodu chcu vsetky vztahy ukladat osve a nie do tabuliek pre objekty, pretoze v RD je to vraj naopak nez v OO a to vraj narusuje nieco. Nic s anotaciami.
+>>>
+<<<
+\cite{designSimple}
+
+\bibitem{designSimple} Lodhi, F. \& Ghazali, M. A. (2007), 'Design of a simple and effective object-to-relational mapping technique', in Proceedings of the 2007 ACM symposium on Applied computing, SAC '07, ACM, pp. 1445--1449
+>>>
+<<<
+ORM;database;
+>>>
+
+<<<
+Invasive Software Composition
+>>>
+<<<
+D:/attr/not so interesting/invasive software composition - presentation
+>>>
+<<<
+Invasive composition adapts and extends components at hooks by transforamtion.
+declared hooks by component
+an invasive composition operator treats declared and implicit hooks uniformly.
+na co sa da invasive software composition pouzit?
+hodilo by sa pouvazovat o tomto
+>>>
+<<<
+\cite{invSoftComposition}
+
+\bibitem{invSoftComposition} A\ssmann, U. (2003), 'Invasive software composition', Springer
+>>>
+<<<
+generative programming;invasive software composition;locality;
+>>>
+
+<<<
+LCLint A Tool for Using Specifications to Check Code
+>>>
+<<<
+D:/attr/not so interesting/LCLint A Tool for Using Specifications to Check Code
+>>>
+<<<
+Checkuje kod C, pouziva pritom nejaku "konfiguraciu".
+>>>
+<<<
+\cite{lclintCheckCode}
+
+\bibitem{lclintCheckCode} Evans, D.; Guttag, J. V.; Horning, J. J. \& Tan, Y. M. (1994), 'LCLint: A Tool for Using Specifications to Check Code', in SIGSOFT FSE, pp. 87--96
+>>>
+<<<
+type checking;program checking;
+>>>
+
+<<<
+On the Definition of Patterns for Semantic Annotation
+>>>
+<<<
+D:/attr/not so interesting/On the Definition of Patterns for Semantic Annotation
+>>>
+<<<
+SRGS standard ktori popisuje ako mapovat ABNF (Augmented) na XML.
+semanticke anotacie v tomto pripade su anotacie ku kniham a dokumentom ak som to pochopil, nejake patterny an to.
+>>>
+<<<
+\cite{defPatternsSemAnnotations}
+
+\bibitem{defPatternsSemAnnotations} Marrero, M.; Urbano, J.; Morato, J. \& Sánchez-Cuadrado, S. (2010), 'On the definition of patterns for semantic annotation', in Proceedings of the third workshop on Exploiting semantic annotations in information retrieval, ESAIR '10, ACM, pp. 15--16
+>>>
+<<<
+annotations application;annotations definition;theory;
+>>>
+
+<<<
+Points-to Analysis for Java Using Annotated Constraints
+>>>
+<<<
+D:/attr/not so interesting/Points-to Analysis for Java Using Annotated Constraints
+>>>
+<<<
+Nieco s anotovanim podmienok ktore pouzivaju pri nejakej analyze pre optimalizaciu kodu, velmi malo spolocneho.
+>>>
+<<<
+\cite{pointsToAnalysis}
+
+\bibitem{pointsToAnalysis} Rountev, A.; Milanova, A. \& Ryder, B. G. (2001), 'Points-To Analysis for Java using Annotated Constraints', in SIGPLAN Not., vol. 36, no. 11, October 2001, ACM, pp. 43--55
+>>>
+<<<
+annotations;theory;annotations definition;
+>>>
+
+<<<
+Using Reflection to Reduce the Size of .NET Executables
+>>>
+<<<
+D:/attr/not so interesting/Using Reflection to Reduce the Size of .NET Executables
+>>>
+<<<
+Pouziva reflexiu na kompresiu Executablov .NET.
+>>>
+<<<
+\cite{cepaExecutables}
+
+\bibitem{cepaExecutables} Cepa, V. (2005), 'Using Reflection to Reduce the Size of .NET Executables', in Journal of Object Technology, vol. 4, no. 7, pp. 51--64
+>>>
+<<<
+.NET;reflection;compression;
+>>>
+
+<<<
+@Composite - Macro Annotations for Java
+>>>
+<<<
+D:/attr/optimization/@Composite - Macro Annotations for Java
+>>>
+<<<
+@Composite ma sluzit ako kompozicne anotacie, kde anotacia definuje listove anotacie, ktore sa vracaju namiesto kompozitu, pricom kompozit umoznuje nalinkovat factory ktora vrati dynamicky vytvorenu anotaciu.
+>>>
+<<<
+\cite{compositeMacroAnnotations}
+
+\bibitem{compositeMacroAnnotations} Phillips, A. (2009), '@Composite: Macro Annotations for Java', in Proceedings of the 24th ACM SIGPLAN conference companion on Object oriented programming systems languages and applications, OOPSLA '09, ACM, pp. 767--768
+>>>
+<<<
+optimization;@OP;attribute-oriented programming;dynamic annotations;theory;dumb;
+>>>
+
+<<<
+Annotation refactoring: inferring upgrade transformations for legacy applications
+>>>
+<<<
+D:/attr/optimization/Annotation Refactoring Inferring Upgrade Transformations for Legacy Applications
+>>>
+<<<
+This paper presents a novel refactoring approach that solves both the Version and Vendor Lock-In problems out-lined above. Our approach has three phases: first, the frame-work developer creates representative examples of a class before and after transitioning; second, our algorithm infers generalized transformation rules from the given examples; finally, application developers use the inferred rules to pa-rameterize our program transformation engine, which auto-matically refactors their legacy applications.
+
+Annotation Refactoring? a new class of refactorings that replaces the type and naming requirements of an old framework version or annotation requirements of a dif-ferent framework with the annotation requirements of a target framework.
+Potrebhnutelne zmeny:
+1. Super type changes
+2. Method signature changes
+3. Field type changes
+4. Annotations added or removed
+5. Annotation argument added or removed
+6. Imports added or removed
+7. Statement added or removed
+Viacere strategie odvodenia
+
+idea: myslim ze to aj oni hovoria vo future, ze z xml do ann
+
+Be-ing embedded within the source code next to the program elements they describe, annotations provide declarative in-formation more robustly and concisely.
+>>>
+<<<
+\cite{annotationRefactoring}
+
+\bibitem{annotationRefactoring} Tansey, W. \& Tilevich, E. (2008), 'Annotation refactoring: inferring upgrade transformations for legacy applications', in Proceedings of the 23rd ACM SIGPLAN conference on Object-oriented programming systems languages and applications, OOPSLA '08, ACM, pp. 295--312
+>>>
+<<<
+naming conventions;@OP;annotations refactoring;superimposition of annotations;inferring;pattern recognition;optimization;transformation;locality;embedded;internal vs external;dumb;type conventions;
+>>>
+
+<<<
+Daileon: A Tool for Enabling Domain Annotations
+>>>
+<<<
+D:/attr/optimization/Daileon A Tool for Enabling Domain Annotations
+>>>
+<<<
+Tento clanok mi pripomina ze mozno by som sa vedel nbejako spojit s Miskou a daco stvorit spolocne. Domain modeling*.
+"a program-level marking technique that allows developers to annotate pro-gramming elements (i.e. classes and methods) to indicate
+application-specific or domain-specific semantics" (citovane z Leveraging component-oriented programming with attribute-oriented programming)
+"The use of annota-tions by aspect-oriented frameworks [6] in some cases can reduce significantly the amount of advices and the syntactic coupling [7]. One point to be observed when using annotations in aspect-oriented frameworks is that it breaks part of their obliviousness [5], since classes will contain explicit information about crosscutting concerns."
+
+Snazia sa nahradit klasicke anotacie domenovymi anotaciami - aby oddelili domenovu vrstvu v systeme od infrastruktury.
+Daileon framework sa stara o to aby bolo v podstate mozne pouzivat domenove anotacie namiesto infrastrukturnych. Myslienka je, ze ak je framework novy tak sam pristupuje k dolovaniu informacii cez Daileon, pri starych sa pouziva bytecode manipulation aby sa nahradili domenove tymi "normalnymi".
+
+idea: Miskine vystupy presmerovat na anotovanie bussiness vrstvy..
+>>>
+<<<
+\cite{daileon}
+
+\bibitem{daileon} Perillo, J. R. C.; Guerra, E. M. \& Fernandes, C. T. (2009), 'Daileon: a tool for enabling domain annotations', in Proceedings of the Workshop on AOP and Meta-Data for Software Evolution, RAM--SE '09, pp. 1--4
+>>>
+<<<
+DSL;domain-specific abstractions;Java annotations;domain modeling;annotations optimalization;annotations definition;Daileon;optimization;idea;dumb;
+>>>
+
+<<<
+Metadata Modularization Using Domain Annotations
+>>>
+<<<
+D:/attr/optimization/Metadata Modularization Using Domain Annotations
+>>>
+<<<
+Attribute-oriented programming is a program level marking technique  that  allows  developers  to  mark  programming elements, such as classes and methods, to indicate  applica-tion-specific or domain-specific semantics.
+Spomina konfiguracne techniky.
+Daileon framework, chcu pouzivat domenove anotacie.
+Slo by ho rozsirit o podporu aj XML a inych formatov? Napr. ze XY framework podpourje iba XML tak preco nespravit nieco co umozni taketo nieco? Nie je to BTE? A A2X?
+V podstate ide o to ze si definujeme domenove anotacie (nie frameworkove), urcime si ich vyznam mapovanim na frameworkove.
+>>>
+<<<
+\cite{metadataDomainAnnotations}
+
+\bibitem{metadataDomainAnnotations} Perillo, J. R. C.; Guerra, E. M.; Silva, J. O.; Silveira, F. F. \& Fernandes, C. T. (2009), 'Metadata Modularization Using Domain Annotations', in Proceedings of the 3rd Workshop on Assessment of Contemporary Modularization Techniques (ACoM.08), Lancaster University, USA, pp. 29--34
+>>>
+<<<
+annotations definition;@OP;metadata;Java annotations;attribute-oriented programming;naming conventions;Daileon;annotations alternatives;optimization;dumb;
+>>>
+
+<<<
+A Metadata-Based Components Model
+>>>
+<<<
+D:/attr/theory/A Metadata-Based Components Model
+>>>
+<<<
+V podstate proposal ich prace v tejto oblasti, Guerra by mal byt teraz uz dost znamy aby som vedel ze o co mu ide. Metadata, metadata, metadata..
+>>>
+<<<
+\cite{metadataCompModel}
+
+\bibitem{metadataCompModel} Guerra, E. M. \& Fernandes, C. T. (2008), 'A Metadata-Based Components Model', in Proceedings of Doctoral Symposium at 22nd European Conference on Object Oriented Programming, ECOOP '08, pp. 1--4
+>>>
+<<<
+@OP;metadata;attribute-oriented programming;theory;navigation;external metadata;naming conventions;patterns;annotations;annotations definition;
+>>>
+
+<<<
+A Pattern Language for Metadata-based Frameworks
+>>>
+<<<
+D:/attr/theory/A Pattern Language for Metadata-based Frameworks
+>>>
+<<<
+A program-level  marking  technique  that allows developers to mark programming elements
+
+Metadata-based frameworks are frameworks that use class metadata in runtime to process their logic
+
+But  in  these  frameworks,  the  metadata  can  be  stored not only by using  annotations,  but  also  by  using  external  files  (usually  as XML  documents),  databases  or  programmatically.  The  metadata can also be configured implicitly using name conventions [6]. 
+velmi dobre, metadata patterns, odosobnenie sa od strtegie citania a pod.
+
+VElmi pekne patterns, bude to skvele porovnat s mojou diplomovkou. Tie vzory su vzory navrhu citania metadat - ako navrhovat modul citania metadat a ake tam existuju vzory.
+>>>
+<<<
+\cite{patternLanguageMetadata}
+
+\bibitem{patternLanguageMetadata} Guerra, E. M.; de Souza, J. T. \& Fernandes, Clovis T. (2009), 'A pattern language for metadata-based frameworks', in Proceedings of the 16th Conference on Pattern Languages of Programs, PLoP '09, ACM, art. 3, pp. 1--29
+>>>
+<<<
+@OP;metadata;attribute-oriented programming;theory;navigation;external metadata;naming conventions;@OP vs XML;patterns;annotations;annotations definition;
+>>>
+
+<<<
+A Simple Edit-Time Metaobject Protocol
+>>>
+<<<
+D:/attr/theory/A Simple Edit-Time Metaobject Protocol
+>>>
+<<<
+Navrhuju pouzit nejaky edit-time metaobject protocol na prehladnejsie zobrazovanie anotacii v kode.
+>>>
+<<<
+\cite{simpleEditTimeMOP}
+
+\bibitem{simpleEditTimeMOP} Eisenberg, A. D. \& Kiczales, G. (2006), 'A simple edit-time metaobject protocol: controlling the display of metadata in programs', in Companion to the 21st ACM SIGPLAN symposium on Object-oriented programming systems, languages, and applications, OOPSLA '06, ACM, pp. 696--697
+>>>
+<<<
+theory;@OP;attribute-oriented programming;annotations;presentation;annotations usage;metaobject protocol;views;
+>>>
+
+<<<
+Architectural Patterns for Metadata-based Frameworks Usage
+>>>
+<<<
+D:/attr/theory/Architectural Patterns for Metadata-based Frameworks Usage
+>>>
+<<<
+Opat patterns, ale tieto su patterny pouzitia skor by som povedal.
+aj naznak riesenia ze kedy je lepsie anotacie a kedy XML.
+Mapping pattern, and so on...
+Najme je to podla mna o tom, na co sa daju metaudaje pozutit
+
+Using   this   approach,   the   framework,   and   not   the application, is responsible for the main execution flow. This is also known as the Hollywood Principle: ?don't call us, we'll call you?.
+
+Metadata is an overloaded term in computer science and can be interpreted differently according to the context. In the context of object-oriented programming, metadata is information about the program structure itself such as classes, methods and attributes. A class,   for   example,   has   intrinsic   metadata   like   its   name,   its superclass, its interfaces, its methods and its attributes.
+
+The   metadata   consumed   by   the   framework   can   be   defined   in different ways. Naming conventions [4] uses patterns in the name of   classes   and   methods   that   has   a   special   meaning   for   the framework.
+
+Conventions usage can save a lot of configurations but it has a limited expressiveness. For some scenarios the metadata needed are more complex and naming conventions are not enough.
+
+Another option is the metadata definition in external sources, like XML files and databases. The possibility to modify the metadata at deploy-time or even at runtime without recompile the code is an advantage of this type  of definition.  However, the definition is more verbose because it  has to reference and identify program elements.   Furthermore,   since   the   class   definition   and   metadata configuration are in separate files, the distance between them is increased, which may be not intuitive for some developers.
+
+Another   alternative   that   is   becoming   popular   in   the   software community is the use of code annotations, that is supported by some programming languages like Java [11] and C# [12]. Using this technique the developer can add custom metadata elements 
+directly into  the  class source  code, keeping  this definition  less verbose   and   closer   to   the   source   code.   The   use   of   code annotations is called attribute-oriented programing [14].
+
+idea: ako metadata vplyvaju an design patterns? je ich mozne nahradti/simulovat metaudajmi?
+>>>
+<<<
+\cite{architecturalPatternsGuerra}
+
+\bibitem{architecturalPatternsGuerra} Guerra, E.; Fernandes, C. \& Silveira, F. F. (2010), 'Architectural Patterns for Metadata-based Frameworks Usage', in Proceedings of the 17th Conference on Pattern Languages of Programa, PLoP2010, Reno, Nevada. USA, pp. 1--25
+>>>
+<<<
+@OP;metadata;attribute-oriented programming;theory;navigation;external metadata;naming conventions;@OP vs XML;patterns;annotations;inversion of control;annotations application;internal vs external;idea;
+>>>
+
+<<<
+Domain Annotations
+>>>
+<<<
+D:/attr/theory/Domain_Annotations
+>>>
+<<<
+keywords; marker interfaces; formatted comments; naming conventions
+when they should be used
+>>>
+<<<
+\cite{domainAnnotations}
+
+\bibitem{domainAnnotations} Doernenburg, E. (2008), 'Domain Annotations', in THE THOUGHTWORKS anthology: essays on software technology and innovation. Raleigh: Pragmatic Bookshelf, Chapter 10, pp. 121--141
+>>>
+<<<
+Java annotations;@OP;.NET attributes;annotations theory;competition;alternatives;usage;domain annotations;semantic annotations;documenting annotations;external vs internal;
+>>>
+
+<<<
+Domain Annotations 2
+>>>
+<<<
+D:/attr/theory/Domain_Annotations_GIDS
+>>>
+<<<
+co pouzit ako metadata techniku, kedy ich vobec pouzit
+>>>
+<<<
+\cite{domainAnnotations2}
+
+\bibitem{domainAnnotations2} Doernenburg, E. (2008), 'Domain Annotations', in THE THOUGHTWORKS anthology: essays on software technology and innovation. Raleigh: Pragmatic Bookshelf, Chapter 10, pp. 121--141
+>>>
+<<<
+.NET attributes;alternatives;competition;usage;
+>>>
+
+<<<
+How .NETs Custom Attributes Affect Design
+>>>
+<<<
+D:/attr/theory/How .NETs Custom Attributes Affect Design
+>>>
+<<<
+a defined method for adding declarative information (metadata) to runtime entities in the platform.
+
+Attributes in .NET provide an ele-gant, consistent approach toadding declarative information toruntime entities. Because the runtime entities interact with the supporting services via declarative information, the set of services and supporting at-tributes does not have to be closed.
+
+V podstate ukazuju ako su anotacie lepsie nez napr marker interfaces a naming conventions.
+
+In its first release of the .NET Frame-work, Microsoft has provided a de-fined method for adding declarative in-formation (metadata) to runtime enti-ties in the platform. These entities in-clude classes, methods, properties, and
+instance or class variables.
+>>>
+<<<
+\cite{dotNetAttDesign}
+
+\bibitem{dotNetAttDesign} Newkirk, J. \& Vorontsov, A. A. (2002), 'DESIGN: How .NET's Custom Attributes Affect Design', in IEEE Softw., vol. 19, no. 5, September 2002, IEEE Computer Society Press, pp. 18--20
+>>>
+<<<
+@OP;attribute-oriented programming;annotations;.NET attributes;marker interfaces;alternatives;competition;naming convention;theory;
+>>>
+
+<<<
+Idioms for Code Annotations in the Java Language
+>>>
+<<<
+D:/attr/theory/Idioms for Code Annotations in the Java Language
+>>>
+<<<
+Annotations  are  declarative  constructs  used  to  add  specific  semantics  to  code  elements such as  classes,  methods,  attributes, and other  annotations.  Their  mostly common  uses  provide  information  for:  compilers  about the  program;  software  tools  to  generate code or XML files; the application at runtime. This paper focuses on the use of annotations at runtime.
+
+VECTORIAL ANNOTATION - vektor anotacii ak je treba viacero
+COMPOSITE ANNOTATION - hovori samo za seba, proste vyskladana anotacia
+WELL-FORMED EXPRESSION - String value, kde sa vklada v podstate nejaky novy jazyk
+ASSOCIATIVE ANNOTATION - asociuje pomocou atributu typu class triedu k anotovanemu elemntu, dokazeme vybavit typovu bezpecnost
+INFERRED METADATA - default metadata odvodene podla niecoho
+GENERAL CONFIGURATION - jedna hlavna anotacia napr nad triedou, a ta sa "dedi" na ine elementy, s tym ze ked ju treba prekryt tak sa pouzije - motivacia, ak sa vela anotacii opakuje v triede (ale neda sa pouzit inferred metadata)
+ANNOTATION MAPPING - o tomto je daileon
+ANNOTATION READER - anotacny vzor na rozsirenie anotacnej schemy, metaanotcia povie ktory anotacny typ rozsiruje schemu frameworku a ktora trieda (reader) ju spracuva (v podstate pouziva vzor associative annotation)
+
+
+Custom annotations can represent domain concepts, reducing the number of infrastructure-related annotations in domain classes.
+>>>
+<<<
+\cite{idiomsAnnotations}
+
+\bibitem{idiomsAnnotations} Guerra, E.; Cardoso, M.; Silva, J. \& Fernandes, C. (2010), 'Idioms for Code Annotations in the Java Language', in 17th Latin-American Conference on Pattern Languages of Programs, SugarLoafPLoP, Salvador, Bahia, Brazil (October 16--18 2010), pp. 1--14
+>>>
+<<<
+@OP;Java annotations;attribute-oriented programming;annotations usage;annotating unnamed elements;annotations patterns;domain-specific concepts;theory;annotations definition;
+>>>
+
+<<<
+Instrumenting Annotated Programs
+>>>
+<<<
+D:/attr/theory/Instrumenting Annotated Programs
+>>>
+<<<
+Popisuje napr na co sa anotacie daju pouzit.
+Instrumentation moze narusit semantiku anotacii.
+Klasifikuju anotacie podla ich spravania sa pri instrumentacii. Popis instrumentacie.
+Indicative - oznamuju nejaky fakt o kode
+Imperative - prikazy pre nejaky tool, generator
+Subjunctive - poziadavka na kod, ktora moze a nemusi byt dodrzana
+DObre odkazy pri deleni
+navrhuju definovat kam spada anotacia aby sa podla toho mohli instrumentacne programy spravat - definovat pomocou metaanotacii
+
+Program annotations are information passed by application developers or tools to the virtual runtime so as to specialize or tailor the execution characteristics of the application.
+
+Pragmas were an early incarnation of metadata annota-tions,passing information from the programmer to the build tools. Other tools used source-file annotations (appearing ei-ther as new keywords or as specially-formatted comments) to receive hints from the programmer,for example,variable mutation and aliasing information [10,1,23]. Annotations guide compilers in concurrent code generation [21,3] and declare method pre- and post-conditions [14,16].
+
+of Java,an attribute was a byte array of known length and unknown semantics attached to a class file element,e.g., the class itself,fields,methods,or code arrays. A virtual machine is required to silently ignore all attributes that it does not recognize,and the attributes are prohibited from affecting the semantics of Java types.
+>>>
+<<<
+\cite{instrAnnotPrograms}
+
+\bibitem{instrAnnotPrograms} Biberstein, M.; Sreedhar, V. C.; Mendelson, B.; Citron, D. \& Giammaria, A. (2005), 'Instrumenting annotated programs', in Proceedings of the 1st ACM/USENIX international conference on Virtual execution environments, VEE '05, ACM, pp. 164--174
+>>>
+<<<
+@OP;attribute-oriented programming;annotations usage;annotations application;annotations classification;instrumentation;history;annotations definition?;Java annotations;.NET attributes;theory;annotations definition;
+>>>
+
+<<<
+Introduction and Derivation of Annotations in AOP
+>>>
+<<<
+D:/attr/theory/Introduction and Derivation of Annotations in AOP
+>>>
+<<<
+The concept of annotations has been introduced recently in various programming languages, such as Java[14] and C# [7], to enable the attachment of meta-data to program el-ements.
+Annotations can be used to express design intentions and semantic properties of program elements.
+In [13], it was pointed out that naming conventions, marker interfaces and other techniques are used in practice to ex-press meta-date in the absence of support for annotations.
+Zaujimavy pohlad, namiesto chytania sa na anotacie (teda nie doslova namiesto, ale otacaju to) sa na naviazane joinpointy vkladaju anotacie (najma za ucelom vkladania a derivovania anotacii, ktore nejako suvisia od inych, na tie sa naviazu a a derivuju od nich zavisiace.).
+Potom je tam velky pokec o tom ake pri tom mozu vzniknut problemy.
+>>>
+<<<
+\cite{introductionDerivationAnnAOP}
+
+\bibitem{introductionDerivationAnnAOP} Havinga, W.; Nagy, I. \& Bergmans, L. (2005), 'Introduction and Derivation of Annotations in AOP: Applying Expressive Pointcut Language to Introductions', in European Interactive Workshop on Aspects in Software, 2005, pp. 1--8
+>>>
+<<<
+@OP;AOP;annotations application;annotations definition;semantic annotations;documenting annotations;marker interfaces;naming conventions;navigation;theory;superimposition of annotations;locality;design intentions;dumb;
+>>>
+
+<<<
+Programming C#: Chapter 18, Attributes and Reflection
+>>>
+<<<
+D:/attr/theory/Print - ONDotNet.com_ Programming C#_ Attributes and Reflection
+>>>
+<<<
+An attribute is an object that represents data you want to associate with an element in your program. The element to which you attach an attribute is referred to as the target of that attribute.
+intrinsic and custom attributes - podobne je v jave
+Attribut ako strukturovany komentar
+A zda sa ze sa daju pouzit viacere rovnake atributy nad jeden kus kodu; dokonca sa da ovedat ci to ma alebo nema byt mozne!
+>>>
+<<<
+\cite{programmingCSharpCh18}
+
+\bibitem{programmingCSharpCh18} Liberty, J. (2001), 'Attributes and Reflection', in Programming C\#, Chapter 18, O'Reilly, 680 pages
+>>>
+<<<
+annotations definition;attribute-oriented programming;@OP;.NET attributes;classificiation;theory;
+>>>
+
+<<<
+Quality Improvement in Annotated Code
+>>>
+<<<
+D:/attr/theory/Quality Improvement in Annotated Code
+>>>
+<<<
+Attribute-oriented programming is a program-level marking technique used to mark program elements, such as classes, methods and attributes, to indicate that they maintain application-specific or domain-specific semantics.
+
+The  metadata  consumed  by  a  framework  or  a  tool  can  be  defined  in  different  ways.  It  can  be  defined  inside  the application  class,  by  using  code  annotations  or  code  conventions.  Moreover,  it  can  be  defined  by  external  sources, through the use of XML documents or databases.
+
+Robia metriky k tomu ze ako pouzivat anotacie, ci ich nie je privela a pod.
+Ak sa to deteguje, navrhuju riesit problem refaktorizaciou, a to bud presunutim conf. do externeho suboru, alebo naming conventions (co vsak zmeni konfiguraciu z explicitnej an implicitnu), vseobecnu konfiguraciu (tj zgrupit viacero do jednej v rodicovi), default value, resp. refactoring anotacnej schemy, ci pouzitie domenovych anotacii a ich mapovanie na frameworkove
+
+predstavuju annotation sniffer plugin, ktory automaticky pocita ich metriky
+>>>
+<<<
+\cite{qualityAnnotated}
+
+\bibitem{qualityAnnotated} Correia, D. A. A.; Guerra, E. M.; Silveira, F. F. \& Fernandes, C. T. (2010), 'Quality Improvement in Annotated Code', in CLEI Electronic Journal, vol. 13, no. 2, art. 7, August 2010
+>>>
+<<<
+Metadata;Attribute-Oriented Programming;Code Annotations;Metrics;@OP;annotations definition;domain specific abstractions;internal vs external;theory;annotations usage;naming conventions;
+>>>
+
+<<<
+Representing Explicit Attributes in UML
+>>>
+<<<
+D:/attr/theory/Representing Explicit Attributes in UML
+>>>
+<<<
+nedalo by sa AOP pouzit na checkovanie dependecies?
+
+AOP techniques have been usually used to enable horizon-tal transformations (within the same meta-model) in program-ming languages [14]. Attributes can carry custom semantics and can be used either for horizontal, or for vertical (mapping between different meta-models) transformations.
+
+Pozretie sa na UML:
+tagged values - kluc=hodnota - oproti @OP nie su strukturovane, nie je mozne ich odlisit od inych tagged values (att vs tv)
+
+kritika: http://www.riedquat.de/blog/2007-12-15-01
+>>>
+<<<
+\cite{representingAttUML}
+
+\bibitem{representingAttUML} Cepa, V. \& Kloppenburg, S. (2005), 'Representing Explicit Attributes in UML', in 7th International Workshop on Aspect-Oriented Modeling
+>>>
+<<<
+@OP;Java annotations;alternatives;annotations usage;competition;attribute-oriented programming;idea;dependency;fragile pointcut;AOP;generative programming;transformations;UML;competition;@OP vs AOP;
+>>>
+
+<<<
+XML, Annotations and Database: a Comparative Study of Metadata Definition Strategies for Frameworks
+>>>
+<<<
+D:/attr/theory/xata - Copy
+>>>
+<<<
+To co to hovori, analyzuje v troch scenaroch co je lepsie ako format pre konfiguraciu (pre metadata). Pekne celkom a myslim ze vhodne.
+>>>
+<<<
+\cite{XMLAnnotationsDataB}
+
+\bibitem{XMLAnnotationsDataB} Fernandes, C.; Ribeiro, D.; Guerra, E. \& Nakao, E. (2010), 'XML, Annotations and Database: a Comparative Study of Metadata Definition Strategies for Frameworks', in XATA 2010: XML, Associated Technologies and Applications, May 19--20, Vila do Conde, Porto, pp. 115--126
+>>>
+<<<
+annotations;@OP;theory;attribute-oriented programming;database;naming conventions;metadata;metadata format;annotations usage;annotations vs XML;@OP vs XML;external metadata;internal metadata;
+>>>
+
+<<<
+Parsing XML Documents in Java using Annotations
+>>>
+<<<
+D:/attr/theory/xata
+>>>
+<<<
+Event based XML parser pomocou anotacii. Niekde som o niecom takom cital (skontroluj ked budes mat cas).
+Ale robia to runtime, tamti to robili generativne, mozno by sa na tom nieco dalo postavit.
+>>>
+<<<
+\cite{parsingXMLAnnotations}
+
+\bibitem{parsingXMLAnnotations} Nuccitelli, R.; Guerra, E. \& Fernandes, C. (2010), 'Parsing XML Documents in Java using Annotations', in XATA 2010: XML, Associated Technologies and Applications, May 19--20, Vila do Conde, Porto, pp. 103--114
+>>>
+<<<
+XML;Java annotations;annotations application;@OP;metadata;
+>>>
+
+<<<
+Aspect-Oriented Programming is Quantification and Obliviousness
+>>>
+<<<
+D:/attr/theory/AOP/Aspect-Oriented Programming is Quantification and Obliviousness
+>>>
+<<<
+The first exceptions to locality were subprograms ( i.e., procedures, subroutines, functions.) Subprograms were a great invention, enabling abstracting out some behavior to someplace else.
+Inheritance in object-oriented programming (OOP) was the second important introduction of non-locality. Executing inherited behavior is non-local. There are two different fashions of inher-iting behavior, send super and mixins. Send-super systems like Java and Smalltalk allow the programmer to explicitly invoke the be-havior of its parent class or classes, without knowing exactly what behavior is being invoked.
+We want to be able to say, ? This code realizes this concern. Execute it whenever these circum-stances hold.?  This breaks completely with local and unitary demands ?we can organize our pro-gram in the form most appropriate for coding and maintenance.
+
+Staticka kvantifikacia (co vieme specifikovat ako podmienku vazby)
+	Black box AOP - v?zba na komponenty, ich wrapovanie
+	Clear box - moznost jemnozrnejsieho viazania sa, pristup ku kodu
+Dynamicka kvantifikacia
+	vazba na dynamicky content - na control flow/data flow (napr vyvolanie vynimky)
+
+AOP Jazyk
+	Rule-based systems.  Rule-based systems like OPS-5 [4] or, to a lesser extent, Prolog are programming with purely dynamically quantified statements.
+	Event-based, publish and subscribe. In EBPS systems, the subscription mechanism is precisely a quantification mechanism. ( ? Let me know whenever you see something like ??).
+	Intentional Programming and Meta-programming . Intentional programming (IP) [1] and meta-programming (MP) [12] provide the ability to direct the execution order in arbitrarily defined computational patterns.
+	Generative Programming.  Similarly, generative programming [6] works by transforming higher-level representations of programs into lower-level ones (that is, by compiling high-level specifications.)
+
+AOP is not about OOP
+AOP is not useful for singletons
+Better AOP systems are more oblivious.  They minimize the degree to which pro-grammers (particularly the programmers of the primary functionality) have to change their behavior to realize the benefits of AOP.
+>>>
+<<<
+\cite{quantObliviAOP}
+
+\bibitem{quantObliviAOP} Filman, R. \& Friedman, D. (2000), 'Aspect-Oriented Programming is Quantification and Obliviousness', in Proc. Workshop on Advanced Separation of Concerns, OOPSLA 2000, October 2000
+>>>
+<<<
+AOP;locality;localization;position;procedures vs code;AOP theory;theory;internal vs external;AOP language;
+>>>
+
+<<<
+Bridging Java and AspectJ through Explicit Join Points
+>>>
+<<<
+D:/attr/theory/AOP/Bridging Java and AspectJ through Explicit Join Points
+>>>
+<<<
+Je to trosku debilne postavene podla mna, ale naznacuje to to co som si myslel, explicitne joinpointy - explicitne ja nastavujem co chcem aby tu bolo vkladane, aky aspekt. Je to teda podobne ako je to s AOP s anotaciami, ale namiesto anotacii pouzivam kod.
+Idea: ked sa viazem na anotacie, su tie anotacie explicitne na aspekty, resp su to domenove anotacie? Mozno nieco s Daileonom by sa dalo spravit.
+>>>
+<<<
+\cite{explicitJoinPoints}
+
+\bibitem{explicitJoinPoints} Hoffman, K. J. \& Eugster, P. (2007), 'Bridging Java and AspectJ through explicit join points', in Proceedings of the 5th international symposium on Principles and practice of programming in Java, PPPJ '07, ACM, pp. 63--72
+>>>
+<<<
+idea;AOP;@OP;alternative;theory;navigation;fragile pointcut;attribute-oriented programming;internal vs external;
+>>>
+
+<<<
+Domain-Specific Languages and Program Generation with Meta-AspectJ
+>>>
+<<<
+D:/attr/theory/AOP/Domain-Specific Languages and Program Generation with Meta-AspectJ
+>>>
+<<<
+MetaAspectJ ako generator AspectJ, popisovany jazyk, argumentuju za pouzitie anotacii ako DSL rozsirenie jazyka.
+
+A common pattern of using MAJ is for implementing domain-specific lan-guage extensions using unobtrusive annotations. Recently, the introduction of user-defined annotations in mainstream programming languages, such as C# and Java, has allowed specialized language extensions (e.g., for distributed computing, persistence, or real-time programming) to be added without chang-ing the base syntax. This is a desirable property as it clearly separates the base code from the domain-specific extensions and their implementation.
+
+Ak som ten MAJ pochopil, tak vlastne pre anotacie nedogenruva kod, ale vygeneruje aspekt ktory ten kod doplna weavovanim (good idea!).
+Spominaju tam nejaky GOTECH, ktory bol predtym spraveny pocmocou XDcolet. - GOTECH generuje nieco podla anotacii ak som to pochoil, terazto ho prerobili pomoou MAJ.
+Pekne odovodnenie preco to robia cez AOP, AOP nie je take finegrained, ale zasa je omnoho jednoduchsie generovat kod takto ako parsovat cely kod a upravovat ten. Je to ako konkurenicia Spoonu.
+SPominaju samozrejme aj moznost vazby aspectJ na anotacie.
+>>>
+<<<
+\cite{metaaspectJgenerator}
+
+\bibitem{metaaspectJgenerator} Huang, S. S.; Zook, D. \& Smaragdakis, Y. (2008), 'Domain-specific languages and program generation with meta-AspectJ', in ACM Trans. Softw. Eng. Methodol., vol. 18, no. 2, art. 6, pp. 1--32
+>>>
+<<<
+AOP;@OP;attribute-oriented programming;annotations application;DSL;MDD;software product line;MetaAspectJ;xDoclet;theory;navigation;fragile pointcut;
+>>>
+
+<<<
+Improve Pointcut Definitions with Program Views
+>>>
+<<<
+D:/attr/theory/AOP/Improve Pointcut Definitions with Program Views
+>>>
+<<<
+Namiesto v?zby priamo na kod sa viazu pointcutmi na nejake program views, ktore definuju moduly a messages, vraj tym vedia zabezpecit napr ak view nedefinuje ze sa metody v danom module aj volaju aj poskytuju, tak sa napr na ne v danom module neda naviazat - treba definovat aj volajucu aj volanu stranu aby to bolo mone. Ktovie v com vsetko toto pomoze.
+V podstate pomocou views vedia robit viac fine-grained pointcuty.
+Injektuju aj anotacie.
+>>>
+<<<
+\cite{improvePointcutsAOP}
+
+\bibitem{improvePointcutsAOP} Yang, Z. \& Zhao, T. (2007), 'Improve pointcut definitions with program views', in Proceedings of the 5th workshop on Software engineering properties of languages and aspect technologies, SPLAT '07, ACM, art. 9, pp. 1--7
+>>>
+<<<
+AOP;@OP;attribute-oriented programming;annotations application;fragile pointcut;theory;naming conventions;superimposition of annotations;dumb;
+>>>
+
+<<<
+Role Annotations and Adaptive Aspect Frameworks
+>>>
+<<<
+D:/attr/theory/AOP/Role Annotations and Adaptive Aspect Frameworks
+>>>
+<<<
+Hovori o probleme krehkych pointcutov, ktore vznikaju pri v?zbe na vymenovanie resp. naming conventions a spomina anotacie ako riesenie tohto problemu. Nasledne vsak ukazuje ze su situacie kedy to nestaci a vyuziva parametre anotacii na parametreizovanie adviceov. To vsetko pre tvorbu AOP frameworkov. Prakticky generuju advices (poiontcuts) pre rozne moznosti parametrov.
+>>>
+<<<
+\cite{annotationsAAF}
+
+\bibitem{annotationsAAF} Seiter, L. M. (2007), 'Role Annotations and Adaptive Aspect Frameworks', in Proceedings of the 3rd workshop on Linking aspect technology and evolution, LATE '07, ACM, 3, pp. 1--5
+>>>
+<<<
+method listing;AOP;@OP;attribute-oriented programming;annotations application;naming conventions;navigation;theory;fragile pointcut;
+>>>
+
+<<<
+Separation of concerns through semantic annotations
+>>>
+<<<
+D:/attr/theory/AOP/Separation of concerns through semantic annotations
+>>>
+<<<
+V podstate clanok o tom ze anotacie pomozu v AOP, navrh.
+>>>
+<<<
+\cite{socSemanticAnnotations}
+
+\bibitem{socSemanticAnnotations} Cachopo, J. (2002), 'Separation of concerns through semantic annotations', in Companion of the 17th annual ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications, OOPSLA '02, ACM, pp. 2--3
+>>>
+<<<
+strong coupling;navigation;method listing;AOP;fragile pointcut;semantic annotations;SoC;separation of concerns;
+>>>
+
+<<<
+Separation of Concerns with Procedures, Annotations, Advice and Pointcuts
+>>>
+<<<
+D:/attr/theory/AOP/separationofconcerns
+>>>
+<<<
+procedure calls bind program points to operations, annotations bind attributes to program points; pointcuts bind sets of points to various descriptions of those sets; named pointcuts bind attributes to sets of points; and advice bind the implementation of an operation to sets of points
+
+check the bibliography for good literature
+
+Straw-Man - priamo vlozeny kod
+good old-fashioned procedure (GOFP) - implemetuje staticku proceduru, ktoru vola na zriesenie concernov (refresh na display)
+Annotation-Call - anotacia @RefreshDisplay + advice (alebo generator) - anotacia hovori, ze metoda ma refresnut display
+Annotation-Property - tuto anotacia hovori ze metoda ma vlastnost menenia displaya (rozdiel len nazov anotacie @DisplayStateChange )
+Anonymous-Enumeration-Pointcut - vymenovanie metod ktore maju refresnut display - ale pouziva anonymny pointcut
+Named-Enumeration-Pointcut - to iste ale s pomenovanym pointcutom
+Named-Pattern-Pointcut - opat pomenovany, ale pozuiva naming convention na pattern
+
+locality of implementation, degree to which the implementation is explicit rather than implicit, and locality of change in a simple evolution experiment
+
+explicity - ze je concern axplicitne definovany
+locality - lokalizovany na jednom - resp. konecnom statickom pocte miest (advice)
+
+Name matters - mozno uzitocne - definovat vlasnost kodu, teda to suvisi s documentaciou
+
+So the effect of using a procedure ? a declaration and one or more calls to it ? is to introduce an explicit operation (the procedure), bindings from points in the program to the operation (calls), and a binding from the operation to the implementation (the declaration).
+
+In discussing the relation between annotations and pointcuts, we use the following terminology: Annotations  are the syntactic identifiers described by JSR-175 [4] that the programmer places in the program (i.e. @DisplayStateChange). Properties are the characteristics of points on which pointcuts can match, including class and method names, access modifiers etc.  Pointcut names  are the programmer defined names for pointcuts. We use the term attribute to include both annotations and pointcut names. In other words, attributes are user-defined names that can be attached to program points.
+
+If an operation is needed at a given set of points then using advice and pointcuts serves to make the binding from the set to the operation explicit and local.
+
+If a set of points used in an advice has a common attribute, then using a named pointcut or an annotation can make that common attribute explicit.
+
+Prefer enumeration-based pointcuts when: (i) it is difficult to write a stable property-based pointcut to capture the members and (ii) the set of points is relatively small. 
+Prefer property- or pattern-based  pointcuts when: (i) it is possible to write one that is stable or (ii) the set of points is relatively large (more than ten). 
+Use  annotations to mark points when three things are true: (i) it is difficult to write a stable property-based pointcut to capture the points, (ii) the name of the annotation is unlikely to change, and (iii) the meaning of the annotation is an inherent to the points, rather than a context-dependent aspect of the points only true in some configurations. 
+In addition, lean towards annotations when the property that defines inclusion in the set is an inherent property of the points, and lean towards other  pointcuts when the binding from points to the set might change non-locally, or come into existence non-locally.
+>>>
+<<<
+\cite{socProcAnnAdvPoi}
+
+\bibitem{socProcAnnAdvPoi} Kiczales, G. \& Mezini, M. (2005), 'Separation of Concerns with Procedures, Annotations, Advice and Pointcuts', in Proceedings of the 19th European conference on Object-Oriented Programming, ECOOP'05, Springer, pp. 195--213
+>>>
+<<<
+@OP;AOP;external vs internal;position;method listing;naming convention;locality;procedures vs code;theory;SoC;separation of concerns;annotations definition;attribute as annotations and pointcuts;documenting annotations;
+>>>
+
+<<<
+Statement Annotations for Fine-Grained Advising
+>>>
+<<<
+D:/attr/theory/AOP/Statement Annotations for Fine-Grained Advising
+>>>
+<<<
+Heterogenne zaujmy si vraj vyzaduju lokaciu joinpointov uprostred metod. Jednou cestou bolo pouzitie dummy method calls.
+Oni navrhuju pouzitie statement annotations ako riesenie, to je presne dovod pre ktory to moze mat vyznam.
+Okrem dovodu fine-grained advising udavaju dalsie:
+Optimization - guide parallelization as in OpenMP; plus dalsie ale tie nedavaju moc zmysel, narp Debugging and fault isolation - nieco re debugger;
+Uvadzaju logging ako priklad heterogenneho zaujmu, ktory si ziada viazanie jemnejsieho zrna
+>>>
+<<<
+\cite{statementAnnotations}
+
+\bibitem{statementAnnotations} Eaddy, M. \& Aho, A. V. (2006), 'Statement Annotations for Fine-Grained Advising', in Proceedings of RAM--SE 06--ECOOP 06 Workshop on Reflection, AOP, and Meta-Data for Software Evolution, Nantes, France, July 4, 2006, pp. 89--99
+>>>
+<<<
+@OP;AOP;attribute-oriented programming;annotating unnamed constructs;statement annotations;
+>>>
+
+<<<
+Tackling Pointcut Fragility with Dynamic Annotations
+>>>
+<<<
+D:/attr/theory/AOP/Tackling Pointcut Fragility with Dynamic Annotations
+>>>
+<<<
+Anotaciami pri pointcute vieme oddelit pointcut od struktury kodu. Oni tvrdia ze to nemusi stacit, lebo dynamicke casti pointcutov sa nedaju zachytit a preto navrhuju dynamicke anotacie.
+Cez ne proste dokazu vyhodnotit aj nieco viac nez len staticku cast, ale aj nieco ohladom vlastnosti targetu (v prenesenom slova zmysle umoznuju pridavat do anotacii ako keby dynamicky kod ktory je vyhodnocovany pri ich pouziti - tj v tomto pripade pri naviazani sa na ne).
+
+klasifikacia akurat tak na dynamicke a staticke
+>>>
+<<<
+\cite{dynamicAnnotationsNoguera}
+
+\bibitem{dynamicAnnotationsNoguera} Noguera, C.; Kellens, A,; Deridder, D. \& D'Hondt, T. (2010), 'Tackling Pointcut Fragility with Dynamic Annotations', in Proceedings of the 7th Workshop on Reflection, AOP and Meta-Data for Software Evolution, RAM-SE '10, ACM, pp. 1--6
+>>>
+<<<
+fragile pointcut;AOP;@OP;annotations application;naming conventions;navigation;annotations classification;dynamic annotations;
+>>>
+
+<<<
+The Paradoxical Success of Aspect-Oriented Programming
+>>>
+<<<
+D:/attr/theory/AOP/The Paradoxical Success of Aspect-Oriented Programming
+>>>
+<<<
+VElmi lahko sa to cita a je to zaujimave.
+Naraza na to ze AOP ide prave proti modularite, lebo aspekty zvycajne narazaju na nejaky kontext (v programe do ktoreho su vtkavane) a do neho zasahuju - maju k nemu prisup.. A to vraj nie je v sulade s modularitou.
+Udava definiciu, vela cituje Filmana and Friedmana - obliviousness - Program P nevie o concernoch ktore su vtkavane, quantification - vazba na condition C: In programs P, whenever condition  C arises, perform action A.
+Obliviousness basically implies that a program has no knowledge of which aspects modify it where or when, and quantification expresses the fact that an aspect can affect arbitrarily many different points in a program.
+
+idea: co takto pouzit AOP na adapter vzor? nieco je modularne ale potrebujem to pouzit na svoj pripad a ten je nejako specifickejsi.. (teraz ma napada ze inheritence je na to..
+idea2: porovnat anotacie s volaniami procedur - je v tom v konecnom dosledku rozdiel?
+
+This is an interesting constructi on, since it shows that quantifica-tion can indeed be completely i ndependent from obliviousness: all places where condition  C can possibly arise are explicitly marked in the program text. - procedures
+TYmto ukazuje ako sa da natahovat definicia C - bud to C explicitne definujem (volanie proc), alebo mozem C dokonca dat na nahodou - a to uz program nema sajnu co sa deje okolo.
+
+Dalej uvadza ze namiesto explicitneho volania sa mozu miesta s podmienkou C viazat na nejake specificke objekty B ktore su explictne pouzite (npar. anotacie) - to redukuje obliviousness (programator moze vedome vynechat ref. na objekt B aby zabranil vstupu aspektu).
+
+For instance, with trac-ing as a crosscutting concern,  annotating every program element whose execution is to be traced is  just as annoying as adding the tracing code (usually no more than the calling of a subroutine) on site. To avoid this, it has been  suggested to use so-called annota-tor aspects that annotate program el ements so that they can be ad-vised by other aspects [39], as expressed by
+In programs P, wherever condition  C arises, add annotation B.
+
+Co sa tyka kvantifikacie, nahodonst je z oboch stran - program nevie kde sa moze aspokt vyvolat, a aj aspektovy programator nemusi mat jasno v tom, ktore vsetky miesta aspekt zasahuje - iba ak ich vymenuje: In programs P, whenever execution reaches one of the points in {p1,?,pn}, perform action A. - fragile pointcut
+
+Prakticke problemy:
+MODULARITY - podla Parnasa je to information hiding, pekna fil. rozprava o tom..
+
+	my main concern is the ex-istence of a strong coupling between  an aspect and its target, par-ticularly if this coupling is left im plicit, that is, not reflected in an explicit interface; since this impairs independent development.
+when code is moved out of its context to some other place, it must take (a reference to) the context that it depends on with it, thereby es-tablishing a coupling between its old and its new location.
+
+	But as far as  I can see, modularity problems of this kind can only be solved by introducing units larger than sin-gle objects (or their classes) as modules. Splitting a class into a class and an aspect produces sm aller, strongly coupled units; it leads to more and larger interfaces, which is counterproductive to improving modularity.
+
+	Dalsi problem je ze AOP ma skor implicitne nez explicitne rozhrania - a to ide proti indenpedent development. taktiez tu nie je jasny koncept pozadovaneho a poskytovaneho rozhrania (required and provided).
+
+	This  reflects the ?inversion of depend-ency? [49] so characteristic of AOP: technically, although the as-pect complements the target program, the aspect depends on the target and not vice versa.
+
+ORGANIZATION OF SOURCE CODE
+	In fact, as has been pointed out in ?AOP consid ered harmful? [13], AOP intro-duces a modern variant of the  comefrom  statement, which was once suggested as a humorous contribution to the goto discus-sion, the joke being that such an inverse form of calling?very much like the implicit invocation mechanisms of AOP [20]?renders even small programs completely unreadable [9].
+	AOP adds another dimens ion of not knowing what just happened, or where I have come from, to programming.
+
+GLOBALIZATION OF LOCAL VARIABLES - aspect globalizuje premenne target (base) programu.
+
+Odporuca pouzivat pri generovani (ako generovany, nie generujuci program), pri komponentovom programovani na upravu rozhrani (moja idea vyssie),
+>>>
+<<<
+\cite{paradoxAOP}
+
+\bibitem{paradoxAOP} Steimann, F. (2006), 'The paradoxical success of aspect-oriented programming', in Proceedings of the 21st annual ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications, OOPSLA '06, ACM, pp. 481--497
+>>>
+<<<
+idea;AOP;modularity;procedures vs pointcuts;fragile pointcut;listing methods;inversion of dependency;
+>>>
+
+<<<
+Using Aspect-Orientation to Simplify Concurrent Programming
+>>>
+<<<
+D:/attr/theory/AOP/Using Aspect-Orientation to Simplify Concurrent Programming
+>>>
+<<<
+Principialne je clanok o pouziti AOP v subeznom programovani - a to pocmocou anotacii.. chvalia to..
+Pekna analyza kritiky AOP.
+>>>
+<<<
+\cite{aoSimConcurrent}
+
+\bibitem{aoSimConcurrent} Hohenstein, U. D. \& Gleim, U. (2011), 'Using aspect-orientation to simplify concurrent programming', in Proceedings of the tenth international conference on Aspect-oriented software development companion, AOSD '11, ACM, pp. 29--40
+>>>
+<<<
+AOP;@OP;attribute-oriented programming;AspectJ;annotations application;generative programming;
+>>>
+
+<<<
+Utilizing Design Information in Aspect-Oriented Programming
+>>>
+<<<
+D:/attr/theory/AOP/Utilizing Design Information in Aspect-Oriented Programming
+>>>
+<<<
+Techinky vkladania dizajnovych informacii do kodu, naming pattern, structural pattern (marker interface), annotations (spominaju tu constraints, a aj nejake filozofovanie), automaticky derivovane semanticke vlastnosti (nie len syntax).
+Obkecavaju ako pridavali anotacie do svojho jazyka Compose*, a potom aj o vkladani anotacii.
+> Co takto navrhnut riesenie interferencie aspektov prostrednictvom nav?zovania aspektov nie na base kode ale na seba navzajom?
+Design information ako semanticke anotacie. -> tvrdia ze pointcut sa musi viazat na semanticke informacie
+The Attrib4j [7] and Apache Common Attributes
+AspectWerkz, JBoss AOP, AspectJ
+>>>
+<<<
+\cite{utilizingDesignInformation}
+
+\bibitem{utilizingDesignInformation} Nagy, I.; Bergmans, L.; Havinga, W. \& Aksit, M. (2005), 'Utilizing Design Information in Aspect-Oriented Programming', in Net.ObjectDays, NODe/GSEM, September 20-22, 2005, Erfurt, Germany, pp. 39--60
+>>>
+<<<
+naming conventions;AOP;marker interfaces;annotations;@OP;attribute-oriented programming;theory;internal metadata;navigation;superimposition of annotations;idea;semantic annotations;special annotations;history;AOP annotations;locality;dumb;
+>>>
+
+<<<
+JavaML: a markup language for Java source code
+>>>
+<<<
+D:/attr/views/JavaML a markup language for Java source code
+>>>
+<<<
+Nevyhody textovej reprezentacie, ako riesenie kanonicke vyjadrenie Javy pomocou XML.
+Struvny popis Javy a XML, v XML idref ako moznost vyjadrenia directed grafov, nielen stromov.
+uprava Jikes frameworku ktory preklada java aj na output JavaML, sp?tny preklad je umozneny pomocou XSLT, rozne pouztia javaML - analyza kodu (pocet metod, vyber specifickych struktur v kode a pod.), jednoduchsie zmeny v kode ako pri textovom tvare (textovy editor zmeni napr kazdy vyskyt, tu si vieme vyselektovat ze iba napr nazvy metod - refactoring v nb, eclipse), Microsoft?s Intentional Programming group - mozno vyvoj XML DSL pomocou JavaML a DTD - preklad pomocou XSLT.
+>>>
+<<<
+\cite{javaML}
+
+\bibitem{javaML} Badros, G. J. (2000), 'JavaML: a markup language for Java source code', in Computer Networks, vol. 33, no.1--6, pp. 159--177
+>>>
+<<<
+program comprehension;XML;code query;views;
+>>>
+
+<<<
+Reducing syntactic noise in internal domain-specific languages
+>>>
+<<<
+D:/attr/views/Reducing syntactic noise in internal domain-specific languages
+>>>
+<<<
+iDSLAddon
+>>>
+<<<
+\cite{iDSLAddon}
+
+\bibitem{iDSLAddon} Nosá¾, M.; Porubän, J. \& Nosá¾, M. (2012), 'Reducing syntactic noise in internal domain-specific languages', in Proceedings of CSE 2012 : International Scientific Conference on Computer Science and Engineering, October 3-5, 2012, Košice : FEI TU, 2012, pp. 111--118
+>>>
+<<<
+new;views;annotations application;iDSLAddon;special annotations;
+>>>
+
+<<<
+Xdoclet for more effective EJB development
+>>>
+<<<
+D:/attr/XDoclet/xdoclet
+>>>
+<<<
+Motivacia pre xDoclet - ale vlastne pre generativne programovanie spojene s @OP
+
+v tomto pripade ide vlastne o modelovanie modelu (pre generator) v kode
+
+Reduce redundancies, allow ?single point of reference?
+- Write less code
+- Avoid boring, repetitive and error prone tasks
+- Improve maintainability
+Apply well-proven low-level code idioms
+- Make the code cleaner
+- Avoid bugs
+>>>
+<<<
+\cite{xDoclet}
+
+\bibitem{xDoclet} ELCA -- ZH -- 2004, 'Xdoclet for more effective EJB development', Xdoclet Basic Idea and Homeinterface, Java, 2004
+>>>
+<<<
+xDoclet;@OP;attribute-oriented programming;generative programming;special annotations;
+>>>
+
+<<<
+Code Generation Framework for Grid Development
+>>>
+<<<
+D:/attr/XDoclet/XDcolet app/Code Generation Framework for  Grid Development
+>>>
+<<<
+Generativny framework pre nejaky grid, ktory najprv vyuziva Velocity na vygenerovanie zdrojov ktore su anotovane XDocletom, ktore nasledne spracuje na vytvorenie finalnej applickacie.
+>>>
+<<<
+\cite{xdocletgenFramework}
+
+\bibitem{xdocletgenFramework} Jiang, L.; Wang, R. \& Wang, H. (2006), 'Code Generation Framework for Grid Development', in The Journal of China Universities of Posts and Telecommunications, vol. 13, no. 2, June 2006, pp. 39--42
+>>>
+<<<
+XDoclet;Java annotations;metaprogramming;annotations application;special annotations;generative programming;
+>>>
+
+<<<
+Overview of Literate and Elucidative Programming
+>>>
+<<<
+D:/attr/documentation/nosal_eluc_prog
+>>>
+<<<
+Moj prehlad.
+>>>
+<<<
+\cite{nosalElucScyr}
+
+\bibitem{nosalElucScyr} Nosá¾, M. (2012), 'Overview of Literate and Elucidative Programming', in SCYR 2012: Proceedings from conference: 12th Scientific Conference of Young Researchers, May 15th, 2012, Her¾any, Slovakia, Košice 2012
+>>>
+<<<
+elucidative programming;documentation programming;documentation;
+>>>
+

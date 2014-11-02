@@ -1,0 +1,8 @@
+* zobrazovanie poznamok priamo pri prechadzani
+* relativna cesta
+otvaranie pdfiek priamo cez toto nech netreba hladat, nie len pdf ale cokolvek
+* sledovanie pouzitia pre potreby pisania
+* sledovanie zmien v poznámkach cez observer pattern
+listovatelny zoznam, nie len scroll, prepinanie mozne (listovatelny resp strankovatelny, stranka s napr. 10 polozkami)
+xxx opravit close aby som si neprepisal existujuce poznamky -- pytat sa aj pri klasickom sejve ze existuje uz subor?
+* otvarat viacero dialogov.. ale mozno by sa dal spravit cisto prezeraci mod

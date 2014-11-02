@@ -1,6 +1,5 @@
 package easynotes.model.abstractModel;
 
-import annotations.Unique;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -28,7 +27,6 @@ public final class Note extends Observable implements Comparable<Note> {
     
     private String text;
     
-    @Unique
     private String publicationID;
     
     private String citation;

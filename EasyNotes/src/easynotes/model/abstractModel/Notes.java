@@ -1,6 +1,5 @@
 package easynotes.model.abstractModel;
 
-import annotations.NonNull;
 import java.util.*;
 
 /**
@@ -13,7 +12,7 @@ public final class Notes extends Observable {
 
     private List<Note> notes;
     
-    public Notes(@NonNull List<Note> notes) {
+    public Notes(List<Note> notes) {
         this.setNotes(notes);
     }
     
@@ -38,7 +37,7 @@ public final class Notes extends Observable {
         return new ArrayList<>(this.notes);
     }
     
-    public void setNotes(@NonNull List<Note> notes) {
+    public void setNotes(List<Note> notes) {
         this.notes = notes;
         this.setChanged();
         this.notifyObservers(new Note.ChangeEvent(Note.ChangeEventType.NOTES_LOADED, null));

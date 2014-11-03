@@ -13,8 +13,8 @@ import java.util.Arrays;
 public class NoteDialog extends javax.swing.JDialog {
 
     private Note note;
-    private NotePanel<EditLinksPanel> notePanel;
-    private EditingNotesCallbacks callback;
+    private final NotePanel<EditLinksPanel> notePanel;
+    private final EditingNotesCallbacks callback;
 
     /**
      * Creates new form NoteDialog
@@ -121,7 +121,7 @@ public class NoteDialog extends javax.swing.JDialog {
             if(!Arrays.equals(note.getLinks(), newNote.getLinks())) {
                 note.setLinks(Arrays.asList(newNote.getLinks()));
             }
-            this.callback.noteEdited();
+            this.callback.noteEdited(note);
         } else {
             this.callback.newNoteCreated(newNote);
         }

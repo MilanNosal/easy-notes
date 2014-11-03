@@ -8,9 +8,9 @@ import java.util.*;
 public abstract class NotesViewModel implements Observer {
 
     private final Notes notes;
-    private List<Note> notesToShow = new LinkedList<>();
-    private String[] columnNames = new String[]{"Title", "Tags"}; //, "Text"};
-    private FiltersManager filterManager;
+    private final List<Note> notesToShow = new LinkedList<>();
+    private final String[] columnNames = new String[]{"Title", "Tags"}; //, "Text"};
+    private final FiltersManager filterManager;
 
     public NotesViewModel(Notes notes, FiltersManager filtersManager) {
         this.filterManager = filtersManager;
@@ -42,7 +42,7 @@ public abstract class NotesViewModel implements Observer {
     }
 
     public String getColumnName(int col) {
-        return columnNames[col].toString();
+        return columnNames[col];
     }
 
     public int getRowCount() {
@@ -61,7 +61,7 @@ public abstract class NotesViewModel implements Observer {
                 StringBuilder sb = new StringBuilder();
                 for (String tag : notesToShow.get(rowIndex).getTags()) {
                     sb.append(tag);
-                    sb.append(";");
+                    sb.append(Note.DELIM);
                 }
                 return sb.toString();
 //            case 2:
@@ -74,7 +74,7 @@ public abstract class NotesViewModel implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         if((o instanceof Notes || o instanceof Note) && arg instanceof Note.ChangeEvent) {
-            Note.ChangeEvent evt = (Note.ChangeEvent)arg;
+            Note.ChangeEvent evt = (Note.ChangeEvent) arg;
             switch(evt.getChangeType()) {
                 case NOTES_LOADED:
                     setObservables();
@@ -87,6 +87,7 @@ public abstract class NotesViewModel implements Observer {
                     updateView();
                     break;
                 case NOTE_DELETED:
+                    evt.getObjectOfChange().deleteObserver(this);
                     updateView();
                     break;
                 case TAG_ADDED:

@@ -3,9 +3,6 @@ package easynotes.model.abstractModel;
 import java.util.*;
 
 /**
- * Trieda Notes manazuje objekty triedy Note, stara sa aj o propagaciu 
- * udalosti z manazovanych poznamok. To znamena, ze staci sledovat udalosti
- * z tohto Observable.
  * @author Milan
  */
 public final class Notes extends Observable {
@@ -38,6 +35,9 @@ public final class Notes extends Observable {
     }
     
     public void setNotes(List<Note> notes) {
+        if (this.notes != null && !this.notes.isEmpty()) {
+            clearNotes();
+        }
         this.notes = notes;
         this.setChanged();
         this.notifyObservers(new Note.ChangeEvent(Note.ChangeEventType.NOTES_LOADED, null));

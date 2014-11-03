@@ -13,7 +13,7 @@ import javax.swing.JScrollPane;
 
 public class NotePanel<T extends LinksPanel> extends JPanel {
 
-    private DynamicCollectionPanel<T> linksCollection;
+    private final DynamicCollectionPanel<T> linksCollection;
 
     /**
      * Creates new form NotePanel

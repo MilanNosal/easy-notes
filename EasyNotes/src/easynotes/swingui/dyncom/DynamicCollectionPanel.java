@@ -8,12 +8,12 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class DynamicCollectionPanel<T extends Component> extends JPanel {
-    private JPanel content = new JPanel();
-    private LinkedList<T> collection = new LinkedList<>();
-    private JButton addButton = new JButton("+");
-    private JButton removeButton = new JButton("-");
-    private PanelsFactory<T> factory;
+public class DynamicCollectionPanel<T extends IsJComponent> extends JPanel {
+    private final JPanel content = new JPanel();
+    private final LinkedList<T> collection = new LinkedList<>();
+    private final JButton addButton = new JButton("+");
+    private final JButton removeButton = new JButton("-");
+    private final PanelsFactory<T> factory;
 
     public DynamicCollectionPanel(PanelsFactory<T> factory) {
         this.factory = factory;
@@ -48,7 +48,7 @@ public class DynamicCollectionPanel<T extends Component> extends JPanel {
     public T pushItem() {
         T newPanel = this.factory.getNewInstance();
         this.collection.push(newPanel);
-        this.content.add(newPanel.getComponent());
+        this.content.add(newPanel.asJComponent());
         this.revalidate();
         return newPanel;
     }
@@ -58,7 +58,7 @@ public class DynamicCollectionPanel<T extends Component> extends JPanel {
             return null;
         }
         T removedPanel = this.collection.pop();
-        this.content.remove(removedPanel.getComponent());
+        this.content.remove(removedPanel.asJComponent());
         this.revalidate();
         return removedPanel;
     }

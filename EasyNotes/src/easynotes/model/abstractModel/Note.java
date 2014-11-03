@@ -23,7 +23,7 @@ public final class Note extends Observable implements Comparable<Note> {
     
     private String title;
     
-    private List<String> links = new LinkedList<>();
+    private final List<String> links = new LinkedList<>();
     
     private String text;
     
@@ -202,11 +202,7 @@ public final class Note extends Observable implements Comparable<Note> {
     
     @Override
     public boolean equals(Object o) {
-        if(o instanceof Note && ((Note)o).getPublicationID().equals(this.getPublicationID())) {
-            return true;
-        } else {
-            return false;
-        }
+        return (o instanceof Note && ((Note)o).getPublicationID().equals(this.getPublicationID()));
     }
 
     @Override
@@ -215,8 +211,8 @@ public final class Note extends Observable implements Comparable<Note> {
     }
     
     public static class ChangeEvent {
-        private ChangeEventType changeType;
-        private Note objectOfChange;
+        private final ChangeEventType changeType;
+        private final Note objectOfChange;
 
         public ChangeEvent(ChangeEventType changeType, Note objectOfChange) {
             this.changeType = changeType;

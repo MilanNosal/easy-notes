@@ -17,7 +17,7 @@ import java.util.List;
  */
 public final class FiltersManager {
     
-    private List<AbstractNotesFilter> availableFilters = new ArrayList<>();
+    private final List<AbstractNotesFilter> availableFilters = new ArrayList<>();
 
     public FiltersManager() {
         addNotesFilter(new TagsFilter());

@@ -154,6 +154,7 @@ public class FilePersistenceManager {
         }
         
         notes.setNotes(new ArrayList<>(loadedNotes));
+        // TODO: nemal by som tu naviazat observer aj na nacitane notes?
     }
 
     public boolean isSaveNecessary() {

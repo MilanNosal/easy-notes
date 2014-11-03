@@ -264,8 +264,8 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         countLabel.setText("jLabel1");
 
         searchField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                searchFieldKeyPressed(evt);
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchFieldKeyReleased(evt);
             }
         });
 
@@ -532,13 +532,14 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
     }//GEN-LAST:event_editNoteMenuItemActionPerformed
 
     @Override
-    public void noteEdited() {
+    public void noteEdited(Note note) {
         refreshCurrentNote();
     }
 
     private void deleteNoteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteNoteMenuItemActionPerformed
         if (currentlyChosenNote != null) {
-            int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Do you really want to delete note?", "Deletion", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+            int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Do you really want to delete note \"" 
+                    + currentlyChosenNote.getTitle() + "\"?", "Deletion", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
             if (answer == JOptionPane.YES_OPTION) {
                 notes.removeNote(currentlyChosenNote);
                 setCurrentNote(null);
@@ -546,10 +547,10 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }//GEN-LAST:event_deleteNoteMenuItemActionPerformed
 
-    private void searchFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchFieldKeyPressed
+    private void searchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchFieldKeyReleased
         this.currentFilter.setCriterion(this.searchField.getText());
-        updateTable();        
-    }//GEN-LAST:event_searchFieldKeyPressed
+        updateTable();
+    }//GEN-LAST:event_searchFieldKeyReleased
 
     private void updateTable() {
         this.tableModel.updateView();

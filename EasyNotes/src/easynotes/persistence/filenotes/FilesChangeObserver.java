@@ -14,7 +14,7 @@ public class FilesChangeObserver implements Observer {
     
     private boolean modified = false;
     
-    private Notes notes;
+    private final Notes notes;
     
     public FilesChangeObserver(Notes notes) {
         this.notes = notes;
@@ -38,6 +38,7 @@ public class FilesChangeObserver implements Observer {
                     this.modified = true;
                     break;
                 case NOTE_DELETED:
+                    event.getObjectOfChange().deleteObserver(this);
                     this.modified = true;
                     break;
                 case TAG_ADDED:

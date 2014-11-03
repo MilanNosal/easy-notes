@@ -18,6 +18,7 @@ public abstract class AbstractNotesFilter {
     
     public void deactivate() {
         this.active = false;
+        this.setCriterion("");
     }
     
     public boolean isActive() {

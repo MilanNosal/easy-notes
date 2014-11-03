@@ -7,7 +7,7 @@ import easynotes.model.filters.AbstractSimpleNotesFilter;
  *
  * @author Milan
  */
-public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter{
+public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter {
 
     public SimpleAttributeFilter(String id) {
         super(id);
@@ -21,9 +21,6 @@ public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter{
         if(criterion == null || criterion.equals("")) {
             return true;
         }
-        if(getAttributeOfInterest(note).toLowerCase().contains(criterion)) {
-            return true;
-        }
-        return false;
+        return (getAttributeOfInterest(note).toLowerCase().contains(criterion));
     }
 }

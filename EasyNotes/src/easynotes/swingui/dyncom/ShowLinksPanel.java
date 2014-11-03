@@ -27,7 +27,7 @@ public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
     }
     
     @Override
-    public JComponent getComponent() {
+    public JComponent asJComponent() {
         return this;
     }
     

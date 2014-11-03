@@ -18,12 +18,19 @@ public class NotePanel<T extends LinksPanel> extends JPanel {
     /**
      * Creates new form NotePanel
      */
-    public NotePanel(PanelsFactory<T> factory) {
+    public NotePanel(PanelsFactory<T> factory, boolean editable) {
         initComponents();
         linksCollection = new DynamicCollectionPanel<>(factory);
         JScrollPane linksPane = new JScrollPane();
         linksPane.setViewportView(linksCollection);
         linksPanel.add(linksPane);
+
+        this.titleField.setEditable(editable);
+        this.pubIDField.setEditable(editable);
+        this.textArea.setEditable(editable);
+        this.citationArea.setEditable(editable);
+        this.tagsArea.setEditable(editable);
+        this.linksCollection.setEditable(editable);
     }
 
     public void setNote(Note note) {

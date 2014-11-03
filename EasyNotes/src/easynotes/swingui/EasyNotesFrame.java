@@ -59,7 +59,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
 
         UIManager.put("PopupMenu.border", BorderFactory.createLineBorder(Color.black));
 
-        this.notePanel = new NotePanel<>(ShowLinksPanel.ShowLinksPanelFactory.getFactory());
+        this.notePanel = new NotePanel<>(ShowLinksPanel.ShowLinksPanelFactory.getFactory(), false);
         this.notePanelContainer.setLayout(new javax.swing.BoxLayout(this.notePanelContainer, javax.swing.BoxLayout.LINE_AXIS));
         this.notePanelContainer.add(this.notePanel);
         this.notePanelContainer.setBackground(Color.WHITE);
@@ -224,6 +224,8 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
             notePanelContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 346, Short.MAX_VALUE)
         );
+
+        citation.setEditable(false);
 
         jLabel5.setText("Cite as:");
 

@@ -22,7 +22,7 @@ public class NoteDialog extends javax.swing.JDialog {
     public NoteDialog(java.awt.Frame parent, EditingNotesCallbacks callback, Note note) {
         super(parent, false);
         this.callback = callback;
-        this.notePanel = new NotePanel<>(EditLinksPanel.EditLinksPanelFactory.getInstance());
+        this.notePanel = new NotePanel<>(EditLinksPanel.EditLinksPanelFactory.getInstance(), true);
         initComponents();
         if (note != null) {
             this.note = note;

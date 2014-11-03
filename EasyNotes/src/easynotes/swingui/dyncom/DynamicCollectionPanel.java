@@ -45,6 +45,11 @@ public class DynamicCollectionPanel<T extends IsJComponent> extends JPanel {
         });
     }
     
+    public void setEditable(boolean editable) {
+        this.addButton.setEnabled(editable);
+        this.removeButton.setEnabled(editable);
+    }
+    
     public T pushItem() {
         T newPanel = this.factory.getNewInstance();
         this.collection.push(newPanel);

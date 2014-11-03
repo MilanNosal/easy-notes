@@ -58,6 +58,7 @@ public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
         setBackground(EasyNotesFrame.bckgColour);
         setBorder(javax.swing.BorderFactory.createLineBorder(EasyNotesFrame.bckgColour));
 
+        link.setEditable(false);
         link.setBorder(null);
         link.setMaximumSize(new java.awt.Dimension(2147483647, 14));
 

@@ -1,5 +1,10 @@
 package easynotes.swingui.dyncom;
 
+import easynotes.concerns.NoteEditing;
+import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.SwingUI;
+import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.WorkingWithFiles;
 import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,21 +16,25 @@ import javax.swing.filechooser.FileFilter;
  *
  * @author Milan
  */
+@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
+@NotesPresentation(task = NotesPresentation.Task.LINKS)
+@NoteEditing
 public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
+    @WorkingWithFiles
     private final static JFileChooser fc = new JFileChooser();
     private final static Set<String> supportedExts = new HashSet<>();
-    
+
     static {
         supportedExts.add(".pdf");
         supportedExts.add(".html");
-        
+
         fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
         fc.setCurrentDirectory(new File("."));
         fc.setFileFilter(new FileFilter() {
             @Override
             public boolean accept(File f) {
-                if(f.isDirectory()) {
+                if (f.isDirectory()) {
                     return true;
                 }
                 int index = f.getAbsolutePath().lastIndexOf(".");
@@ -37,14 +46,14 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
                 }
                 return false;
             }
-            
+
             @Override
             public String getDescription() {
                 return "documents";
             }
         });
     }
-    
+
     /**
      * Creates new form EditLinksPanel
      */
@@ -94,6 +103,7 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
         int returnVal = fc.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -101,15 +111,16 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         }
     }//GEN-LAST:event_searchButtonActionPerformed
 
+    @WorkingWithFiles
     private String getRelativePath(File file) {
         String path = file.getAbsolutePath();
         String currentPath = (new File("")).getAbsolutePath();
-        if(path.startsWith(currentPath)) {
+        if (path.startsWith(currentPath)) {
             path = path.replace(currentPath + System.getProperty("file.separator"), "");
         }
         return path;
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField link;
     private javax.swing.JButton openButton;
@@ -130,14 +141,15 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
     public JComponent asJComponent() {
         return this;
     }
-    
+
+    @VariableSubpanels(VariableSubpanels.Role.FACTORY)
     public static class EditLinksPanelFactory implements PanelsFactory<EditLinksPanel> {
 
         @Override
         public EditLinksPanel getNewInstance() {
             return new EditLinksPanel();
         }
-        
+
         public static EditLinksPanel.EditLinksPanelFactory getInstance() {
             return new EditLinksPanel.EditLinksPanelFactory();
         }

@@ -1,8 +1,10 @@
 package easynotes.model.filters;
 
+import easynotes.concerns.Filtering;
 import easynotes.model.abstractModel.Note;
 import java.util.Objects;
 
+@Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
 public abstract class AbstractNotesFilter {
     
     private final String id;

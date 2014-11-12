@@ -1,6 +1,11 @@
 package easynotes.persistence.filenotes;
 
 import easynotes.Configuration;
+import easynotes.concerns.ModelModificationHandling;
+import easynotes.concerns.NoteEventHandling;
+import easynotes.concerns.NotesLifecycle;
+import easynotes.concerns.NotesPersistenceFormat;
+import easynotes.concerns.WorkingWithFiles;
 import easynotes.model.abstractModel.Note;
 import static easynotes.model.abstractModel.Note.DELIM;
 import easynotes.model.abstractModel.Notes;
@@ -22,13 +27,18 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
 
+@NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
 public class FilePersistenceManager {
     
     private final Notes notes;
+    
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     private FilesChangeObserver observer;
     
+    @WorkingWithFiles
     private File source = null;
     public static final String EXTENSION = ".note";
+    @WorkingWithFiles
     private final JFileChooser fcNotes = new JFileChooser();
     
     public FilePersistenceManager(Notes notes) {
@@ -66,6 +76,7 @@ public class FilePersistenceManager {
         this.source = source;
     }
     
+    @WorkingWithFiles
     public boolean setSource() throws NotesException {
         int returnVal = fcNotes.showOpenDialog(null);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -81,6 +92,8 @@ public class FilePersistenceManager {
         return false;
     }
 
+    @NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
+    @WorkingWithFiles
     public void saveNotes() throws NotesException {        
         if (source == null && !setSource()) {
             return;
@@ -115,6 +128,8 @@ public class FilePersistenceManager {
         }
     }
 
+    @WorkingWithFiles
+    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
     public void loadNotes() throws NotesException {
         if (!setSource()) {
             return;
@@ -157,6 +172,7 @@ public class FilePersistenceManager {
         // TODO: nemal by som tu naviazat observer aj na nacitane notes?
     }
 
+    @ModelModificationHandling
     public boolean isSaveNecessary() {
         return observer.areNotesModified();
     }
@@ -165,6 +181,9 @@ public class FilePersistenceManager {
         return (source == null) ? "No file" : source.getName();
     }
     
+    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+    @NotesPersistenceFormat
+    @WorkingWithFiles
     private Note readNote(BufferedReader br) throws IOException {
         String readTitle = readNextSigLine(br);
         if(readTitle==null) {
@@ -209,6 +228,8 @@ public class FilePersistenceManager {
         return new Note(readTitle, links, readText, readPublicationID, readCitation, tags);
     }
     
+    @NotesPersistenceFormat
+    @WorkingWithFiles
     private String readNextSigLine(BufferedReader br) throws IOException {
         String line = br.readLine();
         while (line != null && line.equals("") && !line.startsWith("<<<")) {
@@ -228,6 +249,7 @@ public class FilePersistenceManager {
         return null;
     }
     
+    @NotesPersistenceFormat
     private String serializeNote(Note note) {
 
         StringBuilder builder = new StringBuilder();

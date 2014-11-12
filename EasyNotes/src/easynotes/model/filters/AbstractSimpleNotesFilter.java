@@ -1,7 +1,9 @@
 package easynotes.model.filters;
 
+import easynotes.concerns.Filtering;
 import easynotes.model.abstractModel.Note;
 
+@Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
 public abstract class AbstractSimpleNotesFilter extends AbstractNotesFilter {
     private String criterion = "";
 

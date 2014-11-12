@@ -1,5 +1,12 @@
 package easynotes.swingui;
 
+import easynotes.concerns.Filtering;
+import easynotes.concerns.NoteEditing;
+import easynotes.concerns.NotesController;
+import easynotes.concerns.NotesLifecycle;
+import easynotes.concerns.NotesModel;
+import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.SwingUI;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.abstractModel.Notes;
 import easynotes.model.abstractModel.NotesException;
@@ -22,12 +29,23 @@ import javax.swing.event.ListSelectionListener;
 
 public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCallbacks {
 
+    @NotesPresentation(task = NotesPresentation.Task.LIST_PRESENTATION)
     private NotesTableModel tableModel;
+
+    @NotesModel
     private Notes notes;
+
+    @NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
     private FilePersistenceManager persistenceManager;
+
+    @NotesPresentation(task = NotesPresentation.Task.NOTE_PRESENTATION)
     private NotePanel<ShowLinksPanel> notePanel;
+
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     private FiltersManager filtersManager;
     private AbstractNotesFilter currentFilter;
+
+    @NotesController
     private Note currentlyChosenNote;
     public static Color bckgColour = new Color(67, 65, 53);
     public static Color bckg2Colour = new Color(212, 208, 200);
@@ -108,6 +126,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         updateTable();
     }
 
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     private void refreshFilter() {
         this.currentFilter.deactivate();
         this.currentFilter = this.filtersManager.getFilter((String) this.filtersComboBox.getSelectedItem());
@@ -116,6 +135,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         updateTable();
     }
 
+    @NotesPresentation(task = NotesPresentation.Task.NOTE_PRESENTATION)
     private void refreshCurrentNote() {
         int index = EasyNotesFrame.this.notesTable.getSelectedRow();
         if (index == -1) {
@@ -444,6 +464,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void runDirMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runDirMenuItemActionPerformed
 
         // TODO skontrolovat ci to je dobre, nie som si isty workflowom
@@ -469,6 +490,8 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         nd.setVisible(true);
     }//GEN-LAST:event_newNoteMenuItemActionPerformed
 
+    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+    @NoteEditing
     @Override
     public void newNoteCreated(Note newNote) {
         if (newNote != null) {
@@ -480,6 +503,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void persistMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_persistMenuItemActionPerformed
         if (persistenceManager.isSaveNecessary()) {
             try {
@@ -494,6 +518,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }//GEN-LAST:event_persistMenuItemActionPerformed
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void clearMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearMenuItemActionPerformed
         if (persistenceManager.isSaveNecessary()) {
             int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Notes have changed since the last persisting,"
@@ -512,11 +537,13 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         updateTable();
     }//GEN-LAST:event_clearMenuItemActionPerformed
 
+    @SwingUI(SwingUI.Role.SYSTEM_HOOK)
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
         WindowEvent wev = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
         Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(wev);
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void saveNotesAsItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveNotesAsItemActionPerformed
         try {
             persistenceManager.setSource(null);
@@ -526,6 +553,7 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }//GEN-LAST:event_saveNotesAsItemActionPerformed
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void editNoteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editNoteMenuItemActionPerformed
         if (currentlyChosenNote != null) {
             NoteDialog nd = new NoteDialog(this, this, currentlyChosenNote);
@@ -533,14 +561,16 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }//GEN-LAST:event_editNoteMenuItemActionPerformed
 
+    @NoteEditing
     @Override
     public void noteEdited(Note note) {
         refreshCurrentNote();
     }
 
+    @SwingUI(SwingUI.Role.OPERATION)
     private void deleteNoteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteNoteMenuItemActionPerformed
         if (currentlyChosenNote != null) {
-            int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Do you really want to delete note \"" 
+            int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Do you really want to delete note \""
                     + currentlyChosenNote.getTitle() + "\"?", "Deletion", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
             if (answer == JOptionPane.YES_OPTION) {
                 notes.removeNote(currentlyChosenNote);
@@ -549,20 +579,25 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
     }//GEN-LAST:event_deleteNoteMenuItemActionPerformed
 
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
+    @NotesPresentation(task = NotesPresentation.Task.FILTERING)
     private void searchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchFieldKeyReleased
         this.currentFilter.setCriterion(this.searchField.getText());
         updateTable();
     }//GEN-LAST:event_searchFieldKeyReleased
 
+    @NotesPresentation(task = NotesPresentation.Task.LIST_PRESENTATION)
+    @NotesController
     private void updateTable() {
         this.tableModel.updateView();
         this.notesTable.repaint();
         countLabel.setText("Count: " + tableModel.getRowCount());
     }
-    
+
     /**
      * @param args the command line arguments
      */
+    @SwingUI(SwingUI.Role.START_UP)
     public static void main(String args[]) {
         /*
          * Set the Nimbus look and feel
@@ -583,7 +618,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         /*
          * Create and display the form
          */
-
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {

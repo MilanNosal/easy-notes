@@ -1,5 +1,7 @@
 package easynotes.model.filters.concrete;
 
+import easynotes.concerns.Filtering;
+import easynotes.concerns.Links;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.AbstractSimpleNotesFilter;
 
@@ -7,6 +9,8 @@ import easynotes.model.filters.AbstractSimpleNotesFilter;
  *
  * @author Milan
  */
+@Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
+@Links
 public class LinksFilter extends AbstractSimpleNotesFilter {
 
     public LinksFilter() {

@@ -1,5 +1,7 @@
 package easynotes.model.filters;
 
+import easynotes.concerns.Filtering;
+import easynotes.concerns.NotesController;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.concrete.CitationFilter;
 import easynotes.model.filters.concrete.LinksFilter;
@@ -15,6 +17,8 @@ import java.util.List;
  *
  * @author Milan
  */
+@Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
+@NotesController
 public final class FiltersManager {
     
     private final List<AbstractNotesFilter> availableFilters = new ArrayList<>();
@@ -33,6 +37,7 @@ public final class FiltersManager {
      * Ordered list.
      * @return 
      */
+    @NotesController
     public String[] getFilterIdentifiers() {
         String[] retVal = new String[availableFilters.size()];
         int i = 0;

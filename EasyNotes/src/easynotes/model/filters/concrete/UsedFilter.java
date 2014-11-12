@@ -1,8 +1,10 @@
 package easynotes.model.filters.concrete;
 
+import easynotes.concerns.Filtering;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.AbstractNotesFilter;
 
+@Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
 public class UsedFilter extends AbstractNotesFilter {
 
     public UsedFilter() {

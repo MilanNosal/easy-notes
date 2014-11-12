@@ -1,15 +1,23 @@
 package easynotes.model;
 
+import easynotes.concerns.Filtering;
+import easynotes.concerns.NoteEventHandling;
+import easynotes.concerns.NotesController;
+import easynotes.concerns.NotesModel;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.abstractModel.Notes;
 import easynotes.model.filters.FiltersManager;
 import java.util.*;
 
+@NotesModel
+@NotesController
 public abstract class NotesViewModel implements Observer {
 
     private final Notes notes;
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     private final List<Note> notesToShow = new LinkedList<>();
     private final String[] columnNames = new String[]{"Title", "Tags"}; //, "Text"};
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     private final FiltersManager filterManager;
 
     public NotesViewModel(Notes notes, FiltersManager filtersManager) {
@@ -18,6 +26,7 @@ public abstract class NotesViewModel implements Observer {
         setObservables();
     }
     
+    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     public FiltersManager getFiltersManager() {
         return this.filterManager;
     }
@@ -30,6 +39,7 @@ public abstract class NotesViewModel implements Observer {
         return this.notesToShow.indexOf(note);
     }
 
+    @NotesController
     public void updateView() {
         this.notesToShow.clear();
         for (Note note : notes.getNotes()) {
@@ -71,6 +81,7 @@ public abstract class NotesViewModel implements Observer {
         }
     }
 
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     @Override
     public void update(Observable o, Object arg) {
         if((o instanceof Notes || o instanceof Note) && arg instanceof Note.ChangeEvent) {
@@ -110,6 +121,7 @@ public abstract class NotesViewModel implements Observer {
         }
     }
     
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     private void setObservables() {
         this.notes.addObserver(this);
         for(Note note : this.notes.getNotes()) {

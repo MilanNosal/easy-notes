@@ -1,8 +1,12 @@
 package easynotes.model.filters.concrete;
 
+import easynotes.concerns.Filtering;
+import easynotes.concerns.Tagging;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.AbstractSimpleNotesFilter;
 
+@Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
+@Tagging
 public class TagsFilter extends AbstractSimpleNotesFilter {
 
     public TagsFilter() {

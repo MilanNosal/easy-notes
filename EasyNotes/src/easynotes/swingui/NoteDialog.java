@@ -1,5 +1,7 @@
 package easynotes.swingui;
 
+import easynotes.concerns.NoteEditing;
+import easynotes.concerns.NotesPresentation;
 import easynotes.model.abstractModel.Note;
 import easynotes.swingui.dyncom.EditLinksPanel;
 import java.awt.event.WindowAdapter;
@@ -10,6 +12,7 @@ import java.util.Arrays;
  *
  * @author Milan
  */
+@NotesPresentation(task = NotesPresentation.Task.NOTE_EDITING)
 public class NoteDialog extends javax.swing.JDialog {
 
     private Note note;
@@ -100,6 +103,7 @@ public class NoteDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    @NoteEditing
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         Note newNote = this.notePanel.getNote();
         if (this.note != null) {

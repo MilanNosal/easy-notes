@@ -1,10 +1,13 @@
 package easynotes.model.abstractModel;
 
+import easynotes.concerns.Sorting;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+@Sorting
 public class UTFStringComparator implements Comparator<String> {
+
     static final HashMap<Character, Integer> chars = new LinkedHashMap<>();
 
     static {
@@ -24,8 +27,6 @@ public class UTFStringComparator implements Comparator<String> {
         chars.put('7', 9);
         chars.put('8', 10);
         chars.put('9', 11);
-
-
 
         chars.put('a', 18);
         chars.put('A', 18);
@@ -72,7 +73,6 @@ public class UTFStringComparator implements Comparator<String> {
         chars.put('ľ', 200);
         chars.put('Ľ', 200);
 
-
         chars.put('m', 210);
         chars.put('M', 210);
         chars.put('n', 220);
@@ -85,7 +85,6 @@ public class UTFStringComparator implements Comparator<String> {
         chars.put('Ó', 250);
         chars.put('Ô', 260);
         chars.put('ô', 260);
-
 
         chars.put('p', 270);
         chars.put('P', 270);
@@ -134,25 +133,25 @@ public class UTFStringComparator implements Comparator<String> {
         Integer fir = chars.get(first);
         Integer sec = chars.get(second);
 
-        while ((fir-sec)==0) {
+        while ((fir - sec) == 0) {
 
             i++;
             j++;
 
-            if(o1.length()<=i) {
+            if (o1.length() <= i) {
                 return -1;
-            } else if(o2.length()<=j) {
+            } else if (o2.length() <= j) {
                 return 1;
             }
 
-            if(o1.length()>(i+1) && "ch".equalsIgnoreCase(o1.substring(i, i+2))) {
+            if (o1.length() > (i + 1) && "ch".equalsIgnoreCase(o1.substring(i, i + 2))) {
                 // riesime 'ch' pre prvy retazec
                 first = '\\';
                 i++;
             } else {
                 first = o1.charAt(i);
             }
-            if(o2.length()>(j+1) && "ch".equalsIgnoreCase(o2.substring(j, j+2))) {
+            if (o2.length() > (j + 1) && "ch".equalsIgnoreCase(o2.substring(j, j + 2))) {
                 // riesime 'ch' pre druhy retazec
                 second = '\\';
                 j++;
@@ -161,10 +160,10 @@ public class UTFStringComparator implements Comparator<String> {
             }
             fir = chars.get(first);
             sec = chars.get(second);
-            if(fir==null) {
+            if (fir == null) {
                 fir = 0;
             }
-            if(sec==null) {
+            if (sec == null) {
                 sec = 0;
             }
         }

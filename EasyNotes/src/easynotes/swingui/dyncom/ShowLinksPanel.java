@@ -1,5 +1,8 @@
 package easynotes.swingui.dyncom;
 
+import easynotes.concerns.Links;
+import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.VariableSubpanels;
 import easynotes.swingui.EasyNotesFrame;
 import javax.swing.JComponent;
 
@@ -7,6 +10,9 @@ import javax.swing.JComponent;
  *
  * @author Milan
  */
+@Links
+@NotesPresentation(task = NotesPresentation.Task.LINKS)
+@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
 public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
     /**
@@ -31,6 +37,7 @@ public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
         return this;
     }
     
+    @VariableSubpanels(VariableSubpanels.Role.FACTORY)
     public static class ShowLinksPanelFactory implements PanelsFactory<ShowLinksPanel> {
 
         @Override

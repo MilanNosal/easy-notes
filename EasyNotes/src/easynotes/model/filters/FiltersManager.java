@@ -9,6 +9,7 @@ import easynotes.model.filters.concrete.PublicationIDFilter;
 import easynotes.model.filters.concrete.TagsFilter;
 import easynotes.model.filters.concrete.TextFilter;
 import easynotes.model.filters.concrete.TitleFilter;
+import easynotes.model.filters.concrete.TitleTextFilter;
 import easynotes.model.filters.concrete.UsedFilter;
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +32,7 @@ public final class FiltersManager {
         addNotesFilter(new LinksFilter());
         addNotesFilter(new PublicationIDFilter());
         addNotesFilter(new UsedFilter());
+        addNotesFilter(new TitleTextFilter());
     }
     
     /**

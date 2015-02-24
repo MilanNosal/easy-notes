@@ -479,7 +479,9 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         }
         try {
             persistenceManager.loadNotes();
-            countLabel.setText("Count: " + tableModel.getRowCount());
+            EasyNotesFrame.this.refreshFilter();
+            //updateTable();
+            //countLabel.setText("Count: " + tableModel.getRowCount());
         } catch (NotesException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }

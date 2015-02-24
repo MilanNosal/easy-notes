@@ -1,0 +1,19 @@
+Predpoklad:
+    - clovek si pri chapani cudzieho (aj vlastneho) zdrojoveho kodu stavia mentalny model kodu
+        - tento model funguje na osi dizajnovej a na osi semantickej v ramci domeny
+            - os kod - dizajn (struktura) - domena
+            - zmeny v kode sa snazi takto preniest, vie co chce v domene, ak ma zobrazenie z domeny do struktury tak vie co v strukture zmenit, a poteubje este najst kod, ktory implementuje danu strukturu (dizajnove rozhodnutie, vzor, ...)
+        - snazi sa kod si namapovat na zname (pre neho) dizajnove rozhodnutia a vzory, a taktiez na domenove prvky (kocenpty ale aj procesy)
+            - toto je podla mna mentalny model kodu
+        - mentalny model nie je staticky
+            - clovek svoje zobrazenie stavia vyslovovanim hypotez (napr. tento kod sleduje zmenu faktury)
+            - aj ked ich nevnima ako hypotezy, tak dalsim studovanim kodu (statickym aj dynamickym) tieto hypotezy v podstate podrobuje overovaniu
+  
+
+    
+    - pri zlozitejsich kodoch si vytvara poznamky, kde si zaznamenava toto zobrazenie
+        - zaznamenava si to vsak zvycajne externe, pretoze chce pohlad big picture a nie len useky kodu
+        - zobrazenie ako take pouziva na zmeny - to pre to, ze chce cestu domena -> struktura -> kod, a potrebuje najprv separatne strukturu a potom az kod, kod je detailnejsi
+        - predpoklad - ak by si dokazal poznamky robit interne, avsak zobrazit ich externe, tak by to pre neho bolo vyhodnejsie (resp aj naopak, ale aby prepojenie struktura -> kod bolo formalne)
+
+

@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-@Misc(Misc.Type.UTILITIES)
+@Misc("Utilities")
 @WorkingWithFiles
 public abstract class AutoFileCloser {
     // the core action code that the implementer wants to run

@@ -3,8 +3,13 @@ package easynotes.persistence.filenotes;
 import easynotes.Configuration;
 import easynotes.concerns.ModelModificationHandling;
 import easynotes.concerns.NoteEventHandling;
-import easynotes.concerns.NotesLifecycle;
+import easynotes.concerns.NotesDataModel;
+import easynotes.concerns.NotesLoading;
 import easynotes.concerns.NotesPersistenceFormat;
+import easynotes.concerns.NotesSaving;
+import easynotes.concerns.Persistence;
+import easynotes.concerns.TODO;
+import easynotes.concerns.UI;
 import easynotes.concerns.WorkingWithFiles;
 import easynotes.model.abstractModel.Note;
 import static easynotes.model.abstractModel.Note.DELIM;
@@ -27,20 +32,28 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
 
-@NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
+@Persistence
+@TODO("Refactor to remove GUI code (JFileChooser, JOptionPane).")
 public class FilePersistenceManager {
-    
+
+    @NotesDataModel
     private final Notes notes;
-    
+
     @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     private FilesChangeObserver observer;
-    
+
     @WorkingWithFiles
     private File source = null;
+
+    @easynotes.concerns.Configuration
     public static final String EXTENSION = ".note";
+
     @WorkingWithFiles
+    @UI
     private final JFileChooser fcNotes = new JFileChooser();
-    
+
+    @UI
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     public FilePersistenceManager(Notes notes) {
         this.notes = notes;
         observer = new FilesChangeObserver(notes);
@@ -71,11 +84,13 @@ public class FilePersistenceManager {
             }
         });
     }
-    
+
     public void setSource(File source) {
         this.source = source;
     }
-    
+
+    @UI
+    @NotesPersistenceFormat
     @WorkingWithFiles
     public boolean setSource() throws NotesException {
         int returnVal = fcNotes.showOpenDialog(null);
@@ -92,15 +107,17 @@ public class FilePersistenceManager {
         return false;
     }
 
-    @NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
+    @UI
     @WorkingWithFiles
-    public void saveNotes() throws NotesException {        
+    @NotesSaving
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
+    public void saveNotes() throws NotesException {
         if (source == null && !setSource()) {
             return;
         }
-        
+
         try {
-            if(source.exists()) {
+            if (source.exists()) {
                 int answer = JOptionPane.showConfirmDialog(null, "File " + source.getCanonicalPath()
                         + " exists. Do you want to overwrite it?", "Save", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
                 if (answer == JOptionPane.NO_OPTION) {
@@ -118,7 +135,7 @@ public class FilePersistenceManager {
                         bw.append(FilePersistenceManager.this.serializeNote(note));
                         bw.newLine();
                     }
-                    
+
                     bw.flush();
                 }
             };
@@ -129,16 +146,17 @@ public class FilePersistenceManager {
     }
 
     @WorkingWithFiles
-    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
+    @NotesLoading
     public void loadNotes() throws NotesException {
         if (!setSource()) {
             return;
         }
-        
-        if(!source.exists()) {
+
+        if (!source.exists()) {
             throw new NotesException("File " + source.getAbsolutePath() + " does not exist!");
         }
-        
+
         notes.clearNotes();
         observer.close();
         // Predchadzajuci riadok by mal invalidnut aj observera a tak vytvaram novy
@@ -157,7 +175,7 @@ public class FilePersistenceManager {
                     BufferedReader br = autoClose(new BufferedReader(reader));
 
                     Note loadedNote = readNote(br);
-                    
+
                     while (loadedNote != null) {
                         loadedNotes.add(loadedNote);
                         loadedNote = readNote(br);
@@ -167,69 +185,72 @@ public class FilePersistenceManager {
         } catch (IOException ioException) {
             throw new NotesException("Problem with reading from file " + source.getAbsolutePath() + ".", ioException);
         }
-        
+
         notes.setNotes(new ArrayList<>(loadedNotes));
         // TODO: nemal by som tu naviazat observer aj na nacitane notes?
     }
 
+    @NotesSaving
     @ModelModificationHandling
+    @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     public boolean isSaveNecessary() {
         return observer.areNotesModified();
     }
-    
+
     public String getDatabaseID() {
         return (source == null) ? "No file" : source.getName();
     }
-    
-    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+
     @NotesPersistenceFormat
     @WorkingWithFiles
+    @NotesLoading
     private Note readNote(BufferedReader br) throws IOException {
         String readTitle = readNextSigLine(br);
-        if(readTitle==null) {
+        if (readTitle == null) {
             return null;
         }
-        
+
         String readLink = readNextSigLine(br);
-        if(readLink==null) {
-            throw new IOException("Note \'"+readTitle+"\' is not terminated ");
+        if (readLink == null) {
+            throw new IOException("Note \'" + readTitle + "\' is not terminated ");
         }
-        
+
         StringTokenizer st = new StringTokenizer(readLink.trim(), DELIM);
         ArrayList<String> links = new ArrayList<>(st.countTokens());
-        while(st.hasMoreTokens()) {
+        while (st.hasMoreTokens()) {
             links.add(st.nextToken().trim());
         }
-        
+
         String readText = readNextSigLine(br);
-        if(readText==null) {
-            throw new IOException("Note \'"+readTitle+"\' is not terminated ");
+        if (readText == null) {
+            throw new IOException("Note \'" + readTitle + "\' is not terminated ");
         }
-        
+
         String readPublicationID = readNextSigLine(br);
-        if(readPublicationID==null) {
-            throw new IOException("Note \'"+readTitle+"\' is not terminated ");
+        if (readPublicationID == null) {
+            throw new IOException("Note \'" + readTitle + "\' is not terminated ");
         }
-        
+
         String readCitation = readNextSigLine(br);
-        if(readCitation==null) {
-            throw new IOException("Note \'"+readTitle+"\' is not terminated ");
+        if (readCitation == null) {
+            throw new IOException("Note \'" + readTitle + "\' is not terminated ");
         }
-        
+
         String readTags = readNextSigLine(br);
-        if(readTags==null) {
-            throw new IOException("Note \'"+readTitle+"\' is not terminated ");
+        if (readTags == null) {
+            throw new IOException("Note \'" + readTitle + "\' is not terminated ");
         }
         st = new StringTokenizer(readTags.trim(), DELIM);
         ArrayList<String> tags = new ArrayList<>(st.countTokens());
-        while(st.hasMoreTokens()) {
+        while (st.hasMoreTokens()) {
             tags.add(st.nextToken().trim());
         }
         return new Note(readTitle, links, readText, readPublicationID, readCitation, tags);
     }
-    
+
     @NotesPersistenceFormat
     @WorkingWithFiles
+    @NotesLoading
     private String readNextSigLine(BufferedReader br) throws IOException {
         String line = br.readLine();
         while (line != null && line.equals("") && !line.startsWith("<<<")) {
@@ -242,34 +263,36 @@ public class FilePersistenceManager {
                 sb.append(line).append("\n");
                 line = br.readLine();
             }
-            if(line != null && line.startsWith(">>>")) {
+            if (line != null && line.startsWith(">>>")) {
                 return sb.toString().trim();
             }
         }
         return null;
     }
-    
+
+    @TODO("Use a proper serialization format like XML or YAML")
     @NotesPersistenceFormat
+    @NotesSaving
     private String serializeNote(Note note) {
 
         StringBuilder builder = new StringBuilder();
-        
+
         builder.append("<<<\n").append(note.getTitle()).append("\n>>>\n<<<\n");
-        
-        for(String link : note.getLinks()) {
+
+        for (String link : note.getLinks()) {
             builder.append(link).append(DELIM);
         }
-        
+
         builder.append("\n>>>\n<<<\n").append(note.getText()).append("\n>>>\n");
         builder.append("<<<\n").append(note.getPublicationID()).append("\n>>>\n");
         builder.append("<<<\n").append(note.getCitation()).append("\n>>>\n<<<\n");
 
-        for(String tag : note.getTags()) {
+        for (String tag : note.getTags()) {
             builder.append(tag).append(DELIM);
         }
-        
+
         builder.append("\n>>>\n");
-        
+
         return builder.toString();
     }
 }

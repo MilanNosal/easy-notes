@@ -1,9 +1,8 @@
 package easynotes.concerns;
 
 /**
- * Data model.
+ * UI of the application.
  * @author Milan
  */
-public @interface NotesModel {
-    
+public @interface UI {
 }

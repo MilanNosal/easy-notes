@@ -1,9 +1,9 @@
 package easynotes.swingui.dyncom;
 
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.UI;
 import javax.swing.JComponent;
 
-@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
+@UI
 public interface IsJComponent {
 
     public JComponent asJComponent();

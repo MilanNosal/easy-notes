@@ -11,15 +11,18 @@ public abstract class AbstractSimpleNotesFilter extends AbstractNotesFilter {
         super(id);
     }
     
+    @Filtering(role = Filtering.Role.FILTERING)
     @Override
     public void setCriterion(String criterion) {
         this.criterion = criterion;
     }
     
+    @Filtering(role = Filtering.Role.FILTERING)
     protected String getCriterion() {
         return this.criterion.toLowerCase();
     }
 
+    @Filtering(role = Filtering.Role.FILTERING)
     @Override
     public abstract boolean filterNote(Note note);
 }

@@ -1,7 +1,11 @@
 package easynotes.swingui;
 
+import easynotes.concerns.Links;
+import easynotes.concerns.NoteAdding;
 import easynotes.concerns.NoteEditing;
+import easynotes.concerns.NoteEventHandling;
 import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.UI;
 import easynotes.model.abstractModel.Note;
 import easynotes.swingui.dyncom.EditLinksPanel;
 import java.awt.event.WindowAdapter;
@@ -12,11 +16,17 @@ import java.util.Arrays;
  *
  * @author Milan
  */
+@UI
 @NotesPresentation(task = NotesPresentation.Task.NOTE_EDITING)
+@NoteEditing @NoteAdding
 public class NoteDialog extends javax.swing.JDialog {
 
     private Note note;
+    
+    @Links
     private final NotePanel<EditLinksPanel> notePanel;
+    
+    @NoteEventHandling(type = NoteEventHandling.Type.SOURCE)
     private final EditingNotesCallbacks callback;
 
     /**
@@ -103,7 +113,8 @@ public class NoteDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    @NoteEditing
+    @NoteEditing @NoteAdding
+    @NoteEventHandling(type = NoteEventHandling.Type.SOURCE)
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         Note newNote = this.notePanel.getNote();
         if (this.note != null) {

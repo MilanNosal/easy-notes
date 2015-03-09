@@ -1,11 +1,17 @@
 package easynotes.model.abstractModel;
 
 import easynotes.concerns.Sorting;
+import easynotes.concerns.TODO;
+import easynotes.concerns.Unused;
+import easynotes.concerns.Utility;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 @Sorting
+@TODO("Use built-in Java Normalizer instead")
+@Unused
+@Utility
 public class UTFStringComparator implements Comparator<String> {
 
     static final HashMap<Character, Integer> chars = new LinkedHashMap<>();

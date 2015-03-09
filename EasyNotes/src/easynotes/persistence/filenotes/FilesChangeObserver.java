@@ -2,6 +2,7 @@ package easynotes.persistence.filenotes;
 
 import easynotes.concerns.ModelModificationHandling;
 import easynotes.concerns.NoteEventHandling;
+import easynotes.concerns.NotesDataModel;
 import easynotes.model.abstractModel.Note;
 import static easynotes.model.abstractModel.Note.ChangeEventType.*;
 import easynotes.model.abstractModel.Notes;
@@ -18,6 +19,7 @@ public class FilesChangeObserver implements Observer {
     
     private boolean modified = false;
     
+    @NotesDataModel
     private final Notes notes;
     
     public FilesChangeObserver(Notes notes) {

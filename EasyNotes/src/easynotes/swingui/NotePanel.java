@@ -1,8 +1,11 @@
 package easynotes.swingui;
 
+import easynotes.concerns.Links;
+import easynotes.concerns.NoteAdding;
 import easynotes.concerns.NoteEditing;
-import easynotes.concerns.NotesLifecycle;
+import easynotes.concerns.NotesController;
 import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.UI;
 import easynotes.concerns.Tagging;
 import easynotes.swingui.dyncom.PanelsFactory;
 import easynotes.swingui.dyncom.DynamicCollectionPanel;
@@ -15,9 +18,12 @@ import java.util.StringTokenizer;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
+@UI
+@NoteEditing @NoteAdding
 @NotesPresentation(task = {NotesPresentation.Task.NOTE_PRESENTATION, NotesPresentation.Task.NOTE_EDITING})
 public class NotePanel<T extends LinksPanel> extends JPanel {
 
+    @Links
     private final DynamicCollectionPanel<T> linksCollection;
 
     /**
@@ -39,6 +45,7 @@ public class NotePanel<T extends LinksPanel> extends JPanel {
     }
 
     @NoteEditing
+    @NotesController
     public void setNote(Note note) {
         if (note != null) {
             this.titleField.setText(note.getTitle());
@@ -64,7 +71,8 @@ public class NotePanel<T extends LinksPanel> extends JPanel {
         }
     }
 
-    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+    @NoteAdding
+    @NotesController
     public Note getNote() {
         List<String> links = new LinkedList<>();
         for (T item : this.linksCollection.getCollection()) {

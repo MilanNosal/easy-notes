@@ -2,7 +2,8 @@ package easynotes.swingui.dyncom;
 
 import easynotes.concerns.Links;
 import easynotes.concerns.NotesPresentation;
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.TODO;
+import easynotes.concerns.UI;
 import easynotes.swingui.EasyNotesFrame;
 import javax.swing.JComponent;
 
@@ -12,7 +13,8 @@ import javax.swing.JComponent;
  */
 @Links
 @NotesPresentation(task = NotesPresentation.Task.LINKS)
-@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
+@UI
+@TODO("Finish opening files in pdf reader")
 public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
     /**
@@ -37,7 +39,7 @@ public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
         return this;
     }
     
-    @VariableSubpanels(VariableSubpanels.Role.FACTORY)
+    @UI
     public static class ShowLinksPanelFactory implements PanelsFactory<ShowLinksPanel> {
 
         @Override

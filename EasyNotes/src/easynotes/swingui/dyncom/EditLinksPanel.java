@@ -1,9 +1,12 @@
 package easynotes.swingui.dyncom;
 
+import easynotes.concerns.Configuration;
+import easynotes.concerns.Links;
+import easynotes.concerns.NoteAdding;
 import easynotes.concerns.NoteEditing;
 import easynotes.concerns.NotesPresentation;
-import easynotes.concerns.SwingUI;
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.TODO;
+import easynotes.concerns.UI;
 import easynotes.concerns.WorkingWithFiles;
 import java.io.File;
 import java.util.HashSet;
@@ -16,13 +19,16 @@ import javax.swing.filechooser.FileFilter;
  *
  * @author Milan
  */
-@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
+@Links
 @NotesPresentation(task = NotesPresentation.Task.LINKS)
-@NoteEditing
+@NoteEditing @NoteAdding
+@UI
+@TODO("Finish opening files in pdf reader")
 public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
     @WorkingWithFiles
     private final static JFileChooser fc = new JFileChooser();
+    @Configuration
     private final static Set<String> supportedExts = new HashSet<>();
 
     static {
@@ -103,7 +109,6 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    @SwingUI(SwingUI.Role.OPERATION)
     private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
         int returnVal = fc.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -111,15 +116,15 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         }
     }//GEN-LAST:event_searchButtonActionPerformed
 
-    @WorkingWithFiles
-    private String getRelativePath(File file) {
-        String path = file.getAbsolutePath();
-        String currentPath = (new File("")).getAbsolutePath();
-        if (path.startsWith(currentPath)) {
-            path = path.replace(currentPath + System.getProperty("file.separator"), "");
+        @WorkingWithFiles
+        private String getRelativePath(File file) {
+            String path = file.getAbsolutePath();
+            String currentPath = (new File("")).getAbsolutePath();
+            if (path.startsWith(currentPath)) {
+                path = path.replace(currentPath + System.getProperty("file.separator"), "");
+            }
+            return path;
         }
-        return path;
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField link;
@@ -142,7 +147,6 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         return this;
     }
 
-    @VariableSubpanels(VariableSubpanels.Role.FACTORY)
     public static class EditLinksPanelFactory implements PanelsFactory<EditLinksPanel> {
 
         @Override

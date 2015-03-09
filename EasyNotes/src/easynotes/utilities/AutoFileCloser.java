@@ -1,14 +1,18 @@
 package easynotes.utilities;
 
-import easynotes.concerns.Misc;
+import easynotes.concerns.Persistence;
+import easynotes.concerns.TODO;
+import easynotes.concerns.Utility;
 import easynotes.concerns.WorkingWithFiles;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-@Misc("Utilities")
+@Persistence
 @WorkingWithFiles
+@TODO("Use Java 8.")
+@Utility
 public abstract class AutoFileCloser {
     // the core action code that the implementer wants to run
     protected abstract void doWork() throws IOException;

@@ -1,31 +1,42 @@
 package easynotes.model;
 
+import easynotes.concerns.Configuration;
 import easynotes.concerns.Filtering;
+import easynotes.concerns.ModelModificationHandling;
 import easynotes.concerns.NoteEventHandling;
 import easynotes.concerns.NotesController;
-import easynotes.concerns.NotesModel;
+import easynotes.concerns.NotesDataModel;
+import easynotes.concerns.Sorting;
+import easynotes.concerns.UI;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.abstractModel.Notes;
 import easynotes.model.filters.FiltersManager;
 import java.util.*;
 
-@NotesModel
+@UI
+@NotesDataModel
 @NotesController
 public abstract class NotesViewModel implements Observer {
 
+    @NotesDataModel
     private final Notes notes;
-    @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
+
+    @Filtering(role = Filtering.Role.FILTERING)
     private final List<Note> notesToShow = new LinkedList<>();
+
+    @Configuration
     private final String[] columnNames = new String[]{"Title", "Tags"}; //, "Text"};
+
     @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     private final FiltersManager filterManager;
 
+    @Filtering(role = Filtering.Role.FILTERING)
     public NotesViewModel(Notes notes, FiltersManager filtersManager) {
         this.filterManager = filtersManager;
         this.notes = notes;
         setObservables();
     }
-    
+
     @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
     public FiltersManager getFiltersManager() {
         return this.filterManager;
@@ -34,12 +45,14 @@ public abstract class NotesViewModel implements Observer {
     public Note getNoteAt(int index) {
         return this.notesToShow.get(index);
     }
-    
+
     public int getIndexOf(Note note) {
         return this.notesToShow.indexOf(note);
     }
 
     @NotesController
+    @Filtering(role = Filtering.Role.FILTERING)
+    @Sorting
     public void updateView() {
         this.notesToShow.clear();
         for (Note note : notes.getNotes()) {
@@ -81,12 +94,13 @@ public abstract class NotesViewModel implements Observer {
         }
     }
 
+    @Filtering(role = Filtering.Role.FILTERING)
     @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     @Override
     public void update(Observable o, Object arg) {
-        if((o instanceof Notes || o instanceof Note) && arg instanceof Note.ChangeEvent) {
+        if ((o instanceof Notes || o instanceof Note) && arg instanceof Note.ChangeEvent) {
             Note.ChangeEvent evt = (Note.ChangeEvent) arg;
-            switch(evt.getChangeType()) {
+            switch (evt.getChangeType()) {
                 case NOTES_LOADED:
                     setObservables();
                 case NOTES_CLEARED:
@@ -104,8 +118,8 @@ public abstract class NotesViewModel implements Observer {
                 case TAG_ADDED:
                 case TAG_REMOVED:
                 case TITLE_CHANGED:
-                    int index = this.notesToShow.indexOf(((Note.ChangeEvent)arg).getObjectOfChange());
-                    if(index != -1) {
+                    int index = this.notesToShow.indexOf(((Note.ChangeEvent) arg).getObjectOfChange());
+                    if (index != -1) {
                         fireTableRowsUpdated(index, index);
                     }
                     break;
@@ -120,16 +134,16 @@ public abstract class NotesViewModel implements Observer {
             }
         }
     }
-    
+
     @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
     private void setObservables() {
         this.notes.addObserver(this);
-        for(Note note : this.notes.getNotes()) {
+        for (Note note : this.notes.getNotes()) {
             note.addObserver(this);
         }
     }
-    
+
     public abstract void fireTableRowsUpdated(int firstRow, int lastRow);
-    
+
     public abstract void fireTableDataChanged();
 }

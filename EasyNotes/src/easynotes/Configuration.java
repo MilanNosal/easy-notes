@@ -1,8 +1,9 @@
 package easynotes;
 
-import easynotes.concerns.Misc;
+import easynotes.concerns.WorkingWithFiles;
 
-@Misc("Configuration")
+@WorkingWithFiles
+@easynotes.concerns.Configuration
 public class Configuration {
     public static String ENCODING = "cp1250";
 }

@@ -1,6 +1,6 @@
 package easynotes.swingui.dyncom;
 
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.UI;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,18 +9,16 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-@VariableSubpanels(VariableSubpanels.Role.MANAGER)
+@UI
 public class DynamicCollectionPanel<T extends IsJComponent> extends JPanel {
 
     private final JPanel content = new JPanel();
     
-    @VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
     private final LinkedList<T> collection = new LinkedList<>();
     
     private final JButton addButton = new JButton("+");
     private final JButton removeButton = new JButton("-");
     
-    @VariableSubpanels(VariableSubpanels.Role.FACTORY)
     private final PanelsFactory<T> factory;
 
     public DynamicCollectionPanel(PanelsFactory<T> factory) {

@@ -1,6 +1,7 @@
 package easynotes.model.filters;
 
 import easynotes.concerns.Filtering;
+import easynotes.concerns.TODO;
 import easynotes.model.abstractModel.Note;
 import java.util.Objects;
 
@@ -31,6 +32,8 @@ public abstract class AbstractNotesFilter {
         return this.id;
     }
     
+    @TODO("Important method. Comment to balance with filterNote(Note note) method. Maybe rename to setSearchString().")
+    @Filtering(role = Filtering.Role.FILTERING)
     public abstract void setCriterion(String criterion);
     
     /**
@@ -39,6 +42,8 @@ public abstract class AbstractNotesFilter {
      * @param note
      * @return 
      */
+    @TODO("Rename to 'accept'.")
+    @Filtering(role = Filtering.Role.FILTERING)
     public abstract boolean filterNote(Note note);
     
     @Override

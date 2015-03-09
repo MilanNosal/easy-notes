@@ -1,13 +1,15 @@
 package easynotes.persistence;
 
-import easynotes.concerns.NotesLifecycle;
+import easynotes.concerns.Persistence;
+import easynotes.concerns.Unused;
 import easynotes.model.abstractModel.Notes;
 
 /**
  *
  * @author Milan
  */
-@NotesLifecycle(phase = NotesLifecycle.Phase.PERSISTENCE)
+@Unused
+@Persistence
 public interface ExportProvider {
     public void exportTo(Notes notes);
 }

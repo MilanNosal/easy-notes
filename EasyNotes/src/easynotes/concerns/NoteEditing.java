@@ -1,7 +1,7 @@
 package easynotes.concerns;
 
 /**
- * Implementation of note edition.
+ * Annotates the code implementing note editing.
  * @author Milan
  */
 public @interface NoteEditing {

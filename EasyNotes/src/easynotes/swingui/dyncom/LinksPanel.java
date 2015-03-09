@@ -1,9 +1,13 @@
 package easynotes.swingui.dyncom;
 
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.Links;
+import easynotes.concerns.UI;
 
-@VariableSubpanels(VariableSubpanels.Role.SUBPANEL)
+@Links
+@UI
 public interface LinksPanel extends IsJComponent {
+
     public void setLink(String link);
+
     public String getLink();
 }

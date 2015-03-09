@@ -1,6 +1,8 @@
 package easynotes.swingui;
 
+import easynotes.concerns.NotesController;
 import easynotes.concerns.NotesPresentation;
+import easynotes.concerns.UI;
 import easynotes.model.NotesViewModel;
 import easynotes.model.abstractModel.Notes;
 import easynotes.model.filters.FiltersManager;
@@ -9,6 +11,8 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
+@UI
+@NotesController
 @NotesPresentation(task = NotesPresentation.Task.LIST_PRESENTATION)
 public class NotesTableModel extends NotesViewModel implements TableModel {
 

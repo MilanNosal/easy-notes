@@ -1,13 +1,16 @@
 package easynotes.model.abstractModel;
 
 import easynotes.concerns.Citing;
+import easynotes.concerns.Configuration;
+import easynotes.concerns.DomainEntity;
 import easynotes.concerns.Links;
-import easynotes.concerns.NotesModel;
+import easynotes.concerns.NoteAdding;
+import easynotes.concerns.NotesDataModel;
 import easynotes.concerns.NoteEventHandling;
-import easynotes.concerns.NotesLifecycle;
 import easynotes.concerns.NotesPersistenceFormat;
 import easynotes.concerns.Sorting;
 import easynotes.concerns.Tagging;
+import easynotes.concerns.Unused;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -16,7 +19,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Observable;
 
-@NotesModel
+@NotesDataModel
+@DomainEntity
 public final class Note extends Observable implements Comparable<Note> {
 
     @NoteEventHandling(type = NoteEventHandling.Type.EVENT)
@@ -27,10 +31,15 @@ public final class Note extends Observable implements Comparable<Note> {
     }
 
     @Tagging
+    @Configuration
     public static final String USED = "used";
+    
     @Tagging
+    @Configuration
     public static final String NEW = "new";
+    
     @Tagging
+    @Configuration
     public static final String DELIM = ";";
 
     @Tagging
@@ -49,7 +58,9 @@ public final class Note extends Observable implements Comparable<Note> {
     @Citing
     private String citation;
 
-    @NotesLifecycle(phase = NotesLifecycle.Phase.CREATION)
+    @Tagging
+    @Links
+    @NoteAdding
     public Note(String title, List<String> links, String text, String publicationID, String citation, List<String> tags) {
         this.title = title.trim();
         for (String link : links) {
@@ -96,6 +107,7 @@ public final class Note extends Observable implements Comparable<Note> {
     }
 
     @NoteEventHandling(type = NoteEventHandling.Type.PROPAGATION)
+    @Links
     public void addLink(String link) {
         this.links.add(link.replace(System.getProperty("file.separator"), "/").trim());
         this.setChanged();
@@ -128,6 +140,7 @@ public final class Note extends Observable implements Comparable<Note> {
     }
 
     @NoteEventHandling(type = NoteEventHandling.Type.PROPAGATION)
+    @Tagging
     public void removeTag(String tag) {
         this.tags.remove(tag.trim());
         this.setChanged();
@@ -169,6 +182,7 @@ public final class Note extends Observable implements Comparable<Note> {
         this.notifyObservers(new ChangeEvent(ChangeEventType.PUBLICATIONID_CHANGED, this));
     }
 
+    @Unused
     @NotesPersistenceFormat
     public void print(OutputStream os) {
         try {

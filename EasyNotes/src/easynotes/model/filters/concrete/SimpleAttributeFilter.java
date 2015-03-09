@@ -17,6 +17,7 @@ public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter {
 
     protected abstract String getAttributeOfInterest(Note note);
     
+    @Filtering(role = Filtering.Role.FILTERING)
     @Override
     public boolean filterNote(Note note) {
         String criterion = getCriterion();

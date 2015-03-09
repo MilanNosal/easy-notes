@@ -1,8 +1,8 @@
 package easynotes.swingui.dyncom;
 
-import easynotes.concerns.VariableSubpanels;
+import easynotes.concerns.UI;
 
-@VariableSubpanels(VariableSubpanels.Role.FACTORY)
+@UI
 public interface PanelsFactory<T extends IsJComponent> {
 
     public T getNewInstance();

@@ -7,15 +7,15 @@ package easynotes.concerns;
 public @interface NoteEventHandling {
     public enum Type {
         /**
-         * Event propagation.
+         * Code handling event propagation.
          */
         PROPAGATION,
         /**
-         * Event concepts.
+         * Code representing events.
          */
         EVENT,
         /**
-         * Source of note events.
+         * Code that is a source of note events.
          */
         SOURCE,
         /** 

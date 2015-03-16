@@ -1,7 +1,7 @@
 package easynotes.concerns;
 
 /**
- * Tag management of the notes.
+ * Annotates code that manages (or works with) tags for notes.
  * @author Milan
  */
 public @interface Tagging {

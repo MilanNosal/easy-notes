@@ -1,7 +1,7 @@
 package easynotes.concerns;
 
 /**
- * Application domain data model.
+ * Code that represents application domain data model.
  * @author Milan
  */
 public @interface NotesDataModel {

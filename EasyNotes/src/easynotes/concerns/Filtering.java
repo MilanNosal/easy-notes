@@ -1,7 +1,8 @@
 package easynotes.concerns;
 
 /**
- * Annotated target program elements implement filtering of the notes.
+ * Annotated target program elements implement filtering of the notes based on some criteria,
+ * such as tags. Provides an alternative to search.
  *
  * @author Milan
  */

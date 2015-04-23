@@ -12,10 +12,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Arrays;
 
-/**
- *
- * @author Milan
- */
 @UI
 @NotesPresentation(task = NotesPresentation.Task.NOTE_EDITING)
 @NoteEditing @NoteAdding
@@ -29,9 +25,6 @@ public class NoteDialog extends javax.swing.JDialog {
     @NoteEventHandling(type = NoteEventHandling.Type.SOURCE)
     private final EditingNotesCallbacks callback;
 
-    /**
-     * Creates new form NoteDialog
-     */
     public NoteDialog(java.awt.Frame parent, EditingNotesCallbacks callback, Note note) {
         super(parent, false);
         this.callback = callback;

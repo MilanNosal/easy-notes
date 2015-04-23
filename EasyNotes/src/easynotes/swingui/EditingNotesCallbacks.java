@@ -5,10 +5,6 @@ import easynotes.concerns.NoteEditing;
 import easynotes.concerns.NoteEventHandling;
 import easynotes.model.abstractModel.Note;
 
-/**
- *
- * @author Milan
- */
 @NoteEventHandling(type = NoteEventHandling.Type.SOURCE)
 public interface EditingNotesCallbacks {
 

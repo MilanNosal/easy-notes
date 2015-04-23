@@ -2,7 +2,6 @@ package easynotes.model;
 
 import easynotes.concerns.Configuration;
 import easynotes.concerns.Filtering;
-import easynotes.concerns.ModelModificationHandling;
 import easynotes.concerns.NoteEventHandling;
 import easynotes.concerns.NotesController;
 import easynotes.concerns.NotesDataModel;
@@ -87,8 +86,6 @@ public abstract class NotesViewModel implements Observer {
                     sb.append(Note.DELIM);
                 }
                 return sb.toString();
-//            case 2:
-//                return notesToShow.get(rowIndex).getText();
             default:
                 return null;
         }
@@ -127,7 +124,6 @@ public abstract class NotesViewModel implements Observer {
                 case TEXT_CHANGED:
                 case LINK_CHANGED:
                 case PUBLICATIONID_CHANGED:
-                    // netreba nic robit lebo sa nemeni nic v modeli
                     break;
                 default:
                     throw new RuntimeException("Did you forget about some event that might occur?");

@@ -15,10 +15,6 @@ import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 
-/**
- *
- * @author Milan
- */
 @Links
 @NotesPresentation(task = NotesPresentation.Task.LINKS)
 @NoteEditing @NoteAdding
@@ -60,9 +56,6 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         });
     }
 
-    /**
-     * Creates new form EditLinksPanel
-     */
     public EditLinksPanel() {
         initComponents();
     }

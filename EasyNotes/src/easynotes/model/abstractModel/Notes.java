@@ -8,9 +8,6 @@ import easynotes.concerns.NoteEventHandling;
 import easynotes.concerns.NotesLoading;
 import java.util.*;
 
-/**
- * @author Milan
- */
 @NotesDataModel
 @DomainEntity
 public final class Notes extends Observable {

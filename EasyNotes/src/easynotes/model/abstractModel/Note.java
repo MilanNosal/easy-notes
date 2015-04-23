@@ -85,11 +85,6 @@ public final class Note extends Observable implements Comparable<Note> {
         this.notifyObservers(new ChangeEvent(ChangeEventType.CITATION_CHANGED, this));
     }
 
-    /**
-     * Use only for getting, never for setting. Returns copy.
-     *
-     * @return
-     */
     @Links
     public String[] getLinks() {
         return links.toArray(new String[links.size()]);
@@ -114,11 +109,6 @@ public final class Note extends Observable implements Comparable<Note> {
         this.notifyObservers(new ChangeEvent(ChangeEventType.LINK_CHANGED, this));
     }
 
-    /**
-     * Use only for getting, never for setting. Returns copy.
-     *
-     * @return
-     */
     @Tagging
     public String[] getTags() {
         return tags.toArray(new String[tags.size()]);

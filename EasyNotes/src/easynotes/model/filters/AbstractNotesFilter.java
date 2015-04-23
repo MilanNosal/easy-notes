@@ -32,16 +32,10 @@ public abstract class AbstractNotesFilter {
         return this.id;
     }
     
-    @TODO("Important method. Comment to balance with filterNote(Note note) method. Maybe rename to setSearchString().")
+    @TODO("Important method. Maybe rename to setSearchString().")
     @Filtering(role = Filtering.Role.FILTERING)
     public abstract void setCriterion(String criterion);
-    
-    /**
-     * Ma vratit false, ak poznamka neprejde filtrom, true ak sa poznamka
-     * ma zobrazit.
-     * @param note
-     * @return 
-     */
+
     @TODO("Rename to 'accept'.")
     @Filtering(role = Filtering.Role.FILTERING)
     public abstract boolean filterNote(Note note);

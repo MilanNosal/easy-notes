@@ -3,10 +3,6 @@ package easynotes.model.filters.concrete;
 import easynotes.concerns.Filtering;
 import easynotes.model.abstractModel.Note;
 
-/**
- *
- * @author Milan
- */
 @Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
 public class TextFilter extends SimpleAttributeFilter {
 

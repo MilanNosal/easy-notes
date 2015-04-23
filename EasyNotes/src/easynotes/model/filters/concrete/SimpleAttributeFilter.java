@@ -4,10 +4,6 @@ import easynotes.concerns.Filtering;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.AbstractSimpleNotesFilter;
 
-/**
- *
- * @author Milan
- */
 @Filtering(role = Filtering.Role.FILTER_IMPLEMENTATION)
 public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter {
 

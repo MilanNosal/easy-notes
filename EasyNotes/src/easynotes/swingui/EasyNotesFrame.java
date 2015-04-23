@@ -69,9 +69,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
     public static Color frg2Colour = new Color(0, 0, 0);
     public static Color frg3Colour = new Color(255, 255, 255);
 
-    /**
-     * Creates new form EasyNotesFrame
-     */
     public EasyNotesFrame() {
 
         this.notes = new Notes(new ArrayList<Note>());
@@ -110,8 +107,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
                     Note note = EasyNotesFrame.this.tableModel.getNoteAt(index);
                     NoteDialog nd = new NoteDialog(EasyNotesFrame.this, EasyNotesFrame.this, note);
                     nd.setVisible(true);
-                    // EasyNotesFrame.this.tableModel.updateView();
-                    // countLabel.setText("Count: " + EasyNotesFrame.this.tableModel.getRowCount());
                 }
             }
         });
@@ -134,7 +129,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
                         persistMenuItemActionPerformed(null);
                     }
                 }
-                // TODO co vsetko zatvarat?
                 notes.close();
             }
         });
@@ -486,7 +480,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
     @NotesLoading
     private void runDirMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runDirMenuItemActionPerformed
 
-        // TODO skontrolovat ci to je dobre, nie som si isty workflowom
         if (persistenceManager.isSaveNecessary()) {
             int answer = JOptionPane.showConfirmDialog(EasyNotesFrame.this, "Notes have changed since the last persisting,"
                     + " do you want to persist them before loading?", "Load", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -499,8 +492,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         try {
             persistenceManager.loadNotes();
             EasyNotesFrame.this.refreshFilter();
-            //updateTable();
-            //countLabel.setText("Count: " + tableModel.getRowCount());
         } catch (NotesException ex) {
             JOptionPane.showMessageDialog(this, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
@@ -622,9 +613,6 @@ public class EasyNotesFrame extends javax.swing.JFrame implements EditingNotesCa
         countLabel.setText("Count: " + tableModel.getRowCount());
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /*
          * Set the Nimbus look and feel

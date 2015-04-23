@@ -16,10 +16,6 @@ import easynotes.model.filters.concrete.UsedFilter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Milan
- */
 @Filtering(role = Filtering.Role.FILTER_MANAGEMENT)
 @NotesController
 public final class FiltersManager {
@@ -37,10 +33,6 @@ public final class FiltersManager {
         addNotesFilter(new UsedFilter());
     }
     
-    /**
-     * Ordered list.
-     * @return 
-     */
     @NotesController
     public String[] getFilterIdentifiers() {
         String[] retVal = new String[availableFilters.size()];
@@ -95,10 +87,6 @@ public final class FiltersManager {
     @TODO("Maybe rename to 'filter'.")
     public boolean notePasses(Note note) {
         for(AbstractNotesFilter notesFilter : this.availableFilters) {
-            // Rozmyslal som spravit to cez pomocnu bool premennu aby som redukoval 
-            // ifi, ale potom by vykonavanie prechadzalo cez vsetky filtre,
-            // aj ked prvy by vylucil poznamku. Vzhladom na to, ze filtre mozu
-            // mat vnutri velmi zlozite porovnavania, tak som sa rozhodol ist touto cestou.
             if(notesFilter.isActive() && !notesFilter.filterNote(note)) {
                 return false;
             }

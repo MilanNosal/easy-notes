@@ -9,10 +9,6 @@ import easynotes.model.abstractModel.Notes;
 import java.util.Observable;
 import java.util.Observer;
 
-/**
- *
- * @author Milan
- */
 @ModelModificationHandling
 @NoteEventHandling(type = NoteEventHandling.Type.HANDLING)
 public class FilesChangeObserver implements Observer {

@@ -7,19 +7,12 @@ import easynotes.concerns.UI;
 import easynotes.swingui.EasyNotesFrame;
 import javax.swing.JComponent;
 
-/**
- *
- * @author Milan
- */
 @Links
 @NotesPresentation(task = NotesPresentation.Task.LINKS)
 @UI
 @TODO("Finish opening files in pdf reader")
 public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
-    /**
-     * Creates new form ShowLinksPanel
-     */
     public ShowLinksPanel() {
         initComponents();
     }

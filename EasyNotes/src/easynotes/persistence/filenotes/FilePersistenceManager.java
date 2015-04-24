@@ -126,8 +126,6 @@ public class FilePersistenceManager {
         
         notes.clearNotes();
         observer.close();
-        // Predchadzajuci riadok by mal invalidnut aj observera a tak vytvaram novy
-        // (pritom by nemal byt problem ze nedavam zavriet observera).
         observer = new FilesChangeObserver(notes);
         notes.addObserver(observer);
 
@@ -154,7 +152,6 @@ public class FilePersistenceManager {
         }
         
         notes.setNotes(new ArrayList<>(loadedNotes));
-        // TODO: nemal by som tu naviazat observer aj na nacitane notes?
     }
 
     public boolean isSaveNecessary() {

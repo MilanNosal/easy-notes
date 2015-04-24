@@ -31,12 +31,6 @@ public abstract class AbstractNotesFilter {
     
     public abstract void setCriterion(String criterion);
     
-    /**
-     * Ma vratit false, ak poznamka neprejde filtrom, true ak sa poznamka
-     * ma zobrazit.
-     * @param note
-     * @return 
-     */
     public abstract boolean filterNote(Note note);
     
     @Override

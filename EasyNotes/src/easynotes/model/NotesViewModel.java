@@ -9,7 +9,7 @@ public abstract class NotesViewModel implements Observer {
 
     private final Notes notes;
     private final List<Note> notesToShow = new LinkedList<>();
-    private final String[] columnNames = new String[]{"Title", "Tags"}; //, "Text"};
+    private final String[] columnNames = new String[]{"Title", "Tags"};
     private final FiltersManager filterManager;
 
     public NotesViewModel(Notes notes, FiltersManager filtersManager) {
@@ -102,7 +102,6 @@ public abstract class NotesViewModel implements Observer {
                 case TEXT_CHANGED:
                 case LINK_CHANGED:
                 case PUBLICATIONID_CHANGED:
-                    // netreba nic robit lebo sa nemeni nic v modeli
                     break;
                 default:
                     throw new RuntimeException("Did you forget about some event that might occur?");

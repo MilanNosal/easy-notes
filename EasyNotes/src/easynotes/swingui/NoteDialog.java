@@ -6,19 +6,12 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Arrays;
 
-/**
- *
- * @author Milan
- */
 public class NoteDialog extends javax.swing.JDialog {
 
     private Note note;
     private final NotePanel<EditLinksPanel> notePanel;
     private final EditingNotesCallbacks callback;
 
-    /**
-     * Creates new form NoteDialog
-     */
     public NoteDialog(java.awt.Frame parent, EditingNotesCallbacks callback, Note note) {
         super(parent, false);
         this.callback = callback;

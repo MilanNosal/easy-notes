@@ -2,10 +2,6 @@ package easynotes.model.filters.concrete;
 
 import easynotes.model.abstractModel.Note;
 
-/**
- *
- * @author Milan
- */
 public class TextFilter extends SimpleAttributeFilter {
 
     public TextFilter() {

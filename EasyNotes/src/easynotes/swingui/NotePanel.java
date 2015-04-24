@@ -15,9 +15,6 @@ public class NotePanel<T extends LinksPanel> extends JPanel {
 
     private final DynamicCollectionPanel<T> linksCollection;
 
-    /**
-     * Creates new form NotePanel
-     */
     public NotePanel(PanelsFactory<T> factory, boolean editable) {
         initComponents();
         linksCollection = new DynamicCollectionPanel<>(factory);

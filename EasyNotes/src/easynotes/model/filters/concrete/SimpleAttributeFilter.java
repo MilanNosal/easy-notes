@@ -3,10 +3,6 @@ package easynotes.model.filters.concrete;
 import easynotes.model.abstractModel.Note;
 import easynotes.model.filters.AbstractSimpleNotesFilter;
 
-/**
- *
- * @author Milan
- */
 public abstract class SimpleAttributeFilter extends AbstractSimpleNotesFilter {
 
     public SimpleAttributeFilter(String id) {

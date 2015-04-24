@@ -2,9 +2,6 @@ package easynotes.model.abstractModel;
 
 import java.util.*;
 
-/**
- * @author Milan
- */
 public final class Notes extends Observable {
 
     private List<Note> notes;

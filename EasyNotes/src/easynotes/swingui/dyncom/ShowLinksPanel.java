@@ -3,15 +3,8 @@ package easynotes.swingui.dyncom;
 import easynotes.swingui.EasyNotesFrame;
 import javax.swing.JComponent;
 
-/**
- *
- * @author Milan
- */
 public class ShowLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
-    /**
-     * Creates new form ShowLinksPanel
-     */
     public ShowLinksPanel() {
         initComponents();
     }

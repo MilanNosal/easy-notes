@@ -7,10 +7,6 @@ import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileFilter;
 
-/**
- *
- * @author Milan
- */
 public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
 
     private final static JFileChooser fc = new JFileChooser();
@@ -45,9 +41,6 @@ public class EditLinksPanel extends javax.swing.JPanel implements LinksPanel {
         });
     }
     
-    /**
-     * Creates new form EditLinksPanel
-     */
     public EditLinksPanel() {
         initComponents();
     }

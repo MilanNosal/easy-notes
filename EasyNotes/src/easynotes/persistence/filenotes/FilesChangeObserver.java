@@ -6,10 +6,6 @@ import easynotes.model.abstractModel.Notes;
 import java.util.Observable;
 import java.util.Observer;
 
-/**
- *
- * @author Milan
- */
 public class FilesChangeObserver implements Observer {
     
     private boolean modified = false;
